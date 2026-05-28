@@ -639,7 +639,28 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/RhtMecFYTwYBi3Kp1PPvhM4hnPowkgQSMIIJQ0tbRgQblTxdu4iYxbexzoUHDxA7ZgKOwtp3sapjWAikaCP8uu0AZZ_gI-lUkaS49fFYugew760WKnX3GhKGYkOpsDiXWgyKuHh8rYxF8LYGRLyR-A.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42673"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001770868"
+      },
+      {
+        "name": "U+ 모바일 티비",
+        "url": "https://motvlnk.uplus.co.kr/?a_rtype=detail_page&contents_id=M012537302PPV00"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tPDOmjL"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=A01_A00000000420&history=season"
+      }
+    ],
     "memo": ""
   },
   {
@@ -2120,15 +2141,6 @@
     "category": "애니",
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4S11f90-Nn0DJeObAFbOaJa9NMo2J_fSjSP2BVPal2Mztd4wJ6sS-AgVDqwlhdMi7i9CNAZ6uEckDLRp6RjyHo8UB1QL6CXT9XIG1gBdRHhFoYt1l5KWowrtN3_Uxsl_jf0dqDn8eAlkje7D5yaa9kc5oNDqPlqLLY8JNt-7iypCyL1Fv0rfHQHWMyg/s1600/densetsu-yusha-densetsu-73651l.jpg",
-    "ottLinks": [],
-    "memo": ""
-  },
-  {
-    "id": 108,
-    "title": "마법전사 유캔도 더빙 (재능TV)",
-    "category": "애니",
-    "status": "expired",
-    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJZEndp0zVh_ENrihGDRuUjyWjQk0BtMOVb2s56uLnW-0WFMTT1lfdifpPJ4YcabrBeePtoeLq04DxlAXTx2vm5UFvjo858J0aAUQubSKvpfN0XS7nxCc5k-huK86iOqkjnd2tx4q5KL6Vbq7aRvrjMHKtzwt2oGCYI86nk6PjGsnvYZH23dn0KGoyKw/s1600/ryukendo.jpg",
     "ottLinks": [],
     "memo": ""
   },
