@@ -1,129 +1,79 @@
-[
-  {
-    "id": 1,
-    "title": "달빛천사 (2004 투니버스 더빙)",
-    "category": "애니",
-    "status": "active",
-    "thumbnail": "https://i.namu.wiki/i/8BhKq4quFf6hG5-KKH-GZ9s-dcglV4mjJMRk6M6Dgt8QAL4e1t4_9q2_KMt7Q4DCMsJLVB5JsLgq8DZV3FeiglNIvL_PLBM4UTpBPT_cUhi3_Wzsl4UmSwo-lMyvGQTizgmZ2jrGZMBc8MFnS_kEeA.webp",
-    "ottLinks": [
-      {
-        "name": "라프텔",
-        "url": "https://laftel.net"
-      },
-      {
-        "name": "티빙",
-        "url": "https://tving.com"
-      }
-    ],
-    "memo": "이용신 성우 오프닝/삽입곡 보컬 리마스터 버전 스트리밍 중"
-  },
-  {
-    "id": 2,
-    "title": "디지몬 어드벤처 (2000 KBS 더빙)",
-    "category": "애니",
-    "status": "expired",
-    "thumbnail": "",
-    "ottLinks": [],
-    "memo": "KBS 구더빙판은 판권 만료 및 유실로 인해 현재 정식 OTT 스트리밍 불가"
-  },
-  {
-    "id": 3,
-    "title": "명탐정 코난 (투니버스 더빙)",
-    "category": "애니",
-    "status": "active",
-    "thumbnail": "",
-    "ottLinks": [
-      {
-        "name": "티빙",
-        "url": "https://tving.com"
-      }
-    ],
-    "memo": "기수별로 판권 계약 상태가 다르나 최신 기수 및 일부 과거 기수 티빙 독점 제공"
-  },
-  {
-    "id": 4,
-    "title": "카드캡터 체리 (1999 SBS 더빙)",
-    "category": "애니",
-    "status": "expired",
-    "thumbnail": "",
-    "ottLinks": [],
-    "memo": "SBS 구더빙판(안경진, 문선희 성우)은 만료. 현재 OTT에 있는 것은 2018 투니버스 재더빙판임"
-  },
-  {
-    "id": 5,
-    "title": "나루토 / 나루토 질풍전 (투니버스 더빙)",
-    "category": "애니",
-    "status": "active",
-    "thumbnail": "",
-    "ottLinks": [
-      {
-        "name": "라프텔",
-        "url": "https://laftel.net"
-      },
-      {
-        "name": "웨이브",
-        "url": "https://wavve.com"
-      }
-    ],
-    "memo": "투니버스 리즈시절 명작 더빙, 질풍전 후반부까지 전편 스트리밍 가능"
-  },
-  {
-    "id": 6,
-    "title": "슬램덩크 (1998 SBS 더빙)",
-    "category": "애니",
-    "status": "expired",
-    "thumbnail": "",
-    "ottLinks": [],
-    "memo": "비디오판 및 SBS 판권 만료. 극장판 퍼스트 슬램덩크 흥행 이후에도 구작 TV판 더빙은 스트리밍 전멸"
-  },
-  {
-    "id": 7,
-    "title": "유희왕 듀얼몬스터즈 (대원방송 더빙)",
-    "category": "애니",
-    "status": "active",
-    "thumbnail": "",
-    "ottLinks": [
-      {
-        "name": "티빙",
-        "url": "https://tving.com"
-      },
-      {
-        "name": "라프텔",
-        "url": "https://laftel.net"
-      }
-    ],
-    "memo": "구자형 성우(어둠의 유희) 버전 판권 유효"
-  },
-  {
-    "id": 8,
-    "title": "카우보이 비밥 (1999 투니버스 더빙)",
-    "category": "애니",
-    "status": "active",
-    "thumbnail": "",
-    "ottLinks": [
-      {
-        "name": "라프텔",
-        "url": "https://laftel.net"
-      }
-    ],
-    "memo": "한국 성우계 레전드로 꼽히는 더빙판, 다행히 판권 살아있음"
-  },
-  {
-    "id": 9,
-    "title": "신비한 바다의 나디아 (1992 MBC 더빙)",
-    "category": "애니",
-    "status": "expired",
-    "thumbnail": "",
-    "ottLinks": [],
-    "memo": "MBC 방영 당시 성우진 버전은 현재 정식으로 볼 수 있는 경로 없음"
-  },
-  {
-    "id": 10,
-    "title": "원피스 (KBS 더빙 시절)",
-    "category": "애니",
-    "status": "expired",
-    "thumbnail": "",
-    "ottLinks": [],
-    "memo": "강수진 성우의 루피 리즈시절 KBS 더빙판은 판권 만료, 현재 OTT는 대원방송 재더빙판 위주"
-  }
-]
+(async function() {
+    console.log("🚀 데이터 피드 추출을 다시 시작합니다...");
+    const feedUrl = '/feeds/posts/default/-/%EB%8D%94%EB%B9%99%20%EC%95%A0%EB%8B%88%20%EC%B0%BD%EA%B3%A0?alt=json&max-results=500';
+    
+    try {
+        const response = await fetch(feedUrl);
+        if (!response.ok) throw new Error("피드를 불러오지 못했습니다.");
+        const data = await response.json();
+        
+        const entries = data.feed.entry || [];
+        if (entries.length === 0) {
+            alert("❌ 가져올 데이터가 없습니다.");
+            return;
+        }
+
+        const parsedList = entries.map((entry, index) => {
+            const title = entry.title.$t;
+            const alternateLink = entry.link.find(l => l.rel === 'alternate');
+            const postUrl = alternateLink ? alternateLink.href : '';
+            
+            let thumbnail = '';
+            if (entry.media$thumbnail && entry.media$thumbnail.url) {
+                thumbnail = entry.media$thumbnail.url.replace(/\/s[0-9]+.*?\//, '/s1600/');
+            }
+
+            return {
+                id: index + 1,
+                title: title,
+                category: "애니",
+                status: "active",
+                thumbnail: thumbnail,
+                ottLinks: [
+                    { name: "애니 창고", url: postUrl }
+                ],
+                memo: "k66google 자동 백업"
+            };
+        });
+
+        const jsonResult = JSON.stringify(parsedList, null, 2);
+        
+        // [수정] 에러 나는 copy() 대신 화면에 결과 창을 직접 그려주는 방식
+        const overlay = document.createElement('div');
+        overlay.style.position = 'fixed';
+        overlay.style.top = '0';
+        overlay.style.left = '0';
+        overlay.style.width = '100vw';
+        overlay.style.height = '100vh';
+        overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.85)';
+        overlay.style.zIndex = '999999';
+        overlay.style.display = 'flex';
+        overlay.style.flexDirection = 'column';
+        overlay.style.justifyContent = 'center';
+        overlay.style.alignItems = 'center';
+        overlay.style.padding = '20px';
+        overlay.style.boxSizing = 'border-box';
+        
+        overlay.innerHTML = `
+            <div style="background:#1e1e1e; width:95%; max-width:700px; border-radius:12px; padding:24px; box-shadow:0 10px 25px rgba(0,0,0,0.5); font-family:sans-serif; color:#fff;">
+                <h3 style="margin-top:0; color:#4ade80; font-size:18px;">🎉 ${parsedList.length}개 데이터 변환 완료!</h3>
+                <p style="font-size:13px; color:#a1a1aa; margin-bottom:15px; line-height:1.5;">
+                    아래 검은색 박스 안을 클릭한 뒤, <b style="color:#fff;">Ctrl + A (전체선택)</b> 누르고 <b style="color:#fff;">Ctrl + C (복사)</b>를 하세요!<br>
+                    그 다음 만드신 편집기 창 하단 결과칸에 붙여넣으시면 됩니다.
+                </p>
+                <textarea id="copyTextArea" style="width:100%; height:300px; background:#09090b; color:#4ade80; border:1px solid #3f3f46; border-radius:6px; padding:12px; font-family:monospace; font-size:12px; resize:none; box-sizing:border-box;" readonly>${jsonResult}</textarea>
+                <div style="margin-top:15px; display:flex; justify-content:end; gap:10px;">
+                    <button onclick="document.getElementById('copyTextArea').select(); alert('마우스로 전체 선택되었습니다! Ctrl+C를 눌러 복사하세요.');" style="background:#2563eb; color:white; border:none; padding:10px 16px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:13px;">텍스트 전체 선택하기</button>
+                    <button onclick="this.parentElement.parentElement.parentElement.remove();" style="background:#3f3f46; color:white; border:none; padding:10px 16px; border-radius:6px; cursor:pointer; font-size:13px;">창 닫기</button>
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(overlay);
+        console.log("✅ 화면 중앙에 코드 결과창을 띄웠습니다.");
+
+    } catch (error) {
+        console.error("❌ 에러 발생:", error);
+        alert("데이터를 가져오는 중 오류가 발생했습니다.");
+    }
+})();
