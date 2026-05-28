@@ -4,10 +4,16 @@
     "title": "달빛천사 (2004 투니버스 더빙)",
     "category": "애니",
     "status": "active",
-    "thumbnail": "",
+    "thumbnail": "https://i.namu.wiki/i/8BhKq4quFf6hG5-KKH-GZ9s-dcglV4mjJMRk6M6Dgt8QAL4e1t4_9q2_KMt7Q4DCMsJLVB5JsLgq8DZV3FeiglNIvL_PLBM4UTpBPT_cUhi3_Wzsl4UmSwo-lMyvGQTizgmZ2jrGZMBc8MFnS_kEeA.webp",
     "ottLinks": [
-      { "name": "라프텔", "url": "https://laftel.net" },
-      { "name": "티빙", "url": "https://tving.com" }
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net"
+      },
+      {
+        "name": "티빙",
+        "url": "https://tving.com"
+      }
     ],
     "memo": "이용신 성우 오프닝/삽입곡 보컬 리마스터 버전 스트리밍 중"
   },
@@ -27,7 +33,10 @@
     "status": "active",
     "thumbnail": "",
     "ottLinks": [
-      { "name": "티빙", "url": "https://tving.com" }
+      {
+        "name": "티빙",
+        "url": "https://tving.com"
+      }
     ],
     "memo": "기수별로 판권 계약 상태가 다르나 최신 기수 및 일부 과거 기수 티빙 독점 제공"
   },
@@ -47,8 +56,14 @@
     "status": "active",
     "thumbnail": "",
     "ottLinks": [
-      { "name": "라프텔", "url": "https://laftel.net" },
-      { "name": "웨이브", "url": "https://wavve.com" }
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://wavve.com"
+      }
     ],
     "memo": "투니버스 리즈시절 명작 더빙, 질풍전 후반부까지 전편 스트리밍 가능"
   },
@@ -68,8 +83,14 @@
     "status": "active",
     "thumbnail": "",
     "ottLinks": [
-      { "name": "티빙", "url": "https://tving.com" },
-      { "name": "라프텔", "url": "https://laftel.net" }
+      {
+        "name": "티빙",
+        "url": "https://tving.com"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net"
+      }
     ],
     "memo": "구자형 성우(어둠의 유희) 버전 판권 유효"
   },
@@ -80,7 +101,10 @@
     "status": "active",
     "thumbnail": "",
     "ottLinks": [
-      { "name": "라프텔", "url": "https://laftel.net" }
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net"
+      }
     ],
     "memo": "한국 성우계 레전드로 꼽히는 더빙판, 다행히 판권 살아있음"
   },
