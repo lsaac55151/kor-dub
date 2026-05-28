@@ -424,7 +424,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3gaPr0pZXOri3GzrIWeWVLT4jpBBvSGAazvnOp6Nh6ghwOVyTnIxLySsRQDdeujo3hiqwG8gOZoNhtAHzBVDLYFdHwTs1hnDPkhP_HVijOZARclLurAIiGfAbulrRIMRq_JYPZ8XRumYRL-DGZCKVIAkvX3WDh1wNfsgW8Z-uMSO-kMN9cgKyKfls9Q/s1600/courage-400px.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 72,
@@ -500,21 +501,23 @@
   },
   {
     "id": 759,
-    "title": "골판지 전사 1기(무인편)",
+    "title": "골판지 전사 1기(무인편) 더빙",
     "category": "애니",
     "status": "expired",
     "thumbnail": "https://i.namu.wiki/i/0Xmp_WOZRZFeaQtBQ_ecQ5jOQOJmuQU593bj7a4gnAagRcR1tczQJeOYXX3nBWJKtoYr2NKst_5BxDqDrzKUPaVHS7xzgk6WyE-VBXL1T7M2fRkb-t4wsfozuKxb8fNDIGfCY5NLmxxrLs5FDX_2eg.webp",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 760,
-    "title": "골판지 전사 W",
+    "title": "골판지 전사 W 더빙",
     "category": "애니",
     "status": "expired",
     "thumbnail": "https://i.namu.wiki/i/wQDvIsgk_X_-fHPsLxdVh77KqSl1AAnrAHbH-f3c0Ric2r2eWo1AGY9UB9Ke_Olfu-XrcM_3gVurjgoS2qZp4MXYnYbrlZjs1vyYgeTa8OivGiJqVLcP2Fl__7cGzJHEN6XYN2RKZ5-5IEL56999Cg.webp",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 381,
@@ -523,7 +526,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWVCbe9mcLngUewsTcAUvuAb9F3Yls7ZOWYw4HM-_SyQZLcW357jYeT1WszRoFcsgTzw_m19WbFtYloSsv0iYgHnH-UiCA20pq8W39aW1NHPc_S5vwwIEEtWLJ1VSJzO0LUY3kfHmmvx1ir5KvvmXmlWZiweUgHnKLgCrClyj6fzC6H-RW6nnGVMbetg/s1600/danball-senki-94701l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 641,
@@ -2151,7 +2155,8 @@
     "status": "bddvd",
     "thumbnail": "https://i.namu.wiki/i/6r5Uc5Zvn-vo41I0QVnbFA0Q5QyQ0v-J7tt65wvt67ol31B5scllm3klD-77Fw7_nh-IpTEPSZqz2aQF_8yZ6cFdDR4Vgo2cxmaLmBfZ3iIlQpzzkdG4zJpONo9Wb4Ub2Hde17WkzWI3HvAOBqotsA.webp",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 277,
