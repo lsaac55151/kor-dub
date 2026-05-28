@@ -237,9 +237,22 @@
     "id": 493,
     "title": "개구리 중사 케로로 더빙 (투니버스, 카툰네트워크)",
     "category": "애니",
-    "status": "expired",
+    "status": "active",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTvBVfP7sneI8e4iUEhq54TEkWvSLlwn_Dx_HN_yccJx5xhGqGiGbBp76c5AlFXgm3vyyA5lU4II47EP-JXl_qBSS4dsbzgDP03hwSQyzYMKv1uhpDqRXyG38MMapHJ6SIY_IZsPV7Sm-xH9zjUJH-_e0lH1TTXiv_xPWizFrO3faHr_YIdjPZaKSvHw/s1600/keroro-117792l.jpg",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42363"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tl9w21R"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001760577"
+      }
+    ],
     "memo": ""
   },
   {
@@ -702,6 +715,58 @@
     "memo": ""
   },
   {
+    "id": 756,
+    "title": "기동전사 건담 수성의 마녀 1기(더빙)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/ueJcQrcpeNtWQyHZmy5v5O8gFAiq7fEeMhzSpCk7_AK0f9vUcrbxoPzEjuvNavB6A4fCdygoJcJLxR6abC_eZKu5ElInJo5NVos0QpqbOSJbuXFxdgSqlNT09yovqkBzbIfv2D3tAKToI2Po9jaKAw.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41200"
+      },
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/kr/title/81643097"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001677167"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?contentid=H04_SG0000151624.1"
+      }
+    ],
+    "memo": ""
+  },
+  {
+    "id": 757,
+    "title": "기동전사 건담 수성의 마녀 2기",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/NAc1Fj_pSiObt7l9ZQg0n3fVSVB8E4gQY6ku_QFlE0USL-VfIzwzPmRbgtHufshIelhBpAAEZVeLyfht1HuJ8QeyEHdUvhkL_uQ4llGVx_5BMwgvlJGOTj0RqO7euXk5HA-6x4kMiKfjhVgIXret5w.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41525"
+      },
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/kr/title/81643097"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001677167"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=H08_VOD000001726&history=season"
+      }
+    ],
+    "memo": ""
+  },
+  {
     "id": 664,
     "title": "기동전사 건담 시드 더빙 (애니원TV, 투니버스)",
     "category": "애니",
@@ -1128,9 +1193,18 @@
     "id": 445,
     "title": "달빛천사 더빙 (투니버스)",
     "category": "애니",
-    "status": "expired",
-    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCpe12_0FmVBBT_TFZgF5cTTc_2IioUXEXhKMDJCd4f85IKK9I7xv4JrDXZLDLPLmLAmaXTv1Tjc34m-H7hcraHTBZNEd-CtSc3rkfbMkjqNhPDfWoRVTB9nAFuqgH9znDDcVdTU2uylb_aOI7Qa27m2IKSP6c9idSSlHHoZ1hqOdVO26518_PYcYj3w/s1600/full-moon-99154l.jpg",
-    "ottLinks": [],
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/8BhKq4quFf6hG5-KKH-GZ9s-dcglV4mjJMRk6M6Dgt8QAL4e1t4_9q2_KMt7Q4DCMsJLVB5JsLgq8DZV3FeiglNIvL_PLBM4UTpBPT_cUhi3_Wzsl4UmSwo-lMyvGQTizgmZ2jrGZMBc8MFnS_kEeA.webp",
+    "ottLinks": [
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001779953"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/16125"
+      }
+    ],
     "memo": ""
   },
   {
@@ -4821,6 +4895,58 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoJZ3sTx4Zd26I38kq3frw14NH2Szjqelw9AUrXHvIXTy06h8WlSVLJdUYXHlvf_kfIXc1o0L_C3etzAFD1xAESWLzmuAQwAzgwBOdE-N9Um2lBuhgOkwRhyphenhyphen1jIwq_VfZKwaHIJJmda2h5xUKz1yjFub-uWoOiUuhT0RCaOs0rOFWmEf0zPVyW3nykuQ/s1600/md-geist-112465l.jpg",
     "ottLinks": [],
+    "memo": ""
+  },
+  {
+    "id": 754,
+    "title": "장송의 프리렌 1기(더빙)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/azULGgYpFzYED7GgXSc-lyOK122x_toKQ8Xeq_4y1SWMFGIJT6Gt4U9RSgftkQg1m0qotm8sfkwVYav1mqUXYb7T16wHTM6p5gHMIzHL4fAD31pWEGKXUOxLMszq2XprE-qfpzn1b51XZPnPTndATg.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42389"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001760783"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=C6101_C61000000792&history=season"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tRN7gzz"
+      }
+    ],
+    "memo": ""
+  },
+  {
+    "id": 755,
+    "title": "장송의 프리렌 2기(더빙)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/qC5pyJnCPyYvPwOxn1pBUgswhbunNnAwvQLTasdQIEbe4CxJMwYyVlk3Gk_vrJcvWjGVS7RFpH6xubDk07IgbYaqv3KpkgUA1FZUAK-Ch_adwaWPaU70DZ1Yv8rvd3OL4v5W03Ctbon0HwQ85rdyDQ.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/45870"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001787100"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=C6101_C61000000930&history=season"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tRWmjaD"
+      }
+    ],
     "memo": ""
   },
   {
