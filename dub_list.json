@@ -1,23 +1,105 @@
 [
   {
     "id": 1,
-    "title": "아기공룡 둘리 (1987)",
+    "title": "달빛천사 (2004 투니버스 더빙)",
     "category": "애니",
     "status": "active",
-    "thumbnail": "https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=200",
+    "thumbnail": "",
     "ottLinks": [
       { "name": "라프텔", "url": "https://laftel.net" },
       { "name": "티빙", "url": "https://tving.com" }
     ],
-    "memo": "오프닝 음질 개선판 버전"
+    "memo": "이용신 성우 오프닝/삽입곡 보컬 리마스터 버전 스트리밍 중"
   },
   {
     "id": 2,
-    "title": "외화A (1995 녹음방영)",
-    "category": "외화",
+    "title": "디지몬 어드벤처 (2000 KBS 더빙)",
+    "category": "애니",
     "status": "expired",
     "thumbnail": "",
     "ottLinks": [],
-    "memo": "현재 국내 VOD 전멸, 테이프 유실 가능성 있음"
+    "memo": "KBS 구더빙판은 판권 만료 및 유실로 인해 현재 정식 OTT 스트리밍 불가"
+  },
+  {
+    "id": 3,
+    "title": "명탐정 코난 (투니버스 더빙)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "",
+    "ottLinks": [
+      { "name": "티빙", "url": "https://tving.com" }
+    ],
+    "memo": "기수별로 판권 계약 상태가 다르나 최신 기수 및 일부 과거 기수 티빙 독점 제공"
+  },
+  {
+    "id": 4,
+    "title": "카드캡터 체리 (1999 SBS 더빙)",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "",
+    "ottLinks": [],
+    "memo": "SBS 구더빙판(안경진, 문선희 성우)은 만료. 현재 OTT에 있는 것은 2018 투니버스 재더빙판임"
+  },
+  {
+    "id": 5,
+    "title": "나루토 / 나루토 질풍전 (투니버스 더빙)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "",
+    "ottLinks": [
+      { "name": "라프텔", "url": "https://laftel.net" },
+      { "name": "웨이브", "url": "https://wavve.com" }
+    ],
+    "memo": "투니버스 리즈시절 명작 더빙, 질풍전 후반부까지 전편 스트리밍 가능"
+  },
+  {
+    "id": 6,
+    "title": "슬램덩크 (1998 SBS 더빙)",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "",
+    "ottLinks": [],
+    "memo": "비디오판 및 SBS 판권 만료. 극장판 퍼스트 슬램덩크 흥행 이후에도 구작 TV판 더빙은 스트리밍 전멸"
+  },
+  {
+    "id": 7,
+    "title": "유희왕 듀얼몬스터즈 (대원방송 더빙)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "",
+    "ottLinks": [
+      { "name": "티빙", "url": "https://tving.com" },
+      { "name": "라프텔", "url": "https://laftel.net" }
+    ],
+    "memo": "구자형 성우(어둠의 유희) 버전 판권 유효"
+  },
+  {
+    "id": 8,
+    "title": "카우보이 비밥 (1999 투니버스 더빙)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "",
+    "ottLinks": [
+      { "name": "라프텔", "url": "https://laftel.net" }
+    ],
+    "memo": "한국 성우계 레전드로 꼽히는 더빙판, 다행히 판권 살아있음"
+  },
+  {
+    "id": 9,
+    "title": "신비한 바다의 나디아 (1992 MBC 더빙)",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "",
+    "ottLinks": [],
+    "memo": "MBC 방영 당시 성우진 버전은 현재 정식으로 볼 수 있는 경로 없음"
+  },
+  {
+    "id": 10,
+    "title": "원피스 (KBS 더빙 시절)",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "",
+    "ottLinks": [],
+    "memo": "강수진 성우의 루피 리즈시절 KBS 더빙판은 판권 만료, 현재 OTT는 대원방송 재더빙판 위주"
   }
 ]
