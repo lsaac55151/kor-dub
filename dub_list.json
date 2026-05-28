@@ -490,8 +490,26 @@
     "memo": ""
   },
   {
+    "id": 759,
+    "title": "골판지 전사 1기(무인편)",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/0Xmp_WOZRZFeaQtBQ_ecQ5jOQOJmuQU593bj7a4gnAagRcR1tczQJeOYXX3nBWJKtoYr2NKst_5BxDqDrzKUPaVHS7xzgk6WyE-VBXL1T7M2fRkb-t4wsfozuKxb8fNDIGfCY5NLmxxrLs5FDX_2eg.webp",
+    "ottLinks": [],
+    "memo": ""
+  },
+  {
+    "id": 760,
+    "title": "골판지 전사 W",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/wQDvIsgk_X_-fHPsLxdVh77KqSl1AAnrAHbH-f3c0Ric2r2eWo1AGY9UB9Ke_Olfu-XrcM_3gVurjgoS2qZp4MXYnYbrlZjs1vyYgeTa8OivGiJqVLcP2Fl__7cGzJHEN6XYN2RKZ5-5IEL56999Cg.webp",
+    "ottLinks": [],
+    "memo": ""
+  },
+  {
     "id": 381,
-    "title": "골판지 전사 더빙 (카툰네트워크, 투니버스)",
+    "title": "골판지 전사 Wars 더빙",
     "category": "애니",
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWVCbe9mcLngUewsTcAUvuAb9F3Yls7ZOWYw4HM-_SyQZLcW357jYeT1WszRoFcsgTzw_m19WbFtYloSsv0iYgHnH-UiCA20pq8W39aW1NHPc_S5vwwIEEtWLJ1VSJzO0LUY3kfHmmvx1ir5KvvmXmlWZiweUgHnKLgCrClyj6fzC6H-RW6nnGVMbetg/s1600/danball-senki-94701l.jpg",
@@ -5922,6 +5940,32 @@
     "memo": ""
   },
   {
+    "id": 758,
+    "title": "토리코",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/slSVmu4VHM8DoaX2ENyRyUPfkPKi0SOjcQqqQSHHdsLaFUPRfzj9l5o-qYx5cAgH5eARYxn_4Dn7IeNRxDdZev3Iz5TaLFNbAF45WreQ1RdBEA7thWA6aXLr05_2WrvARsmVqmKud-gW7a4BDNrL1w.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/40343"
+      },
+      {
+        "name": "쿠팡 플레이",
+        "url": "https://www.coupangplay.com/content/3de52c5c-37c9-4a88-b7e8-33ada317b283"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001506660"
+      },
+      {
+        "name": "애플 티비",
+        "url": "https://tv.apple.com/kr/show/%E1%84%90%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8F%E1%85%A9/umc.cmc.2q32im6pk8vsmsme3rblj8o49"
+      }
+    ],
+    "memo": ""
+  },
+  {
     "id": 9,
     "title": "톰 소여의 모험 더빙 (MBC)",
     "category": "애니",
@@ -6258,7 +6302,7 @@
     "id": 147,
     "title": "포켓몬스터 DP 더빙 (SBS, 재능TV, 투니버스)",
     "category": "애니",
-    "status": "expired",
+    "status": "active",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-eC-vBvC63FGVos204wsigU7_VmEY2b3pto5BIxIEg1e_lnJ_jI9hbqfhrpOLYfe0uDEfkkBQbSBwy5dyj_qMjDc9XTYHtyYANg6gpWPAT-71mT9SwUD4cL_uIakko8vEoxB5GuvvT1aNKG-OjLj8jBtNfgjPePxArBPPJ4MYFdHtCaU3RKJSHQ-Ow/s1600/pokemon-dp-142699l.jpg",
     "ottLinks": [
       {
