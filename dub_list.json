@@ -1,79 +1,2102 @@
-(async function() {
-    console.log("🚀 데이터 피드 추출을 다시 시작합니다...");
-    const feedUrl = '/feeds/posts/default/-/%EB%8D%94%EB%B9%99%20%EC%95%A0%EB%8B%88%20%EC%B0%BD%EA%B3%A0?alt=json&max-results=500';
-    
-    try {
-        const response = await fetch(feedUrl);
-        if (!response.ok) throw new Error("피드를 불러오지 못했습니다.");
-        const data = await response.json();
-        
-        const entries = data.feed.entry || [];
-        if (entries.length === 0) {
-            alert("❌ 가져올 데이터가 없습니다.");
-            return;
-        }
-
-        const parsedList = entries.map((entry, index) => {
-            const title = entry.title.$t;
-            const alternateLink = entry.link.find(l => l.rel === 'alternate');
-            const postUrl = alternateLink ? alternateLink.href : '';
-            
-            let thumbnail = '';
-            if (entry.media$thumbnail && entry.media$thumbnail.url) {
-                thumbnail = entry.media$thumbnail.url.replace(/\/s[0-9]+.*?\//, '/s1600/');
-            }
-
-            return {
-                id: index + 1,
-                title: title,
-                category: "애니",
-                status: "active",
-                thumbnail: thumbnail,
-                ottLinks: [
-                    { name: "애니 창고", url: postUrl }
-                ],
-                memo: "k66google 자동 백업"
-            };
-        });
-
-        const jsonResult = JSON.stringify(parsedList, null, 2);
-        
-        // [수정] 에러 나는 copy() 대신 화면에 결과 창을 직접 그려주는 방식
-        const overlay = document.createElement('div');
-        overlay.style.position = 'fixed';
-        overlay.style.top = '0';
-        overlay.style.left = '0';
-        overlay.style.width = '100vw';
-        overlay.style.height = '100vh';
-        overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.85)';
-        overlay.style.zIndex = '999999';
-        overlay.style.display = 'flex';
-        overlay.style.flexDirection = 'column';
-        overlay.style.justifyContent = 'center';
-        overlay.style.alignItems = 'center';
-        overlay.style.padding = '20px';
-        overlay.style.boxSizing = 'border-box';
-        
-        overlay.innerHTML = `
-            <div style="background:#1e1e1e; width:95%; max-width:700px; border-radius:12px; padding:24px; box-shadow:0 10px 25px rgba(0,0,0,0.5); font-family:sans-serif; color:#fff;">
-                <h3 style="margin-top:0; color:#4ade80; font-size:18px;">🎉 ${parsedList.length}개 데이터 변환 완료!</h3>
-                <p style="font-size:13px; color:#a1a1aa; margin-bottom:15px; line-height:1.5;">
-                    아래 검은색 박스 안을 클릭한 뒤, <b style="color:#fff;">Ctrl + A (전체선택)</b> 누르고 <b style="color:#fff;">Ctrl + C (복사)</b>를 하세요!<br>
-                    그 다음 만드신 편집기 창 하단 결과칸에 붙여넣으시면 됩니다.
-                </p>
-                <textarea id="copyTextArea" style="width:100%; height:300px; background:#09090b; color:#4ade80; border:1px solid #3f3f46; border-radius:6px; padding:12px; font-family:monospace; font-size:12px; resize:none; box-sizing:border-box;" readonly>${jsonResult}</textarea>
-                <div style="margin-top:15px; display:flex; justify-content:end; gap:10px;">
-                    <button onclick="document.getElementById('copyTextArea').select(); alert('마우스로 전체 선택되었습니다! Ctrl+C를 눌러 복사하세요.');" style="background:#2563eb; color:white; border:none; padding:10px 16px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:13px;">텍스트 전체 선택하기</button>
-                    <button onclick="this.parentElement.parentElement.parentElement.remove();" style="background:#3f3f46; color:white; border:none; padding:10px 16px; border-radius:6px; cursor:pointer; font-size:13px;">창 닫기</button>
-                </div>
-            </div>
-        `;
-        
-        document.body.appendChild(overlay);
-        console.log("✅ 화면 중앙에 코드 결과창을 띄웠습니다.");
-
-    } catch (error) {
-        console.error("❌ 에러 발생:", error);
-        alert("데이터를 가져오는 중 오류가 발생했습니다.");
-    }
-})();
+[
+  {
+    "id": 1,
+    "title": "지 아이 조 더 무비 더빙 (비디오판, KBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhkcAad8hVRk52Lz9BvwXTCzGTDll6DRyDeVoPL6FPJpNyH0YDkAKMlLwW90gGGPPCVGb2L2E72E-KEObFCdl1k7SiZOUCvm7o23G4VmQBqf26Adw45kJmnTYDgtZGnG6XGXUIHGr2dWIrzxLkOnnVdE6hg444yJ_lyNduCXl8ofBAPglDW7kDHb130A/s1600/g-i-joe.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-752.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 2,
+    "title": "아이시티 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm82AQ8MGyM-sABtcRLJ4HyyrJuy5B6jtK1orokzgvYEHX8lzj2KQ4fLNWRPFbu6_gvvtJrFg_UpIcy1Xsvuoq7-VFfjHiqvLtkcHg4106PDFax2KpsGQ05iKnYMixzGIU_DwvI7JI86mjOrFIuLiX53tze_urKRT9AH9MWP2ou4_WjPAPvyqFbBvh5A/s1600/ai-city-94240l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-751.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 3,
+    "title": "변덕쟁이 오렌지로드 OVA 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn10WSdig63c7vAWLXP4nU3fr9zXH6gAlA80zJ0lo3jYl_TXByevj3VQtD2tEOLsxF5r08ccESSkZ9ZiAIrXm16OzpXSG1RSZ0uDEMQRRIQKH4UnvaYMr1B2VIt5iFL4VYrRPsGuXPRuIg0uP6aMREJDm64VkxAZRs3pa1TGCg2aF1z7vy56_fXuzhPg/s1600/orange-road-130378l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-750.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 4,
+    "title": "성검 쉐이드 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7_lFCofJl_saj4vRPbjTR0B45OjM10_oPhMOsqj9bQJp7eJ5Bn4Lq8Ltk2ld4c_5_UuKsOjZlgv1f0Q0rmfE95bOUyJV8faW8ZeqQaa86Of94Ft_3DXS4tHd0oCO1FJXqpIek8ILMZLFp4rq08uviTe32zvFg1OTbhlve4RYM92yJQVhlRRWwB-3Q5Q/s1600/birth-93998l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-749.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 5,
+    "title": "베르사유의 장미 더빙 (비디오판, KBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNvfu79BxTBGGEJIN7AYajpj0zDi4oGQEvaflaOb-hVkIYrrxGSkZOyo_PtIBVN1joAbxhTWU0OMdHuGDDajLhRPo8yTCIbFim9glOsHZEewXMZMhkShPvna87RxBWEW8PLt0NAkHitNXPU4GtvIjuFHKrSSSN9y0J_98WQetvQOTJW62PMwOm2ojfXQ/s1600/rose-of-versailles-87313l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-748.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 6,
+    "title": "이상한 나라의 폴 더빙 (KBS, SBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAEkgWzWcxKK8y-XoaK2YmPd983gAceW3VMG9XEbrKjSS5gjftRVzK6usL5vCjWDhjrJO8-VBq3MKVJJS0KRqb-ic6I3JMCh0n3SuelUgLcqPyZ1SuBYGwBfigxCZqBvEzef7Ds1dByXLr59RRkaD0CMDcTS9iK8zJThoWRe50vn_7laJTlTPt6xR2eA/s1600/paul-fantasy-island-56407l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-747.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 7,
+    "title": "엄마찾아 삼만리 더빙 (EBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7hK655g0j_EedqqExafwrAwEV7M6CZwvgykuAigNj9GnEeCLZudjHT5hFqr4etj-3KhNav4bSO_EeunJ8miRoyqvVXr-yZ_DCUOdK9rK5nIzYKm3wAz2NHtyS461eDN0OpsWcWpbHlVfMuVtrQLZMoNI3J-QYB40CCzUJKpY55GMxtsmzPd1NJCIkXQ/s1600/apennines-to-andes-60823l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-746.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 8,
+    "title": "모래요정 바람돌이 더빙 (KBS, EBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXInmJFfNuMq3bMO2zJu6Dfn2aufZ3wCITFg_tkkPWaHFLG9jdZZsuMagygkk-UC01RkOp-8PIPUpGABgwJCBzFGwl1uuE0Ycg6O6KTClcdcokA0Zp6lC4rNtquOx0VTgXO_aItKVQsERSFCiFE037_OHpJPRPDNK3PAOJKqx9wL3T5pyq61ARPoI37A/s1600/samia-don-71569l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-745.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 9,
+    "title": "톰 소여의 모험 더빙 (MBC)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtD8rgrSq7y-OSZppuhAFlotBkMW2VCwEJQyCqJ90d7smcibyCEk46W86QH-chYexXWGK1bEtHAgyE3ayw-Yo5zg5lfzkgCXG8DBGj8hSJp6eGIRPoHpmjbdyJ99HtRIcYNCgGK1EOHP8G9mvZ08E5Hn_zOuB-ANWbog0tsRLXyFcCpl03ugjrA7OB4w/s1600/tom-sawyer-155273l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-744.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 10,
+    "title": "마법의 요정 페르샤 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIuokDwlpVY3pFOzcYtMLg-9WK_0a6WAw7yl3NbLlIYhTBKeEcUK2PrhDTdJE3Gzzt54WXdZW5k5TFJmmn-qemwN9UybPKuVbv1BM48_SHEyshQum3Q2HCjvd9QMpody3AyXgQKf0Qnb2nSfyYKGACJO7qgwUTa-dtN-2AK1Li7jqYy1YkqfWV2HVIHQ/s1600/magical-fairy-persia-106162l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-743.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 11,
+    "title": "천방지축 하빗 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh67YDTB_ZnVnXMSAgK0bmG4PDNqnbWVKW1xz598-edsUWL8ProkEDSYrQs9lnJNXPuhFR5frrUEb0FdXkWo3KRGLudfqbYNmlGPWsMqRHmc6Tif2pyD9AXp_uF50I6NLa1JC2n7RCV_vMboaCFYid4PbSzPrIOe3_5F9fPStzNAc9KO67FCAPRGu8E-w/s1600/make-habit-49689l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-742.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 12,
+    "title": "캣츠아이 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghsvyEDuvUjpm-XdaFm7M8s7wsLPLj4n4gLogMtT1YJyrXfCojPnhN5lEyV1xFiaeo7CFY_HqB0wmmw7lfP-bXV5thmzhptfpkuz7KeQYd0haWvGydMNsvmg2NQakK3oCPDgRFXD5sEzLuvLY7LYRgwCjiHhmN4Dr5YlZz_VWvZlOE4_nhdCBWz5XifQ/s1600/cats-eye-96171l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-741.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 13,
+    "title": "고르고13 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy8ISkTroiEZpnceDEPq37-hKh6NB3YNXmX6_KT9mCRiXLbWQ1ucvqjJgLF-1ZBaaPlqcMeAa7mdbfohwJexmhfJ757VAN0d3pHkqRMPjAQwFR3TewOXW9iQTjCGbSBE6W4KSqvmqtJv3FYE3bXtT8xUJlnJlp0JyDWE59LIU4t4ldhU9EybIVY69jkw/s1600/golgo-13-83822l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-740.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 14,
+    "title": "내사랑 유미 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIUmgvRDRK5ojZtPwNDrGKV0ih77DRRPLGD7JZeZK5eiO-wNAsXdV8XtMdlyC7nCBzstqp9CsL8V-vgeuQxoDpDzdjYiwkZ92EMnP-DvoVnZOHPQmUe2D3rqO9r9IiAeYaQOMoguK2iINX1vcoooBkDJJkm816p5_5goGjdrmNugLOaIMviZ87XIzsSw/s1600/miyuki-360px.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-739.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 15,
+    "title": "빨강머리 앤 더빙 (KBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3AzinKmIupFMpX-ez5K05AnFy6U3j1-6urHbyIZpg-XHq1prRu8dRuw1vgo4At5qTmNmmG-btA4CLPkrLv2bGkDy2p2VWW9icn9EbxVxLu04JlPKQE64Arvv4fygcSGAee3ZDSKxMnZMiu9H3eLBGbUWMbTxrZCJz9uHxNihkC4nSn13P4_bQu1VovA/s1600/akage-no-anne-156562l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-738.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 16,
+    "title": "플란다스의 개 더빙 (KBS, EBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgR-yL-h8jqS9UARgYBm-IUo065fo1v5NAyn_84PYMDRMygvI8XcIpHxVgePkorwhASJlE1bnxPgzJq4kZVmcvlMLuvxe-PMrHbDDcQpko9QUODA6QQPMz0EJzXnR-zWdzqHfGOIpzgjrRu82zu4lq6kUgOgM2_99pk5ZDm37DyV2vbxJUJn77PzF616w/s1600/dog-of-flanders-17492l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-737.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 17,
+    "title": "우주선장 율리시즈 더빙 (KBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3PGFIF8vluYy395_qYtYLHXlZ1OM4VxtFUclEofc4FWQK9qHV6VL2zsDI_GEQEbzwPSdO0d2DlARE4JSP1AtHB9O792bjyxSWfSp4ryCtFQGio1HNf3Q3LUxNuykSHP5M8MjVvgPFw4fIBBznWPKn8K8d3Iby_wmO2p_rQn55fA0iq7ilY2ExfF-UVA/s1600/ulysses-31-131936l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-736.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 18,
+    "title": "기동전사 건담 더빙 (재능TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCwba5eWLkMsDfl2OvTNM68CrDt-HX6V7hf9_dpb24ONOI8lgdef1rpiwIHVyRR6RJ2FL8m0w-4bJJSFt3JODctaJxqvKsyI31mMlBxBlm8FoDTOEKRRMe5c2tW3dL7fUs-RqDqj07D3RvzPDpeAAMC3Mr7VpSr-gofD8fUmMFHlsP_BQX3jq0XB8SxQ/s1600/first-gundam-127417l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-735.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 19,
+    "title": "역전재판 더빙 (애니박스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQyI8fwdmmhIniYG5WNEFzxujmuAA4FjVJ0qsez9ZCxCwHib9qqi19RCERueggz2fQASzyeLbycKHpBRTB0WwNWEZwQfFv6XjkPQsoEpUFsoB_S5axi6RfEL3JOeDb5x0WmVefCI5CCPqH9OpsKR93DAOnfp9zf7KCO-eWmwA1Mnm2zm0GmJeT081LUQ/s1600/gyakuten-saiban-79448l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-734.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 20,
+    "title": "인형공주 리카 더빙 (비디오판, KBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirZSRsL0gjSQXPku77RGRchXQSM0sAbCyIAfy0RlivKAGD0CyTASPYHkCnBzb9a08gsg7KMSBx_qotrAow01xuGLo318vSvfeLGHIVdRmIDVIjykldV1qt-BQes2LVNSWLtUizbw21tNAMXDOAiysnqhsd7O4QCBz8-MRtfTRgGWq37wLSQr3bAtlNYg/s1600/licca-chan-105492l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-733.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 21,
+    "title": "으랏차차 짠돌이네 더빙 (재능TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYClMSy3ZQi4Zoy5fTcQBBrnKl7abiB2yUyST2pW846tShaeDmkMBttPE-mA71bE2dGQO1BXQvZVqIJuqvkHxvPD6ZDyN0j46SnhblmT-dbbap04Ht6_vLpZ-fthbLpCCuUXdFB4MF10whDsqWuKESSnYtK5gQ30sZ7Hh4PZJPBkLBBgQeU5rpDLNqOA/s1600/hagemaru-124736l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-732.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 22,
+    "title": "요절복통 사총사 더빙 (EBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-wCTcckYkQLt2qHslPSigd1PX3O2xh_KJhwUR6Cuj5_g7_xMgR1-suWMfWcAanqU-IBXG8owl13EOWl1hu4SgCmXoILI0vNczlo3VjH2kg8EieiMk0WfcjdtwOjGhZK1W98ekCZbudxqfL0RkyCOAuHaluvPiD1q7xbMcWoLboOcGX6PNBCuytMMkyA/s1600/my-life-me-245px.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-731.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 23,
+    "title": "어린 왕자 더빙 (EBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_I0oyqioVdWJ_TZ3vl9kuWRoSOuOuk7uUfyoFMmV1jkUCeF2fo6Hw4RvYq6ZYNVKa1sTyndO4WafprN3oSkCTvAoTIneFn8Hei_ajiLUMlRFLt_rTPWEcwq1TYmgDqhFz-2qZTD1g4Og5m9Gs1Egs1JwhObvaKHvxMsMt7fuaOFml5iueynVXMyHq5w/s1600/the-little-prince.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-730.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 24,
+    "title": "우주의 왕 카프리콘 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOPmkL2YCEKyKwuZDMePmn-a7zNWD8-jqzvoxKdIATA_hoWmSMeKgvATbWoAUn5OFCbUMPrS6SujJi4UWFH3nupJtAxdVEmRnZzw3nCAdtmjUYNFEhwq-UMKXV4u3bwfuodprZtZpcUvzjGh6ZJ5re8eh7jdqNwpTBP05ntMg6ykabi9aq9wQdhcJiqQ/s1600/capricorn-64657l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-729.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 25,
+    "title": "우주경찰 저스티 더빙 (KBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwWt6ETQbD2QbB06WUmXOrxL8j1c93SIEqHzrsLhTI54UM9hXW207QbXDhLLCy_td3IsZZ0MRxBH2USh1JJ4AA2iZOI9xUcRCEGargrx0i5e35zmdt-yg0_DJikRfFPmIf8Jk8Vag_ybYjy08WImqxasWEIGbFWy1LwhjoEGq6p571xXgKE8kLhQTElg/s1600/cosmo-police-justy-135662l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-728.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 26,
+    "title": "렌즈맨 더빙 (MBC)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinzAsGzBn78jmxRc3LHQ2ZExEd1knDDKbG_sGOxfUl0fQiYRbNsQaFpj88omUbae-XbZfy4f2VrrccxmfFjkkS1GeCpvW5xOhDA2o78I0u45cJew8KlMysDkQMgWvefpnC5fnCXtOMVw2VVo4po37lNWTwlcpCCf3P2p0z7bIJ9yvaEsh0Xik9Zjdnig/s1600/lensman-149692l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-727.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 27,
+    "title": "유성기 가쿠세이버 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIdUeLoNlt0eiobwjxiv63nz0Slhyphenhyphen4rs9Bu_AzG6lDcM7JduLU0rhDd-Pv24DJFVcSg82XZhjujZWucEKyPCwrBBzOOqGAp9a0lTU0PZkLJOto6VGJJRS7cxz7TF7X_zNDmMndhylvTwBVDnGS4qv04q7PR4JfKn1vn9c1LQiKEfr3VJO0AKOcBCuO5w/s1600/gakusaver-97695l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-726.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 28,
+    "title": "이리아: 제이람 디 애니메이션 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2-nPR0dmSk5TWsVVphG6-SYAjm5NDjI0vFozf-17kgW96TOg8bVv0ZhryFsmVGr52uV9sjvmKC9ooan6g2x1XFuHwr6YvtRCoAg5t96DaacHpM3YwqHhY1svPHYNmI262DF9A72JIukVzeE_D6a1PkG5v1CGHwqg53uBqp0Iv-eG-osU5UgnlmkPIIA/s1600/iria-zeiram-93965l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-725.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 29,
+    "title": "원탁의 삼총사 더빙 (KBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSO1pBgMcmGmqdKH6PPXvAuqg20azGptx3nXv0hhychTMnPLHvTfTx0s0xCt9r5jEaWhlMMI-rZAu0S35FdeywdCWxJ0ROMFvRfAYcLCNm6VuKKEvRwV8HRD6u3v0Sl-B-AY5DnKSQ1AYsvGBI_Vs_jJDjn_PC6MAPcmC5qUIGE5uDBbGnpu3gll8NkQ/s1600/prince-valiant.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-724.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 30,
+    "title": "뮤테킹 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLhdi9VUDttNxyUWiQkJT2EsdgOrFiMVXlRFTvVTNNlxx3TXQGjdrzeLrNSIBjG6ARAbJexjh2ua-v8El9q9l15pcc2tU0a681DIhECbTXYF8v5OjRjs0D_xzvlZv5Xo-KCwg8nhmrkvXiQU_O8usSi8Qq5dMKXQSNAAsZQQ0tQc3TkTSzhP7w7lhbvQ/s1600/muteking-151486l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-723.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 31,
+    "title": "펠리컨 로드 클럽 컬처 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsdZJo-fpYLXIMvniPJe6iKlTnHLWDKsZqPslqZb2_hM9Z0X4CPNeHOIY_kjk8eyKY9AhGKmqBePJl5NuFRP1qYBfwfMIpfIlb9l0fTvKkIz0MfehtPlMoWQS28jRe21WrM4xYsF0wxHl5w-8zfOzm5Ylxe1oprnl8qnX-2533K7LGVPnLTr11ZJkGKA/s1600/pelican-road-21894l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-722.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 32,
+    "title": "갸라가 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqcDk0D12UYkcKJpQkmViJPK1Tm-aWBCgvrzNxzNMZgAlqz4D-JIdSqHj1g7bH4zEeVsWurbqs63LT1pSwddr1qsjUnCD_r9BEyJaiMgw16O-pQ6yulo9Uut1eht8gfCt-CDN1nBpNB9PiukyoXmf6-3hnDIlTTzHapfX66pQe6n2WKtF254InDGaAMA/s1600/garaga-28323l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-721.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 33,
+    "title": "신데렐라 이야기 더빙 (KBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjabm4xp6Cw1YOIjHddsT319geRhJQ1Cv-P2yXGUKCw7j2Ift_T3EUGx1jCe8kgB5_wvyTxktu6C6GENZvDLNzIerU9aKqihnUwpa5Le7pm8bpUwd3pDlo0p2bVnEzdUFUZ2Em7JKQxAs5eaZg3ofSzbPqRmO8dyJBV2ILIor9GrROA87dOkiSTCUC5Pw/s1600/cinderella-monogatari.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-720.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 34,
+    "title": "꽃천사 루루 더빙 (비디오판, KBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEEPijIu__iBnJUGZDX3AyB9NLIzhsbcpPRKipX720_rCSq0HOdh9Q8cf14DJL5a4qlwjO-Zm46YiDnTJcBKWlg43_NefZ6g1iLaUhhGda_BOW-KbxtUnDk6aktYXrfOSUz8apovhovaKorQZ8PqgA1vVQRdHjMbNf9vimFVK6-R-i6zXJ7UCPGDv4fQ/s1600/hananoko-lunlun-73310l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-719.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 35,
+    "title": "호접몽 더빙 (KBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7IOAUYFAft7uF2XMqSWEo20lsXAAbsCRu5U1NnrVHW9Jcr8nKM8Ap2Is7Vh3D2iKYVcCkkt7AliAZJpWCsw_nV_GE5iyuueQLe2LQMfSOFM4uO2TMHL0lhv6OGUQZO9y_n6A6GLQyFoQC9Ilk1zzPkrfX6tKn8q7_D8DShCa0B9XDzCUfZXyAxaaDUA/s1600/butterfly-lovers.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-718.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 36,
+    "title": "오즈 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3_0lL-JMcgE28KxDi19MXbMr7aMbiIFsolab1SmVWye1tlLrucv5wB9vqlVa8y_sxnmFYTvM6EzowfOKy8wBC5zDGURHBj4oBIsFmBDUaNKLQthYI4UdQiuQLOLsQ9iWrUHVLI973Z5jafBWQLychDScHt_tvmXwbeAd5lD_p5vnZYNBsnnUbtW3xTg/s1600/oz-77858l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-717.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 37,
+    "title": "별의 커비 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzOaIH1lqa6yxTHrsTU8wFY-hp5VfvRgZ5eQVTTYudI33zZeClBob3l6cpYXwNLlvlhYtLq1YeE23PfURSstP86KsfyNvL978qsUDQh2ksDzhVUMUMK_JRT83TWnsaXWmJqO2zWCtrGpJbAEm1ZZz0psOE07G3DruI7WBw7w0y1gZqX3Zf4A2R3XBDtQ/s1600/kirby-22184l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-716.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 38,
+    "title": "꼬꼬리코 돌격대 더빙 (SBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7ovhMxFeEkm5pw5LtPFAqZZm91QAjnbFQcLmioGVWA3yM6cpNpoUakjSLvjkRpZLg2Qq-yUn52A7Yt9jKDUVEHDHNNGTPKxRyCF64T3UguU3PSM3m0aGL6Foqupu1QmlakZj34vBBoPNxB-vj5boGdSoXWc6vv8hjiQ9CSqVuQbJdmV3p9Y__zxhySw/s1600/calimero.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-715.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 39,
+    "title": "가공스런 미래전쟁 더빙 (MBC)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5LbeOLUvsHmNqqvyZRfQMDF78Q_jy5JOQP93Pchm9ktVzVmBB3LQjkNfryyQ-GKq2c88vhVo7DPls-RmIAbaNfKOAw7c_SZdLNPwIAul86OQxVnIP9vtFTwPxG0DJiyKKyyh26PdTb8XGSRoiz9elM7TYlBU2tFl2GMFQmfeM2VeRrrl0kTzQNoNv3A/s1600/future-war-198x-100162l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-714.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 40,
+    "title": "오자나리 던전 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi30PcCfL8WuQUM0hqFzJqFU91_krSLRyQ_RamLVIlRNkyXljpMQAZmKE6Zd97sXm9_LHdvirDVGTy7Ivs8JSpIUi9oLwBk1f9TJhqejBHSOS6qtDVd3TaPT6LA_YHZRm0KS6dFjp24DNdfuKfOoQH973DHjk8ggFKfjsnbvc09au0-ARmgo0FDM7ILig/s1600/ozanari-dungeon-94158l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-713.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 41,
+    "title": "짱가 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqdpyBFkE8h8hAJ1yr9wY5tlOdNQQHKmp-IWVPBuXeWDAvjXMpHkpPb6gJ00hNK5PZz1C5Jw67LhUVo9WUcFgmsD3MUnYPWahZB_WbqAavbsPBLSF_GtDV-ZS3ZvjziF7R_BSjEvjuavQr9XObML5DTGNJgokSlsAJkPAFdb5WejuxM1LLMfrVis3MAQ/s1600/astroganger.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-712.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 42,
+    "title": "SF 서유기 스타징가 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwse2umUpXL0gReSQ2lD8UkUQ-dvChkOzWGKiqMSJAqefVebu8_zsjqSr-sKzt02WSKsyX1cJ744IeChAi7ttmyQDnHOmt0vh8JSo1r_1sDoLtx-vuqnO6a2Ye1TEzdQZRUSp4KpLW91HCFjkArIIP-NjPDGJ6PwzVESxTQz_TbdKruNSGe1Btht54Hg/s1600/starzinger-45698l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-711.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 43,
+    "title": "전국마신 고쇼군 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdhz1M9c6VDJGgwGO4WeKmN9Rx2JhNF912aL-uRMnLhgD4aofA4m2YedV39sWnorac0HnS-JkAVk7RX1ZqSnxQXfqyFgh0cr9RdBqLbZ8Cg-BRrAoI2qiUDZcmiVxw6e2VRx9wx15TGdSqozu-CaV_oIWmtoLMopxXxjlsLi5V1W7iH4la0t6V9R_fWw/s1600/goshogun-143848l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-710.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 44,
+    "title": "혹성로보 단가드A 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEDK9upW9nJzXc3e7b9qpcr4oyIr-vKc9Vbqmfl3-njaJLmMBfKyTdXcxIeveXiYD7fFpgT5LYhlcPO9S2wjpa7SeAMbLyw9OqH0E2ACvZ4OXkjgXNYhIjXqWHnfsp6tOQqxlS4AH-zQwze1Ak-MGepGOrybwmf6UQrTuMVouSYdsZIZRdngP3wVU85Q/s1600/danguard-ace-148813l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-709.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 45,
+    "title": "우주대제 갓시그마 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKxci31BkguCvGE2obdvggfIJKV5NGBc1QSh5893wfWwWKP86dDHRroM-ZcYdhExqyGknBfttq7xdJLCuBTVl7XRyVeHD1PT1RdMpSIKaleMnB2UlV4VFtLIrTnSCjh5TYP3V6TVcqoS2k88GZNU8dtPx44BMgwVp8kLsEXJ9XEk9uGO5iXEYzKAUz-Q/s1600/god-sigma-52303l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-708.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 46,
+    "title": "미래용사 볼트론 더빙 (비디오판, MBC)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrTrRtPE02AKb3rzcinurOZsadq1N3htWjZ15WX7Vhia-BQtqSopOfYkFlNs025m2S_-FaZJiDtZyDe5pqBvbPPTLHXdkGPOok2pMR_pZB8hyphenhyphenlGpk_tgRGol11ZZTe2z3pBB_ocFn6EuVtp8Qdq0e3aiF2wu5ePgip-Pbgcu_4UhanJcBBSYW09eHu8w/s1600/golion-51647l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/04/kordubani-707.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 47,
+    "title": "미래경찰 우라시맨 더빙 (MBC)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZxTP57-5SfEX9IgjPR_Mqek8z8adNcW0gppBZJefy6JkeQEN0pKgZeWpYOc0osur2ishGRlaOjx4gmAqL3s7HbU_PMvizkWDQzXFmBvNEpWAX9UKisodiqHuvvazsb_rA31b226zyO5ighNLrXTBidt0OrhrJtJmZwvErKtMk3fksot0A13MtbHj6tA/s1600/urashiman-91989l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-706.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 48,
+    "title": "윈다리아 더빙 (MBC)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHwRTY9aNTbh5U3wbAiBsuF1mi7hMafOspOGC7GeooS_AO3wL9nTTfJDvkjeE-L3mDcNsPXApSM_EokngbrcEfHaK_0EPvZ0yebg-vsm3vUlnVFnwxfdREtlmMjjLrxs4hLzDXlllCnxhEpu7C-5qcd4UB_q9t93dJizWWR_GKLbzDcxr1ZLkgCwQLkA/s1600/windaria-133835l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-705.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 49,
+    "title": "운계의 미궁 ZEGUY 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0y3siLoJV_-Uu5QzC5wxQ23lDur2jJ_yoii1b84gBkgnlJjI4HLyBmQtd2nD5ADm-0rHYceH6YMUzHFizG1aPCUJHbEdm1RW02MqbeOAmvx5Jx3dArqrlu936Ye31E-s6kCu91ciU3yF69yQ3eD5Wjh35Ye9B11plG9fqaL0EGvT6XyxTTbhZlzkp9Q/s1600/zeguy-6215l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-704.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 50,
+    "title": "스쿠퍼즈 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-Uv4dul9pwweYigfKJEw2QdXJxHEFWBK91q5JURY-IRMcLcd68K1_a67dS9NSed1IRSSKlrSA06CEVCjO0k4LNqeE30czlqy74KrjZhQAwCkSLtEhjWX9rwl-05V960PXRnneDPaWMijadOVA9VJYH8LhGHUmqguOFC7JddXodkLl3lOXPuI8BQjP9A/s1600/scoopers-49239l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-703.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 51,
+    "title": "천서기담 : 권법소년 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih5OFIXuufmPhphoOKgBl-clrU2u69WHbeHl3v1P35sweyriDzYKBo5ctg9UTFJ97bJ2DJVfx0KPiLObwQXxvxrMyrEq7LTBT3WT0wfKHQIpfK4E6ZPPa8rhq0knsN-DzZTrDg8Zgozhs45EA9h_44_jkbuSokOR_3lDxeq8OdxG2IV2bVabLV5_KNCA/s1600/tianshu-qi-tan.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-702.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 52,
+    "title": "비너스 전기 더빙 (DVD)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSd4iakCpUzrMmZ1zx7PwwsbIVUxCeFjjLJ8m9MrkWoEs7Cp1nmwH0GO8HXHJmQRuhuJvb5IgeXeAPOC1p6ZBHOk-v26pE_FoKdvGhd0yD4DCm48beMwyw0bRzfKRVzLOFt27srU6092KVVygge6v9iNs2tMFAzeWLQ9y4WaeKQLjRmf6l2rD2nX_paw/s1600/venus-senki-100582l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-701.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 53,
+    "title": "신비의 세계 엘하자드 (투니버스, SBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEQT9anWRbbyeXACbSyS9Z-STxVBWAHX-qYOoZVztjbP5dlJWard1-cBQt1N8nZ4r_j6AHS1vEfIz3gw-6n7jzw8CUJueyHYMYuqktIySWgnnHEJIm6YCcp9Oz2RpDJQsZnUupjG3aw8vSnRWaxi22TojLkXb96NU6DbkCwQzB-Uhv6oHAF4Hb95HekA/s1600/el-hazard-151305l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-700.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 54,
+    "title": "키바 더빙 (애니박스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6uXvtoC5ksQ3HN4XszlnEPGDFjQT1Y4s0HbUj8tjpYFP_6fe0PXU6NyD-cHcqQqzNGjWIvZ1fPcPHYZSyVXHTzqziqCqA-D265YNfNZPOrONRZckn4M8kSf6mbDgTwc1pZwTRaacKF0sIo64gbxC-0LTjSB30u-HeHdf0_DfltjKKXJf4dKKgrar3rA/s1600/kiba-114250l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-699.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 55,
+    "title": "피카츄의 여름방학 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-tVC08LNj8nzPa5wmfbH5FvQyAAtClKa20W4HK9S_AVkzVU5Id6p8E2gmmNrwlrnFsRYvrqDP4ShoLDjR_Zk1YpdLGBDobP3RZC4hoWDnFoUFEmX5J2JEne3d2myQCOOBGyAqC6ADM4qdgB-RiOV95Wby77emoqxFy8prrGGHL_3rN_hOHWFOnWIU5w/s1600/pikachu-summer-97383l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-698.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 56,
+    "title": "초코초코 대작전 더빙 (DVD)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6u0ftkweL54S9sCezvwwItZmecejwd1ERjj4uSdK4tM7Ae4HTHTWOJHe1in3S_t4EvLRD8-Alc58-OfJ80rsi-vdPKSWWPZJNFotEZcBE42IYrAWV-_40rzCSWdm45cDBVJa89bjXSFbDWALg4CwKBaTwub0HbmweV3IDOg96f_b_fynwdhZWkvI36A/s1600/chocolate-underground-95713l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-697.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 57,
+    "title": "마계도시 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP9FvZV4_AETWVfVxewqKLZLDrDeTY0MBd7HpsA0oqRJuSqpRr7orQHeGRdODRv5CbuTj0YJuKxID6WlTkJsgCNr0VeO4rxzlP2KeVkHvc6356as7G3YmyA4S5nUCJ61ssYbi73-h66_CeZkcqwje4yadMP2V059opV7_idDHLZH4kB1ybmdktIv7Afw/s1600/makai-toshi-shinjuku-80564l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-696.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 58,
+    "title": "트랜스포머 애니메이티드 더빙 (카툰네트워크)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYrcwo9IlWJwbR8M1ImM06GGEDOcWDvGlUqZoaZfsX57RIiF8ubXYdJp63-kKQtSoVVPctyzvQRBROp1aCOG8_neWmPUU-BHJ8-ghfjA-Mo1yEnCNhY9i6YFt_tpBfGxb3zNlcCNde_D9DwkG1B-4guJjddE47yuQovSIsAb_EdRNZa86-9kxuof6WXQ/s1600/transformers-animated.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-695.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 59,
+    "title": "트랜스포머 더 무비 더빙 (비디오판, DVD)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY1TkJdNMorkoEWZD5FhWv11cyrLgVsj7vk7MF1z3-_YwMpIWWY7WdV_zwUAQb1yAAMmByJIQdUk-ZUtHnXmWjDRCV1LRyryMHwRZFK3gRoXuoMKwfLu1BT-qckFv8q3qpXWwE_qci7MORxmq5d3xK760DP_mgFxhuEYK2dPAAqZEBXoxGw_fyzBz6bw/s1600/transformers-movie.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-694.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 60,
+    "title": "포켓몬스터 디 오리진 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ6v-lxNNEWIGmkDMSz1cq0rYrJEJb1t5txhyphenhyphenXGUWBmsHgGxGWa-ib1FWjvJxx936jy1nuRJ3OoTXXZ0uf2FwbIzEJnIxzSmtkbHDpp1GfNB4kPWJ1ctJbKxlUPkOvKK5dNWWaShyphenhyphendiC1ao9YrYsIjuf9gPeVWLkhRvxHLcwH5a7zlDlkyfds8xpcN5A/s1600/pokemon-origins.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-693.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 61,
+    "title": "해적왕 뉴트 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRrIVYNiGMzNejwJI98zwEnIcqX39_uOyHvh_n9bJZ0SUfFvHiExAd9woMp93AXgRRGn-kgSt69gv2bSTWUYPRwg81FEKVbxWH54kp4gcK6OHU21vaBnLKIXmAwHqKhLofIcNHZr6EwX20iFjhPoQLo66gFFuWiHGB1fqz_y8b6hTrnY_yoTr3drXWaQ/s1600/pirate-express.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-692.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 62,
+    "title": "싱싱초밥단 코부시 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIJAt9UDZZpTLJU92OHlFe9FBWKoFlVam4OzXmHbsDz2DwUjXqyIT0NtlN6lYmxvxsy_Jc2SHSpDcaB0JGgzyylTfWTz8EhbZoV8A8Luf06r2DSrV6DBrw3aWbAgngh-YB4sM82VuaLXFjuZPbggBjYI-nbynNEpDuP_pl3SnGj1FjJHFkbsBu2QAlbA/s1600/kobushi.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-691.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 63,
+    "title": "다이노 댄 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhltto5yue8nQt6LiTKwCB1X4x_ny4Aiw7-GHkrdGoRIVXlobX1CoWI5p6tMxAT-1-6EFZ6YKwps5RhfhDckqTihjFMhbrBPt63noTnpp0hew31Fn4II81-Kn0ZcQaz-KgYSJG73S9E8uVQJ9lZJFnnpeAVqlKATv8lfImZu_perCrtDoFgtUjF6PgenA/s1600/dino-dan.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/03/kordubani-690.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 64,
+    "title": "홈런왕 베이브루스 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCgyPJRNsJOzQ85vDWpuH7xJRN6KuwfI_-qRMoB92wLcvmdpc18zljsUZBxS3Dz0N6g_2DbVhyP6hctSjgYZhUCPnLqMzYb6TOhtv-0MoA4XIjKBnm4FMwyLODvWnAuy6epqm8gxmxKJhqGo29HYu4uZAsXcledMj44NyQwycbSR5rNv6648ETKGFLUA/s1600/midoriyama-koshien-96589l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-689.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 65,
+    "title": "육신합체 갓마즈 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN4-LgjXaMVNLdKvbHuSeUUFqOMRu0KxP0Hz12oyfWqK6INpzS3ODNEUekuajg9WYdH44iJB845MimVR2G6gjVxEnUSeN4BQ3G4xVw0Cf1NJP7Fk1qHIlI4TdweDpjCcLp54-FDaJx6X1vMAWwzIX_vXxcUb7o5jYthA_UqToX9WJa0m7pWqjRARN3zg/s1600/godmars-21725l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-688.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 66,
+    "title": "사이코아머 고바리안 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihyl-E4CEA7VV001Xi8MUcThw15fRDe5TRpVBhMA7qnV3zn2mG9kFmxXCu22SZhxwcMODwnSl-bFh-mGu1d9eiQCpX4dWwP-AcTkZcoBbKsamaRuDrtP4cD_AsIm700Lj-7BVXdgSALv5wVuMkQrSEp-EpD-BH75B3v0MtYNDK4_CEYpLLCASYTI6NoQ/s1600/govarian-134582l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-687.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 67,
+    "title": "천상태자 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeVAW6PnsZWRKV7FG31DU26nDgGF5_42djApO7U0bnGlivB5uKcFhyphenhyphen4pRUbAlcigfl0Cy1iYZ5W4Vim8wS0nalATyuxtLPVK4wX_1aTJGYgt9w_zdkQ0X6cDWKnjw-YOB8-MhPXOO2o3g9fomQNd1x2PxUr2wYj0Av8TASYJ7J2AZ2fKP1EkyFW-hoOA/s1600/utsunomiko-146499l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-686.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 68,
+    "title": "테크노폴리스 21C 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhl3BKLIg5e3R6tcIn0sKmKwh4lfC0yA0z6mglAfdwEOdkypjVu-DLXUJ1gguEGYaDo2Hcdwq-ODtXXaExeZeevKBfseaLN1D3sLThcL1nXi4hTAzGPMmzUDoOp4mWOouWVqtDbo5gAl6i-UKXAmO9sgJuHuPc3W4VPOZKMtOZjJ8fo3eL7tLLcqjbx6Q/s1600/techno-police-112413l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-685.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 69,
+    "title": "해저대전쟁 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4J3xVT2tfp8MgzxsP65-a-849n-Kr9PQ0ej4mRp3RWpTV9JOkqTAcUh0Mv7QHizbTXY97QQdv0NI_ZkZxogmAJDyBvVuzCdZn-lWcU6LGdxK83lBF3wGaYigOqGAsLNygOXXF8kkI26tt1Zhkv5purNPQ7hDGcug5t2tffIhAlqs1rg53gwdI2QNsJQ/s1600/kaitei-daisensou-112272l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-684.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 70,
+    "title": "환마대전 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKRXm-W_bsHUtxRkznejSZYCh-254GcWKzU5OJh-tUsIWxFIfMThW6gB7o_Gdz-rLntlcoGP-pN8AXDGlcf1G3EEOSH9K17YrDnUCh6qgoSdIRl_JY-HcdtD8IOTc17HghdnIBPsErL0c_xIa19WQbk8LnunHHUh_RcMnHsmpikQ02u9KW-uM-wAAMDA/s1600/genma-taisen-73382l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-683.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 71,
+    "title": "초수기신 단쿠가 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9LfMuLkyqi7tnVnm1esJ76udvk0SSyLJlPrD7k1u5cj0IFoU4qe2LP4cNbl186zldVbk674IE54twSr4AVo4sCFgZ85uTCEOXdkt4Bex2p4Dy8RPKIGy6uL7th56Sofs7DvTmp6hVBL2_BVPBKRICPcmtUmUJU-RfmtOFp2v5NedHbn_Zw5abb61URA/s1600/dancougar-89566l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-682.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 72,
+    "title": "겟타로보G 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX_heF4y4mfnzIL_-3YuKE7BR8upqB0E11uVfMkqnngCgZeCfC6ZJTzATQKkdbcmeMNO0sCyo3-MQpUUtq2pQvL00FqhHVdV6BLIaeWvvryMtad2rorPDJKaRVCPIPf7cAny6onHTUMmkO4YWZXik4tQOn90K9KRS_aXFx5NaJ41Z6vM7MVdARfBTh6g/s1600/getter-robo-g.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-681.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 73,
+    "title": "파사대성 단가이오 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5kv3zraWXctJJJFM0GsA3JTGlk7b4u8iSWSbZaDEKOcUHtRgiJrCXezXweXfAJFmRLImbTAybJz_5LSjTcrmzqLX0sdJ4poFo0n-4Mv0ApuPAixSuwzovoYH2z-SYfUSAbAmFlzZ4bvCdYJXmPQvuk2-v2J1tLwvteF_FLhyphenhyphenqjLIt75shPZxJTI1KmA/s1600/dangaio-133238l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-680.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 74,
+    "title": "포코폰의 유쾌한 서유기 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEWt-T4_yezYLumbStGTzSKRCLasU7PI8PvI3lWVsdiV3YNY4X1s5zVaGChGcqPgtCl4ngbbxRhDSWkIsaLtl7VYxLpFxi5Ns8bINMt3SOVHK60WeIqh60sPMkH3T6jcDvBOqJXy8JxQy8VowRzld8ia_XPrBYX6NBdpOxjagKZgfCRY0dU4mEQWoa4A/s1600/yukaina-saiyuuki-78315l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-679.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 75,
+    "title": "봉신방 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGatc3O_pi9-xo1DT-e84a_SMRpaj_TB0gMYHNGAmEkQNWl0JtRX_J25VZlvEu7sGMV-XsMn7MxsmAr8kL1JkgBPUzOVVtwDWZvWdZJq5-hMBdZbV9EMFfu-VMCJTG-HNN47z3GwZNloRdKKb9jFAqJ9NYqhZYuICDDpIdMnAi6oQSKtlirKVb2WdK4g/s1600/fengshen-bang-85212l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-678.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 76,
+    "title": "꽃의 천사 티스토 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiogFey57CCtjfHHZhgt13R1JJOXWJCd2ZU1DvtuAyqixd1hWOFfoABw0YKbTtQ7jQ95nP5w8xAQR_ka9gaT3z5fcToAj6F_uSFY4-RDnnljEgSOf4PMSjviLbRwaXfAG8sbLyYq7eZG6aQXSCK1nFI1VifychgAHg3uyi6E_zonIdT0EzsprggCQgPmw/s1600/tistou-68841l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-677.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 77,
+    "title": "DNA특공대 더빙 (MBC)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyxmkbPWtZRKkXbcvcR255BqUXjQVSTOHSzSgfUMuTmFbcYtxxr_RuqwKsNv-7xHpPKEL601M47sXnnT__ymZacbOKMOSWYV1Dk0PGB3fJ8iXo-4_NPJ2OIcM-8jHK8cZchQeVlB83XYEmeJEVstTRl73qB0NOHr4nxfmgaYF69ssV9RGcTKP8ZesRrA/s1600/dna-sights-99920l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-676.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 78,
+    "title": "소년 케니야 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFBh4VAo_EXkzBDB2HM5igzW8siq4iJoq7m6IviLYdjOETeXymhEfVRFwIbOKNJWpCfHOCm4FnEEDCjP7FKn4pNVu5uJULh7ow3rABgb7v0hsU_TZwKVE9XlfRamnOkjAXK41PGra5dn6xdcxBUMNnNPDARGS44rgj_u46HZpad4zqV6Vks6_xE_7vcQ/s1600/kenya-boy-100874l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-675.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 79,
+    "title": "공룡탐험대 본프리 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY3b0aVJzmQJn8kcFHbiSR726alsgiok8NM50GyNFVAW0ZsYIJXvjVVV-9-jg9a13GbtOfNi9aIqelbKfrE7wVRcjr6yCHiurh3BhcI7HS9sN8rOTp0U8_i04WjVOb9yMvoP__vgRymtq1tOqI9nrvr-X5Fl1us-u6DxMxlXzRlSDvfViliTn70-Sl2A/s1600/born-free-60897l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-674.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 80,
+    "title": "감바의 모험 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVMkjK5U0TRSXIHEbNTmE74k3zcdmlIUvQWXAAJnmdRz1HjXBuUg_GqM3LTp7HaQFBhNl8z_suSmISlswAhq18byRfkLu4YA_iu2yWElNQCcizIjE0kUDCLpbKhyNtilSteoILPbmBTeIkZ7hcSug83_B-5VoQ0S_fD94CI26m_bFtIZl8RVsy3UwQ6Q/s1600/gamba-no-bouken-90303l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-673.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 81,
+    "title": "SD건담 외전 지크지온 편 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVfhGBnzOZbleUUp_xKdB68qYdXCscxoJv2prnfEbw-4MNGNz0_Ub68xcs4OTwhsCru9v1WPH-VTYe0DvOqiF5FDpogewP70vkXzlySAUlVFV1jUhbSNih5jpOc7MRFC4xJ31W7fbkVwZ91oX78GEy4bujhBt9V4J_3zq7_A7nasLDGKwCiCd7O5YFNQ/s1600/sd-gundam-gaiden-138664l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-672.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 82,
+    "title": "기갑함대 다이라가 XV 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeKItfFQA1xV1gXAJZK9BLrkmEi8Uo64jK6BCJfA0J4ggrgoIWcHbM2Tb5Lx94XBy-tZs_SlhAE0AXSYMpfI5oX2_tlJ-wrXVWo5k6jtyITLacA3mOAYAKeWUb-QbIsrXImtJOvvKHjq0qfcg6EpSSRzZPjgvM1cMb7fiqglvNq2uxzhQ8M4Hewy3E-w/s1600/dairugger-144768l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-671.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 83,
+    "title": "하늘을 나는 유령선 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi986xjnbXwvoRyoixWd8Uq-OVd-u8UMp7FRwIdX1UER3qCRmlInfdzGCzLm8svKufrhD3vSKwvLj5be7fWkDdEFxtwbtfkBDrU-FVSJkrBDy4TH0fldIZusVyj1UBf5GPi8OYSo1f8FvEVRRP1KabLbUTYvQQRn6BIQPhI_YcfP0aZXdybCMocJzT4Sw/s1600/phantom-ship-112988l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-670.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 84,
+    "title": "초음전사 마스 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifEEZ-GGHlGd0cIrq1E5UXat4aX9veGS52-dNoMdGzbfsNa1QRRGkdqcKwfPteblkbTs1jnpNlCD7e_Xbxu-lFp3wf2jul5Vmjem_lcSUeAMYZ0swkkVQukciSQ_TauusLg_UDBUKGhuaptyEboKsj4i7gv_AIkV7zIoK-Aj7cZNLtM_bj8INVenHSvQ/s1600/mars-149121l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-669.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 85,
+    "title": "루츠 서치 식심물체X 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaB1H_CdbT_fn-UhAvedK5IDlp40MoMTTgxkiDvgVt23GTDrSbOXQ7wxqWkqPHipFAszKKgyiqJhyft2XljDHdxJKuwG_yg4AoySrFT26mBazHvZ16KWI9zMsG99DmEB7flT1ATGboli4ydjMXqK_lYBHuVr-utFLWzgoaaM3pe-XT2dP94cSKEReIVw/s1600/roots-search-152556l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-668.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 86,
+    "title": "장귀병 M.D. 가이스트 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoJZ3sTx4Zd26I38kq3frw14NH2Szjqelw9AUrXHvIXTy06h8WlSVLJdUYXHlvf_kfIXc1o0L_C3etzAFD1xAESWLzmuAQwAzgwBOdE-N9Um2lBuhgOkwRhyphenhyphen1jIwq_VfZKwaHIJJmda2h5xUKz1yjFub-uWoOiUuhT0RCaOs0rOFWmEf0zPVyW3nykuQ/s1600/md-geist-112465l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-667.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 87,
+    "title": "특장기병 돌박 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_qT6Q9x8NJrdKXcnqnGr0PKFgUrjklW2LzCV3u9PeWucTZJEqu8Fh55UGfJGyfRlkyAy22JY2DmQL0V6bSBXrrjXiaZQzCFsPKkswM0h3g6iwm2VNa7nE7wouknQvbnANQMZXdMf4ZH9PUzniZMWxp0DSp148GkDebRzisoS4Fp_tvhs-pniBruDQWA/s1600/dorvack-68555l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-666.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 88,
+    "title": "달려라 번개호 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN_3pER2C8SLuZkIFDQ6GIOS3OnFHqsfTLIlNBb-ayVPpD9Ou-1LGmZMNSkB96sjWW7huMnj59NXqayhE9B8LH5G1nL85jke-4S_9IEevhbzXLoA1CDI3FJPn_C54DnGU1oSq1Ji1SKbgruMNpx9YQ68L4o6Ki5rksXugowRC2forrGX4FCrxpzmrpqw/s1600/mach-gogogo-1967-59645l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-665.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 89,
+    "title": "세계명작동화 숲은 살아있다 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2frLjTd0eAVNd5Em366G7mrRT-_zBQjyGIR9Zc96qhyphenhyphennei4lU458M7kUQEUatfcYxZz0s_3sEcPVIlUchpiwMpCNGD6r4t20TTO3oKSvgQmwqEwKlJ_dRkWYMZVEClbWqlt0zTmxKfBgUibus8kN29INSfSdDlFC2BnEKswUtyoEBgIO7z-qD4fxj4Q/s1600/mori-wa-ikiteiru-131904l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-664.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 90,
+    "title": "로보틱스 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6VV2WuXuWLZvw5Z2zTqhEYc7sTAkDe8K2V07p5wwtJYCRLCiiW-4GWA50Sxmbbh169NoOIPl14oXVbJIo7ETHk1ChdYMRTEjzGEZzXh-JpfzTCBC_DnEgu4yzNNzCNftsS_a-RLhj1cic4GXx_DwICW_xIRuP20c4-HhyphenhyphenIULq33ZtNY1lyiu07VUW3w/s1600/robotix_FMjpg_UX498_.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-663.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 91,
+    "title": "분나의 모험 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaBYuJq9AF9KwLLHD5AALdlvUuH0BMw0tCY5DhpQ2inHdbLDu6mZGc40Y8KrFayeQChgkRiIR8gXe-xe_oB20E0lBrS-PScjm8zftkgaRar6jf8IrCz9lgVqdnCHG9fipjREJULEAGiXsaK-uDns3RPBNtmedNS5zupFoQs5CY0V3a-8aNlQa_9HnWnQ/s1600/bunna-adventure-61155l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-662.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 92,
+    "title": "어셈블 인서트 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhD9Wf1a2FYDbWi4THu1T7xV-i9Em7XRouDDjCH7TQIiS6h03YirGcpKwbs0bael0saXTyNY3FiqeSOkfWZeUhRwD4Li58nwLFA0-TFDCPc_lYipS2bFvVlRrpvV953tcb5dP0_Q0BEn6JGPi6NsOJuf-_QvkNYX_al5YSv3Lozjr_ClnAP3P8X8bboWQ/s1600/assemble-insert-99360l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-661.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 93,
+    "title": "와트포와 우리들의 이야기 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg8MEP9ts1PSST7woMxE6TXWZjZdfwn7zqVQNYr3lZaMoyA1w9XAvOxXhWaScCMs-DGd5jdlPJDCr4lC0y0Zl5gBhNK1MEIsfyk5qE6SChJLHQ6YpkcRk3hKaAOzf3fpDYBbNhPNZ-5bPgY9s2FQCu0Tkx8DBr0hclEvQtNjYj2S_YD3dl8NtlAiUmAA/s1600/watt-poe-52595l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-660.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 94,
+    "title": "번업 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj85nXyu9RxOHVLP_cJH64UaxZNuQH3IsQ44iKhLH43I0T6LwfbLACr2gO5CRC281-F7xEAqMBJTzKn5qpi8TVHdx9-hIn1zfitLA3pQNNuSL2iY3UHtkP5ZA2YNYJ6FvJ2AA1b3bEVLXVo9gWwv5ffhrKRNZlV3ed2hl3rT_qaQmxEj1nAstYA-IMySg/s1600/burn-up-155058l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-659.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 95,
+    "title": "플라스틱 리틀 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAHReWQXYsajpcxbz4HUulb9GV12Bkr4n9d-S5X_oVbbfOAne_pGNuOvfxC3vNDb3eCTxOABKRNtqJuUJfvho8ZysZuHkOzQgwFD4Bz5oyvjWIT_JKx0Jm0VQjURysGtF-RxqftYHQvAKBCEhg71w6WaL5INuk5a6t_VlYjQ15gMBYKI3rHo16W3M34w/s1600/plastic-little-92858l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-658.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 96,
+    "title": "포켓몬 불가사의 던전 시간의 탐험대·어둠의 탐험대 더빙 (재능TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-GUekyYk9NI2iA8o1C1csyI2fkXFs4LJjkXJ5uH4FQawK9dSt227dO4GT6rE8QTqQP49xGlC2p_NUH0cQZMDybalUD8E6czMdU26TVe2xOcoK8ETL_Mk9CKUd0s2vTUAqv0gAOBbr87b8nHDQMZWY4GKJNyD7AeVkNSraPHRN4vmxzCSypR9s9VfQQw/s1600/pokemon-dungeon-109889l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-657.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 97,
+    "title": "포켓몬 제너레이션즈 더빙 (VOD)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj-66OAHqtvn86vto4TOM7Ei_L986iZJtr2VEtvPaN5KP3a32uO4XF94wOVsqiR2x9RAkEy9xPvRdNbhyXHiC0ZF3NT5sepx1fEefrPnwMUKGFC-zJdp8VXabgZJRWcRTFmOxjlQKdTup0IxTQv1nZ-EuNfWVvujCV9iBlcijtrJE4Pp-Jmd6y6e1p8w/s1600/pokemon-generations_FMjpg_UX640_480px.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-656.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 98,
+    "title": "제너레이터 렉스 1기 더빙 (카툰네트워크)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWO0LnZwbEHwVYDTXKFubY7P1JAp86W8WvgKTpHQ3VMfAgMlFsrvHK2wmtjicMNM25YWUhppdSiBOn-YapK1Knnf3Cdyb9immTRQ3WNtFRcuoR74DsLLF5vvHvCJqqOkTnVPAVZQSJnT07EuEXn4R79ZDBTvmx3QCKbEODfydZQDU-MdRTKuSKrvkFqA/s1600/generator-rex_UX640_480px.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-655.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 99,
+    "title": "빙글빙글 미밀루 나라의 케이트와 밈밈 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi48f_oO_4Wy8jojFo3dfWT2UF3ZMrPHlvxh9_2ucdljxuWbdJO1InP_pQoEtQo_ruqUGRH8VlgcQM2qh4_KLjup5FoxnmljV1j_zfNrpe2MKOfeJFb740y0ERYfm9vUg6uEmEoTAjISBjXv_d09lmL6LABqEEqmLarm4CVMXjQSEnurUXELRxdYllA2A/s1600/kate-mim-mim_UY3300_480px.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-654.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 100,
+    "title": "빰바라빤쮸 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyAO2b8WHfEjCXyQnPeyzO65EnshL_PB_vUsAq7iCuzfXLBrjSVlMbp0f_GxfnJiplsdhzJnzmvDT7Gges0Qvyovwy7N95t_CdpFD26gNFz3-3oURcblm6_bffo71pxaVitWibnbbv3YH0aTeOhWfaIYmBTY6yu1aXkOA8INQvygbMKKIvBIlXEwMYDA/s1600/panpaka-pants-84744l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-653.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 101,
+    "title": "피핑 라이프 더빙 (애니박스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxtEtuvBQG2Ql4breHD2TO61ItxjYxG2cWKCZmQX6MSPPZXiiQDjNSAn3jz1jgPPq7d7g3J4dvX_UJsANAM66Iqv_VAItq2wqkGWJG87pH_5kLoZrh_Qit4rdQTskQrAGW273rnUdYGVPICfr6nsMtL1GgyOx4Eie3HolCUZlLGWJcZaDSzBqy78tBbw/s1600/peeping-life-23512l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-652.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 102,
+    "title": "매일엄마 더빙 (대원, SBS, 투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNNQbsSJ6ONYiSc2olmm8T02AcXW-lc5sWa4W6GKOb5Qfsncv131cwS16DUJjvXKjY6txAPofzpf3MHrkk6iIR2CQM2IR4McqwMfLjGxD9MGIEG7D9rSG1v7sOjR2-V7l2atyZoIRiO_mnyhgv8-2rpZCJNWAtxuKnBC3GzlvFEtd1KI6ssO3gvX7l1g/s1600/everyday-mom.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/02/kordubani-651.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 103,
+    "title": "육가네 6쌍둥이 더빙 (카툰네트워크)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEha_L9WZyWW5K3DdavIz6FF84aFgpYiH1tb1Icr7hKiAVmOJS0ZfcW90dXR49JDU4YKcbJoCbBU4S8GpMfV_KNZ8Vsh_hqoYkkw86IdulyRivQxFqBNuuLEL12WwteuZ1hL6u_iEqtZje6xJZd16s6vbq0rQ49entVHXwOBAnxWaOoT9yPQdHzAxrCN_Q/s1600/osomatsu-kun-1988-134376l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/01/kordubani-650.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 104,
+    "title": "누가 내 궁디 좀 말려줘 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvEdnoRwmSX7F6EsBXs_JD7QDm3Ld182_TOQq7FHwm3NvXuCYnXh-tq932gqfVfBqwS9UhC4ox51XVGgoOK7PzDuOnIHVQaRRS1yYRDHkrpRMs4wz3RQgU93s7qiIy8QzNpJn_tXT3VbhKGO_7FNkUazPGIF3gicfho-8HEWYdngs6bCx8PMwCxBWf-Q/s1600/my-buff-psycho.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/01/kordubani-649.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 105,
+    "title": "마스터 햄스터 더빙 (재능TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-xaGtZk6TLKbHD02pxveMMM4qvuyTM2qcl-R5bHFwYbrgEqEvjuFV82xTdJs2FjBsixXtyl-AfNuhtC_dqvpLbyPRh_N5ib5vHEgSN2990o6fjYNeByZdx1RrwEHpA6muyUcr8-JJC_G7IHlZb-hbYFgoabU_ZCixpLSAHEN6EzqrElIRCtEadtiCaw/s1600/master-hamsters-21229l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/01/kordubani-648.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 106,
+    "title": "닌자라 더빙 (대교어린이TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkUobQ6Irl1mDkdAD0Qk7YMdYPMQ06e_sj5qzfpODt6x8eGPO_bBNNaSRoBrn4sNfhFfFS2WJbL66LFbYfei5P5nDGpAIXH2PCXuGuloE7c78sfom3kJFeHbRdns3xJDtww1cj9TVw87JBVKzA3uV9wRqB6A4wRggbsl3pgvLIqyS5cAw-RUZW9BCZeA/s1600/ninjala-119871l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/01/kordubani-647.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 107,
+    "title": "겁쟁이 강아지 커리지 더빙 (카툰네트워크)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3gaPr0pZXOri3GzrIWeWVLT4jpBBvSGAazvnOp6Nh6ghwOVyTnIxLySsRQDdeujo3hiqwG8gOZoNhtAHzBVDLYFdHwTs1hnDPkhP_HVijOZARclLurAIiGfAbulrRIMRq_JYPZ8XRumYRL-DGZCKVIAkvX3WDh1wNfsgW8Z-uMSO-kMN9cgKyKfls9Q/s1600/courage-400px.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/01/kordubani-646.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 108,
+    "title": "마법전사 유캔도 더빙 (재능TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJZEndp0zVh_ENrihGDRuUjyWjQk0BtMOVb2s56uLnW-0WFMTT1lfdifpPJ4YcabrBeePtoeLq04DxlAXTx2vm5UFvjo858J0aAUQubSKvpfN0XS7nxCc5k-huK86iOqkjnd2tx4q5KL6Vbq7aRvrjMHKtzwt2oGCYI86nk6PjGsnvYZH23dn0KGoyKw/s1600/ryukendo.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2026/01/kordubani-645.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 109,
+    "title": "숨겨진 숲의 비밀 더빙 (카툰네트워크)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxMlA-7HgkOrihUEJSzwne3G6inOtDI5o00HEURAqMxsrRSnhDnsfKyxRifdvJyvJ1YtAZ8XpVGD6nCawHamtA6x9MhDrQnazmikLlndQ7du27DWbCK1hKGiMDjGnj0v4qy7XTJQwO7uY3vgNOmZk50LYR2zAZ7Ec98kxh1osL5el2NfcBq6rflJA6-A/s1600/over-the-garden-wall.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/12/kordubani-644.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 110,
+    "title": "소닉 툰 1기 더빙 (카툰네트워크)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaq_KqD-t5emxuBQbQJDJYbBlTSnOxRvCu6KYxV-v2o-YcYG5enxiS3nDThpJYXkW6m_hGctdNnHBTSWseJ_kWJBRQZ5TCy23dxK3YYr3sabed9B-_zrjXclL9vpuJe-VfiqbcaryqY-zOuDn8BtNX8b2qpBo3mPlN1KrbpyWY7NF1v9sya74yj7KvUg/s1600/sonic-toon.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/12/kordubani-643.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 111,
+    "title": "히어로뱅크 더빙 (카툰네트워크)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfMj00056uduscOfEt_NE34R2yk19ksojEJvT-Y1xAbMKnA6ojFlFb0mXXDQxyqclNLksUBm-Vwbz_Jb4qxCr4sMrDYGBlM9m_XZQCMid00ohaRUzckZmkNRaiy-NZLUPdqvgna7bn4yj5MF5LVfF5YZXMLvXO4tY9wr-_WDC2R88A5LjX9mgEBECCVw/s1600/herobank-59089l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/12/kordubani-642.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 112,
+    "title": "검볼 더빙 (카툰네트워크 2011년)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf9IcUe8xb7BX9iKPToxCzJExGn4JD-1-9KxZpjHbQrzbeKUbcrbvlZejuJB2YQ1av3ZUGCAB1fIJh-r2IoQgSu_al5HTzDAEX8JDCAVcbNdrNEo_sDv2l_M9V1FKPoYcB8K-qbQkURj5xQ9ePF7r7vSB45YNXErEpsDhJpMe7FwxbbYSEF0uoF8fHXQ/s1600/gumball-capture.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/12/kordubani-641.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 113,
+    "title": "리틀프릿 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWXCyL_VJD0Z50dK-Y8f2_DV5lZOKUmPIT6xLbJP7nA8KMkp93SwgFJau2CdOM9w1Zt6Ku7rDuEcCv3SaY-VjtCeD147fuiTchvwELh5TpmLN9YFw95XfhnEDo6tqmjrCTX-1MZRi5tjdliah4I1SPhMheLF6nAM9XFHGrf38RbuCD0b_NHJ5toTXJTQ/s1600/lilpri-133814l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/12/kordubani-640.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 114,
+    "title": "말랑요정 치치 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu4FuHE-IARI5bKoBt3bZs0cNJei9p7gxTUigXjYKUFJBapzWwr62vOFBjhViKyOlTY8ZGaUcubt_DdPWaeqeCIoIkU9Joex0l7HQRitUsSSyiXOyeKls0mIfX5WS-b7UpxfMkccv3yG6k39SgYj8GSuBz_dl4UTteIXuFdMLgROEjKpAU3S8lD66mAA/s1600/pripri-chi-chan.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/12/kordubani-639.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 115,
+    "title": "뿡야뿡야 왕바우 더빙 (애니원TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaUR45RiU87T1KR56gVzZSo14G4JoQecRgKcGri_XFsB6frKnmeH9TgxhfKEbzSQuVBPRMbYJWlJzZ1t3HHOHZbzf1iDVH4mOaLrRObHCp9usQFM8HuDeVn41Q1X3CVfZOjrT_VR5bdurzKW0313vJV8tEUF6YHtOeXwhD13tcyEvqIEjKcJ-KXX-0hA/s1600/makibao.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/12/kordubani-638.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 116,
+    "title": "맑음 때때로 뿌이뿌이 더빙 (애니원TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi911yL7jbUVrOtn59x44rHJPpd83fMt_B67YVXV-xk7apNdN2YA5tzwcWebDryXaCcgB2A_hL4PzdzvFEv0lDej65bjcG1UAOto8jLZgLiEmtnDgX-C0R0Ol__8gfnLu_m_5bN8A9CvYeOqgol8exXOWu5ZYYlWWJS0oOCv8aNbhpgRB9PUqLeHA3QCg/s1600/hare-tokidoki-buta.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/12/kordubani-637.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 117,
+    "title": "스캔2고 더빙 (SBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir1_wowdJu8X_-EvO_3G3jRHHgBcn8GoqmplBU36Z2OSUBxt90MTHEgkDpSmDt-g5yEvwyJj4gx5yhC9YryST1YTF0ktjvBb_UCrwJpjICYk3h4zCUfHeQfXuE_J16vZZsHRUia4ulVY-FTygIA2ffoM31QPMgf63XceimArTZDdTd-QD__vnse0JWEA/s1600/scan2go-9788925273686.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/10/kordubani-636.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 118,
+    "title": "메이플스토리 애니메이션 더빙 (SBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_6gWHNMerpysaLsRutpW-ZG1Eum8yzqP6ZbrryBdMKU1KDsiwR-X16zJzwRJQZlwxwxINAUdSP4rPblEvfcBy6QJHIqnVZT9FksZaMvxgoR5HZ1rGTMd9SuahYImP58VYCbqga-cUYWOzgI3zH-tgJ8Qy873kIcCsK1wh7N4BuX05OTWaQgm5oxg8lw/s1600/maplestory-anime-141234l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/10/kordubani-635.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 119,
+    "title": "쥬블스 더빙 (SBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghlDmZwwZJICS59FIUmpSEQ_E7acCGPKDljkKbId9tgygB4J86H8mLw8Z6yqaTlspjZ_gjVMlwh01IchcElMdPl7NjfYgPndn3JyQJqbSFQ6Zo4wzV96IMsTzOF1ozlXfyMCgrWcVvKmAo7PnTPOvDiKzvvy04dxjEjMzWTjMwAVu-tp5iDoag4UnSig/s1600/zoobles-36875l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/10/kordubani-634.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 120,
+    "title": "2.43 세인고교 남자 배구부 더빙 (애니박스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdH9n6YhZ-aZE96ZumSB4FdXqj_jcweKClQRao6oQMCkvAg2K25rmGrxjqpUtBpwPZ_dOMXNmaP-596BT_sLW9KWmclgvYjvZ__45dGD0gTF5aonhQVwOTD5qJcKQ29XfMDSsDfF87pFaf0C9amfhLVW8wCoF79F8rNrAF_7Nv9AyrkM2kSenKpGhIgQ/s1600/seiin-koukou-110083l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/10/kordubani-633.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 121,
+    "title": "파워 디지몬 더빙 (KBS2)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHDsxUwlwXfB4YBEWRbwcpxO-HbWZQDsoZlyCl1f6DeWLo6rQsx_TzvMwmnV84dHICoLu8d1oahz1oOC4eCBr-6bhaQWILYcEol0KGYg9MZPXJI4PIPgcG8U_pI2_u8JAbD4niavIiR9S3A-F6GNjiQ-CEmB5KCDldMCnUnGjWGzVXm8ypMTzu-yB0qg/s1600/digimon-zerotwo-97427l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/10/kordubani-632.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 122,
+    "title": "딱지왕 김태풍 더빙 (대교어린이TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikpGjnSCpw_8058hdFaTaULm2BRhqWss4ifjqNd-cIL3OpIRhXUud_PupgItiUverhYZF1FfbZVOCbcRbWAFm-chG2WuUzhNv7xpnL0xIC0nsdMiphnMDUqS9ipIE6zMyKd1nsMyY6IIZK_xZkIMAC3-jYxSXK0kpYfO-JUB3sTzWS_5jTfpbxJxrBpg/s1600/gigant-tsukasa-60675l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/10/kordubani-631.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 123,
+    "title": "맵스 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnC3aUWwBkYMRpwrra2nWJnaNstfspz1oZNOhcR0BqqFsGA3qzXuGnqQ7xGHYCl7w8rh8V7EM7UtdmdV5hwoNXp_LcQWM2mOcBswfcrev_go4hhyphenhyphenhYEAAJhZpaejGJ2p3DnjcyBzfoPvSbvQIUhzeDY0sVKF2Cv7q1fFdFi-bpeLZUTQ4EW_0Fz1JV-w/s1600/maps-148761l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/10/kordubani-630.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 124,
+    "title": "디지몬 테이머즈 더빙 (KBS2, 투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6mZymbkx-VTIB4x62UuBeAwUTjeX-vnEByXm34YFpsvV1gz0oxHirGd-4FdjTLRAFwHS00bvutMJy9AFrdwCwRntnlTSfKx3x_iLtMBTf0M5lL6-6PFbFCJ-ov6kNRI6TfD19uheDPHzLdGGq0Fo3w6S_BW9wZDrKaKjpP4hZvDB0lpzbXPrH7rva0w/s1600/digimon-tamers-73696l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/10/kordubani-629.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 125,
+    "title": "파워레인저 매직포스 더빙 (재능TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgssi7ms90QUsNO2gWhjf99zurc8XcXuAuYg66YyNQwyOlSJ4vLwRp4ExAkK_mW50_oZZHssiL3JWUJJLJyCqIEfEYlWR9eZZGR7TaKXZaWjFOYxGhyphenhyphen8PeIcBdB5xChN_oKyUPMs049tfaDOObNNVx1k7hKXazWrDvN4VV7QyNe7tcLJx1ddERDGKRX5g/s1600/magiranger-400px.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/10/kordubani-628.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 126,
+    "title": "파워레인저 SPD 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihmetZ9Q5H5rXyRl4YFspolo3bebvh1dLs-iHxz20dZKhjGo0dqKODTgaogBho5211PnGJxUw37FRnu6kX53ajCW39E7MMeSCRb7uMbIklu3rmQXA9UQsPBiCUm4VoFl-C7CPVVeN0-icDnD8kTcCqwOXdbz9IYc9DZyUSO4zbHWtNMaQ6QOH961q4VQ/s1600/dekaranger-400px.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/10/kordubani-627.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 127,
+    "title": "건담 빌드 다이버즈 Re:RISE 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijlBGLNAka3IBYxV9qCFlq-GEGRB-cmm7eTHWb5wFGh-5Ev5QOHt1mj-2Wkw7jSMEMNJfsx6DLKzM0pU2hxdO6to_rpGwKTHhrOs81GJWMdus4RTBIohk6sE_A3LmMAdAgPc2bn_wzpPkFXwb724gO7JCQDhzX72SxKVUHFXN8Q5IHuHk5VZoFH2oOQQ/s1600/gundam-build-divers-rerise-109143l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/10/kordubani-626.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 128,
+    "title": "건담 빌드 다이버즈 더빙 (재능TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJxBT2I_qMh6MGp30tHPO046z_p06VfjQ1V3Rd9iCHDHukkQTwQpkf4ltl1w6nrwPYgRG5WahLBQC4cQpDr4rodpSUJFaPHfwp3Hf5jm7L4F1p3jOGZIF_pNw_ha35oym2ALvSEVwyutZVjQMu4mn536WIQutjaspY347k1_-sknJY4Id1Wezkpr-oGQ/s1600/gundam-build-divers-90388l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/10/kordubani-625.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 129,
+    "title": "건담 빌드 파이터즈 트라이 더빙 (카툰네트워크, 애니맥스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCZajsoqX4BBBrBonHMKmwKfP-2ott1vUwSsaM9XW7VfwlMaVeLiUB_hLWMTobDP4xh1kLHoG5DnvFwXE1DcdAxLSDG9e95k12FIjbtcXMHzwruM1qNcU2awLAR91_kxfLf_G0Ogto7VZg-l4_sfOcq4rmOK7i_1d5S78TWevIw-cFuXmZ17o5VaKlYg/s1600/gundam-build-fighters-try-67511l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/10/kordubani-624.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 130,
+    "title": "건담 빌드 파이터즈 더빙 (카툰네트워크, 애니맥스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4pdpiHU2ImlDT9wVgUKRBT0-xKEfR8C6JvreKr66nU4hGWu8usNUiZ97_rKysSfaeEtzcgeByUOeTdl9TVR7w7JEVV8efIRQt2ZtZi1iJn6iHC_eo0Y6jrAaxraEQ3vqBv99jJAQ2ZVijD0jC5X8hitEsg93vy7g-zMQKPL1MVHOTPza1pdLLSM8sDg/s1600/gundam-build-fighters-51815l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/10/kordubani-623.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 131,
+    "title": "초성신 그란세이저 더빙 (챔프TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIDqR3T4CIyVc_VvydpJ10H_zuHn-alsBg6Q6_Kms7Q6AfJER4Jo8qJ218InF12OXI__xPx5fiA7M7Azr2bUh16Cah1WrqNOoPggwnxju14kjujlsZXaMIc07yt83LvjjgQ3ONcp-vOCoJVgYOuJNsbATUsg1IINPhVqr8WV-YU3dGhbBXcQ1a-aMhNA/s1600/gransazer.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-622.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 132,
+    "title": "탐험 드리랜드 더빙 (투니버스, 대교어린이TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJwtQQikyzy1-EgIvJ053uGV0xZhRxka7BywbRTnF4VLvxxKafhSydkIL0VlQQYYhqva7TZ9_miD5jwlKxQTbErR-aFROAESKNv-iWphrt-8H7yKukyZNKVX5IP7WgWTlgdMMhwyVBeioGuVVEnYZjSzJO8QbuXGphRlDcZXjaz5MmJRjVc2fKMCY91Q/s1600/tanken-driland-100164l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-621.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 133,
+    "title": "마법의 책과 역사탐험대 더빙 (EBS)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiohcwiTbir0s8uDEln9gs59-xpEfN0HMvgzJRhhDrqecfRcXafbm2th9KFAeCmOYtfhIugsKiEbFdbiVMU98-ebmejwHoi5vDiwypo42aL_g0Spg7OMNif9fbH2h5eM2EC4nC6dhyphenhyphenzAPB5_bLAyqZC2eTq9Nbb6nM1vT7ChzjRB1EplAuP03Ss3F_OjQ/s1600/time-warp-trio.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-620.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 134,
+    "title": "외계소년 위제트 더빙 (KBS2)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBgrAQE2mpmBzSUj7JFDnfQQbzwgD3C6ngURlUiq0Qs1Bi0aqCTX3QMKPuicVpDzxdzsikR0u_AtTvbEHqVJFvRty1iXH77kkNJcMDWnOcEcJK4PBNjddbNfdLxrfUjasyWcEqD30ShESjlyLzvlr83tcIfER8bXWCUEbSM29U9Oq9dCwkZT9eYhPVYg/s1600/widget-world-watcher-korea.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-619.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 135,
+    "title": "우주에서 온 모자코 더빙 (애니맥스 2011년)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil21kFZ2IoFxWGxGxjYDaJKJGbE1Sy3XR8tVF8HBl4rGZV9huNRpVjpY0hkPGO6pO3znyjPHlbT6Oy4OyN7Br23-Q0MOM5_e4v6i6EbF5Dw5CXPQcfWk5qZv8grwIA7nMHOiGLOojfY9O8yk8AhzIFpes3jVJgz5DeQzzKvj4nJnjA143lYEZd5vPVLw/s1600/mojakou-75211l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-618.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 136,
+    "title": "달려라 이다텐 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOfzkCQhOlLV2i2fD3hoWYDGhilWreqfH1YbLR18S3wWqdVYnzB4Cg616CUe4Mck19-WT-y7ie44eYyCy0B_bWHXBfaOg99WXI5x3mAAdwMl0Q3RB3U5DiLiDPCteFNmfMcbedCF8INgwGH6SD6_iC7ay2IuQ0R3rdbyEu6xr3rSBPJFFlacArkIj7Eg/s1600/idaten-jump-133569l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-617.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 137,
+    "title": "시험의 신 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgblJNC2XTFZA7J4uOPrJ8pXiUbJHC6AxfMxyKbRNIJBzE9pk5v4M6blBYL6EsFpXqduqiKFJzfuzmp1CYGrViyw7DKF6X65mrkfu_sMF87qws2sghog5eMexoPa6LYyfhYJGaBDlkIZNsyKPrrtF_4Q3yv55JwrEkUfgSZkhDSXIdGlIqbsdiqPmWwA/s1600/juken-no-kamisama.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-616.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 138,
+    "title": "개와 나의 10가지 약속 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghP5Dy17TOzl-kexmutD1cegK0SAmMa1pcGI1KFsT0oyuCkyxzv1179nOhvcAsN6KXGhkipllb_GzOdLPkSmUovH1mzX8pD3FUvaD-jhmsTagLWXvYa2_VIw6A7JeWywg-k-x-W9ZdFQKWT1I_EILL2OD_6sINB0y0wulfeZQvhFYdfzCSgwKCMcnL5Q/s1600/promises-to-my-dog.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-615.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 139,
+    "title": "트윈 시그널 더빙 (대교어린이TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKyyM2x3-Q65U15VSBAstknJe0KJoFP2K4QFWdIFv33CCGm6NVs6orv2kFgWAu-VjutetaOCRVioHGbQoBgqDH84WfAXpC1QkOCp5eDYiCChASfwiRQnbGmSd9S_UHvnoCQP0_GREIuk47d9aFWZjiUukaDhsjgJk3frJ5oMFiqHngGRPpsM9No52f5g/s1600/twin-signal-65095l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-614.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 140,
+    "title": "열려라 코코밍 더빙 (디즈니채널)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzCWjLtNT9aXbnjUAsWWQ1T3YLkqAXeElYjRAZVU33KOAYx7lccuixpOQ4uy2B24dm6ljqM6r-udgnMw1FDKyi2dhB8UDnP-_USll26QttvmCfmYI-09g1hw6dOo4rliBLiaIyMNjTN6OnQ_XzGosAOJ37TXKjwg8r8zZkolgOP9N_Ky07vQ_WtWpzag/s1600/hirake-cocotama-93170l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-613.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 141,
+    "title": "천방지축 람바2 : 시끌별 녀석들 극장판2 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2Xlqij7CJh5aha8OjnwqXIEj1i-dWIoeNodZrRIhsp5GgnTs4AobsVm2Ytt_gNbdjHfjosgv0NXI-KmAnadDNbLNWqtHFitYNipGK6iDKYB845VaHDAfnG8rumicm6lAwGkH9n5nEmQngNtHhFxS9ZHiS8NcscrQeYpcgNAeejyBmmtpZpKiahZqfDw/s1600/urusei-yatsura-100143l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-612.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 142,
+    "title": "슈퍼걸 노바 더빙 (비디오판)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmwKCvBYfUN887jR8Cf_ykyZD-CfsIrFIwuF4uqn9nP8ssITq_9hJKQ1iKFjCMr8CRDz7iN9qwIvIhe1XL3uqeZs_kcD8Rrt9qCs42JB7ade2rbx9T6lkRqft9UK2XqQflpmq8Lj5t5YVAxDn6bCIBzkvuSR2Rx8mP4X4PFgD5-6NZrPn-4t75tPoC2w/s1600/project-a-ko-58391l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-611.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 143,
+    "title": "울트라B 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfNtwalWWyPbWJe_hDmz2CoV-X_qq9s1stvqNQHisChKfYRak5WeUiLhWMMgDUv1SSbyHdu-JiNY3NwdZ16CM4Dg6ED6MwbEg0gGXb1LwaBYb5tWPg6wEpCxVCN6LeMqH6i6DW0t_Mg9KC1QfYbnJNWIr29QbMHPBw03wJivd5XdSmz1wfdzqxaMx93g/s1600/ultra-b-120949l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-610.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 144,
+    "title": "마법돼지 핑키 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiupDypenhneazfBa-MwO8Q9novW2P8md7hhiMc0aG1ql8WQdiATc9JfyiwpHPPQyd3sF2i_iwcVa3xF9teZvke_W4GSBiNnHpH-n5TolECJqru5KBZgWtS6l72nph1cmVhDC2W0IL0Rtbu96VpaQM5O9E2UqLyV4xmgwdDYlsiuESdGV3WZs5NxJInA/s1600/tonde-buurin-101335l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-609.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 145,
+    "title": "대롱대롱 요괴지롱 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigc2bET8-dBGG6XCkP8PGqPn1QfQjyzeVmREFPhP_NZI7Rev4nqvPJD9dGJf-zGPIYsrZezmsCrY6eCjaYi6TZOt96-1zMznUz8I0AQKd0CT3QX9pXr8sBEP_TrUWwf6BJd3s038ifd__yyo8Ogwr6zCak9ySfOucWH14p0ncuY0P-JuQHgZ6Riuxlzw/s1600/kutsudaru-60721l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/08/kordubani-608.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 146,
+    "title": "아따맘마 더빙 (투니버스 2004년)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhL2i4DKbfutEP6yK2_E0YkudVTiS1Tm6sRrg8kJN48GCnnLaIMQ03HSfwXAgliZy1lNAdqscbRZbB96XKABKx9s9bWIEaC3Je97wmbiQQREXs7w-6A5CEXQsz_CWiIZRA1Qg1_kuSrlbfC2-zXHMKsouWYtYqdPusKRTKgSXSw36BdECuWlvT6aujiGA/s1600/atashinchi-1473996-01.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/04/kordubani-607.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 147,
+    "title": "포켓몬스터 DP 더빙 (SBS, 재능TV, 투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-eC-vBvC63FGVos204wsigU7_VmEY2b3pto5BIxIEg1e_lnJ_jI9hbqfhrpOLYfe0uDEfkkBQbSBwy5dyj_qMjDc9XTYHtyYANg6gpWPAT-71mT9SwUD4cL_uIakko8vEoxB5GuvvT1aNKG-OjLj8jBtNfgjPePxArBPPJ4MYFdHtCaU3RKJSHQ-Ow/s1600/pokemon-dp-142699l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/04/kordubani-606.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 148,
+    "title": "포켓몬스터 AG 더빙 (SBS, 투니버스, 챔프TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTAhQJifTQSgAfU3-AzP6Zv-h-tzw9qogsmswC4pLvWB4hY4qgr1akI9bXDNukQeoaApKequ-S765-8qpfgHR04eV7JRrYQdNognAoQPFLLclCqshgx26yz9fDTGVShN8C2zKGGxwdoDAFiRQ2S6a96UQZ7Ve2Hb-5i5wKS9Sj29ruoZKzlY4LTn5PPQ/s1600/pokemon-ag-142698l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/04/kordubani-605.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 149,
+    "title": "포켓몬스터 무인편 더빙 (SBS, 재능TV)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfAMcLYIshpDWCe0uKg_Z-MZ98sMcpIWTm4ZxBi-IwVlpYhfyiXAM7UBP0m70tqSk-JV9IDzntEduma-8M2twV-I9MNNBHha_s5RAykr64j2915Vzwy_WHEhyHrD-zczkx7ZGkTk5ZUro1vZWNaBhCN0-81YhuT7za1GZrLhN3IMZhyQ6W89xo5PIhBw/s1600/pokemon-original-140239l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/04/kordubani-604.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  },
+  {
+    "id": 150,
+    "title": "파워카 엔진봇 더빙 (투니버스)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih3xS0_4_b8F4OpsEpCZyeU7AFvkyhFRvOx3UN9NOx_W1eYdj9vyVhozd32hyphenhyphenWD0P4u5R84t_MPHjoKo5MzKSV2BDmzbvK0PzuMQUY-p5Hoivkr4VelBViyn_4FIhW7ZbzgdBgtZJCuyE4UZaVStdKKHcHYFBa9YMrycfu1fGNdoI3zlmqvnXRJuPAeg/s1600/earth-granner-114349l.jpg",
+    "ottLinks": [
+      {
+        "name": "애니 창고",
+        "url": "https://www.k66google.com/2025/04/kordubani-603.html"
+      }
+    ],
+    "memo": "k66google 자동 백업"
+  }
+]
