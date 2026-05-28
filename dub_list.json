@@ -6260,7 +6260,12 @@
     "category": "애니",
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx-eC-vBvC63FGVos204wsigU7_VmEY2b3pto5BIxIEg1e_lnJ_jI9hbqfhrpOLYfe0uDEfkkBQbSBwy5dyj_qMjDc9XTYHtyYANg6gpWPAT-71mT9SwUD4cL_uIakko8vEoxB5GuvvT1aNKG-OjLj8jBtNfgjPePxArBPPJ4MYFdHtCaU3RKJSHQ-Ow/s1600/pokemon-dp-142699l.jpg",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "B tv",
+        "url": "https://www.bworld.co.kr/product/btv/mobile_btv.do?menu_id=P03050200"
+      }
+    ],
     "memo": ""
   },
   {
