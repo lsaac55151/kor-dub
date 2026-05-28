@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "아기공룡 둘리 (1987)",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=200",
+    "ottLinks": [
+      { "name": "라프텔", "url": "https://laftel.net" },
+      { "name": "티빙", "url": "https://tving.com" }
+    ],
+    "memo": "오프닝 음질 개선판 버전"
+  },
+  {
+    "id": 2,
+    "title": "외화A (1995 녹음방영)",
+    "category": "외화",
+    "status": "expired",
+    "thumbnail": "",
+    "ottLinks": [],
+    "memo": "현재 국내 VOD 전멸, 테이프 유실 가능성 있음"
+  }
+]
