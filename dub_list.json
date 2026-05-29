@@ -300,7 +300,7 @@
   },
   {
     "id": 493,
-    "title": "개구리 중사 케로로 더빙 (투니버스, 카툰네트워크)",
+    "title": "개구리 중사 케로로 더빙 (투니버스)",
     "category": "애니",
     "status": "active",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTvBVfP7sneI8e4iUEhq54TEkWvSLlwn_Dx_HN_yccJx5xhGqGiGbBp76c5AlFXgm3vyyA5lU4II47EP-JXl_qBSS4dsbzgDP03hwSQyzYMKv1uhpDqRXyG38MMapHJ6SIY_IZsPV7Sm-xH9zjUJH-_e0lH1TTXiv_xPWizFrO3faHr_YIdjPZaKSvHw/s1600/keroro-117792l.jpg",
@@ -319,6 +319,16 @@
       }
     ],
     "memo": ""
+  },
+  {
+    "id": 865,
+    "title": "개구리 중사 케로로 재더빙(카툰네트워크)",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/K9DRDwfFMQvljTNtNzgMFjaWax6lp1OkHgXlyQcFhnNyvo6xc2ibnsA8Kg6WeotpqLN4EaJ0eXavIYw4miD41Mhil9g36tyi8-qK3oE2dhJuPy10D72opHNNlIwMwsxXZN9vruoSHD8AVTqY8I56Tg.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 484,
