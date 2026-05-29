@@ -811,7 +811,18 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqJfQW4sb3uxo42NrneA-RH4K4sqbrSEjJdilSoFrRlI6vx6t7xHqru33AXSSNA8zUtkjwtGohS1OQE9f0Tt93TFmOeAQo4ZD86sp_exnc_JIV1INSjeqpkWujy1UwdFIwylqAdj_y9kB-CKtO7g0OYti1OtmHtjnuYgTuYav7hOpwNFxGGppTMgYjIw/s1600/magic_girl_75539l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 831,
+    "title": "그레이트 마징가",
+    "category": "애니",
+    "status": "vhs",
+    "thumbnail": "https://i.namu.wiki/i/dns0ThHdTqCHJzrwugdAbPEZlk4I5kSm3O1MZV6sgvoCedlkktYThtHT__aRlzk4XXbQRGLqd892vbrltzQhB0N9o7LzGJtKlRXCuV-SdV1QlJsUNJ7clDkYcMwobSXpIqe5tYo2-UR76QUgrSxcmA.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 627,
@@ -963,7 +974,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKewagty4V9a2wF0izGjP222TdHee86yJQagrqeZyi9y5-5rg1EsDs5jdqa85HSr9AERGe-CCNUvOZkHAd5voSD4HPup9HpbZkNfjqAWKTwDayZWGZXAj6mBvGWcsaNv1pkRXuwlxn6loaQXDLRQqAZt6uPIFluqd2AKl0TzG7ac1YdqdhnGDozhc3lA/s1600/gundam-0083-75776l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 18,
@@ -4402,6 +4414,60 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVcgHooCuGOgm5N46Fp3-XpZHZzWspH5jeo655iz00kMsCrfxXo2966rwsuyWOS0fRYILVfnZKrFyY1CCvaKMZhpFHkvP4NQv_CYSEkpYtv5O8Xr1iNtCg9TNACgsrcsEIWBNXR2HXZxixZ9ObAkBSYJ2SE2zamqRfE1s5yDC3DeNDx24dxTt3InMZoQ/s1600/kaitou-jeanne-143967l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 829,
+    "title": "신의 탑 1기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/AF32-g5TAgjCRBppJLNHw2xI0P1qOdsHC6QwZ1ICeAdztrlS8WW_CeE6xFiPijRZicHp5e_T6ThKRFzp_40wtIsOD2_RpHdnju_0JVa_bB6ysyfDiMX6xRxGqV02v8N7Ar4BM-cjqNtG2ur1p1eNKA.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42307"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tlAnA9G?utm_source=kinolights&utm_campaign=kinolights&utm_medium=organic&utm_content=title_provider"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001758875?utm_source=kinolights&utm_campaign=kinolights&utm_medium=organic&utm_content=title_provider"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?history=season&programid=C6101_C61000000790&utm_campaign=kinolights&utm_content=title_provider&utm_medium=organic&utm_source=kinolights"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 830,
+    "title": "신의 탑 2기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/f-Kq-9KcIhnn5vWNh2_PVxzPlTNWIa3Xp19EfYU2-Bp8iEr_rXq7SaIOtUcYrbRPWPbK5Wi40NW8Gl0fJVRL3TJStiTC3RsC2nCNE5zG_kT3XpdDOrbdT6CJDWSQlLyuEAcnMKk6qduUp04n9jTgyw.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42306"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tlObdWX"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001758793"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=C6101_C61000000786&landing=season"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 62,
