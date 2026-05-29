@@ -90,6 +90,31 @@
     "memo": ""
   },
   {
+    "id": 846,
+    "title": "가디언즈 오브 갤럭시 기내 더빙판",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 843,
+    "title": "가디언즈 오브 갤럭시 VOL. 2 (더빙판)",
+    "category": "영화",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/r0rETZ3QTbKQNrIKsZIRD8evDxvn1RY5Iykb0vtt0VRTZtxvfd4obfQm8TcKOQORqB_e9XiK6b4gdJVUkyWBhP1A3oze2G5x-aKTcnXIZp252BwA5Su_rbj_QjKHNfux8Lcn0NB7ogSU2cU1U9TxYQ.webp",
+    "ottLinks": [
+      {
+        "name": "유튜브",
+        "url": "https://www.youtube.com/watch?v=-DekgWywgr8"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 183,
     "title": "가면라이더 더블 더빙 (대원방송)",
     "category": "드라마",
@@ -1588,6 +1613,21 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisFlP-KfdVDUTNd9KnYe5684QKus0_o8lyQHL80RCwPLNnoqXteamteDDiZwp-V2X_1lLEVuyaD7nZ90NpgZvDSd9sCU38YNmB04T3NBv9KrV0SBW2OnGX6JpcbCXFJDUd1GV9DTLFcQJ37XGShyT-tt0BTbuvJlgDyzS1QQ1CZlItDegzylxADnxBHw/s1600/takahashi-rumiko-129752l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 842,
+    "title": "닥터 스트레인지 더빙",
+    "category": "영화",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/V6_KvsIZ_g1CLLigSVQZScVmbYG34s1YVpKOaisN-f2bqGRaB9xOWXDi9ZkSNTGmUMgj0lIYcwpSjJphEfPQhUHdbLFHkjuN2HSzV3TmeXrcZpmipVBvkSR32Q1iGSeLZPziH0nldtiqgZVFUPS1IQ.webp",
+    "ottLinks": [
+      {
+        "name": "유튜브",
+        "url": "https://www.youtube.com/watch?v=-wsiPzDu4tw"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 245,
@@ -3861,7 +3901,8 @@
     "status": "vhs",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFK_sh_RWwS3YD5ss5vzoK9vwLp6lwJVnc0bv_7K8XWJVbZ8CYlBit1WL-mFW-jhix1gPpmSfDvnrrb0FpOdQzp2_EnPUuyNN0dK3BsFI7rEvWTGaJSzVSmXPG0kJcsm9pmD4dV14DGWBnpSVh9Y1_KdLr2t2yvE2PAvqH6x6FANBPQJg_-m3WgFT0EA/s1600/sailor-moon-134146l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 590,
@@ -4251,6 +4292,36 @@
       }
     ],
     "memo": ""
+  },
+  {
+    "id": 845,
+    "title": "스파이더맨: 파 프롬 홈 기내 더빙판",
+    "category": "영화",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/ZiOLNBGPRVS6QIOZ48O8D55y2xGVLu3gPs2CyIKnU0VFgri78NCVfjHS1FvFmDS50p3KKVhoU2HI7gdbEjbOmOHEEtW-b4wBGq3nh_N9GsyVrjN0eCqstzJMo8ATZX4_7sD1kxG9AmbeLSflaqHTQg.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/81055822"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 844,
+    "title": "스파이더맨: 홈커밍 기내 더빙판",
+    "category": "영화",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/Dxm8ab23f6rYvKlqqp8jAVw7q0PnIrLChEDFPosVI8PEItxqDygFlqetUzw6F0VFwwhiVjdhd40R8a1LyC1yrVP6PDBh1JrUsr-R5nkhW1f7tOyjXO7h4J5yRZ7e8YlbfGaWiDkT5veL2CX-DpDGoQ.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/80166369"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 532,
@@ -4735,6 +4806,51 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7eKbT4Pe_3-yqptQWwqXVINR_sJYlMQQ56jOiPG61h94V2fO1Hhy-tYK0KVG6tx1e_qYUgqJMZhK1ITxNscOzM0GtcjmW2yeNEju41mxCX_QiJsDt6dQQ95wNlGgMIeQzkPRMNJ76lI_AW1Fa28vpbBKmYZKWtHO0wQGvXaqWkc-_g68p2vZElbYRtQ/s1600/avenger-19921l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 840,
+    "title": "어벤져스 : 엔드게임 (더빙판)",
+    "category": "영화",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/Zju-3qOrm-TvoZwZWgfdNDtywge-lFooZu0KGfFMy7hEM7qcRqrDvGau7dS2K4rAgZ_oN4PbKDiw75CT_ssyfu87HE6XREfchuBf5oKdV3IsQuAxzfuDU4_YgWjxD3Xuufsn9ydSbhd0vnLkdwJyEQ.webp",
+    "ottLinks": [
+      {
+        "name": "유튜브",
+        "url": "https://www.youtube.com/watch?v=VihkgZYwxPo"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 839,
+    "title": "어벤져스: 에이지 오브 울트론 (더빙판)",
+    "category": "영화",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/3p4sAoTAbHOIixatUqTRf_QxedWcgTWtC8LpKv1sZelLu7P4lUVQ9isM1meY1JHhFfuahaezQi4lbGYAifSvd95RmwlBuWLNLegAp5UomAHmSYbben-evQ2MHKlC0oWNbGkassmWBcdcv_ZYJ8x8rQ.webp",
+    "ottLinks": [
+      {
+        "name": "유튜브",
+        "url": "https://www.youtube.com/watch?v=vQX1Dqd_iTs"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 838,
+    "title": "어벤져스: 인피니티 워 더빙",
+    "category": "영화",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/-O3FIxWwhOvnFSrHxelANnqexYpgmLvh4D8ZDNs0qPYf7M1FqpznLS38L5GjNmqSIPFIoOusPyoOUJVLrCavZY6gfgTskg-zP-bgaEycDWhw-jvjIXiJ6ULITQnWg8ua_9h8WBoYJdL8VM8XYzOKDg.webp",
+    "ottLinks": [
+      {
+        "name": "유튜브",
+        "url": "https://www.youtube.com/watch?v=nZahhK7Vs3k&pp=sAQB"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 92,
@@ -6844,6 +6960,21 @@
       }
     ],
     "memo": ""
+  },
+  {
+    "id": 841,
+    "title": "캡틴 아메리카 : 시빌 워 (더빙판)",
+    "category": "영화",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/tLaSDSTV5dGkfnVqZfOqnJH7SwSvj3Ue6HTpSSUPhgC0aQdxW8TjIrP72VlMyPueTNfq7VKZt4rYE6-hhgzkX9AXWxT_iO04zjm5NgHfzHpJkeXVix_50TBbctPpYY3fvmvqMjtNuKYbi9_qr9U7Tw.webp",
+    "ottLinks": [
+      {
+        "name": "유튜브",
+        "url": "https://www.youtube.com/watch?v=jCeW4CCdpoU"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 535,
