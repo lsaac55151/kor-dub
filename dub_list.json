@@ -1944,6 +1944,33 @@
     "isExcavated": true
   },
   {
+    "id": 862,
+    "title": "더 퍼스트 슬램덩크 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/7jYZSp77G4Y8COPqLsL44BpQ8V1DTgjbFGBPnacRMseNSQkCYisY-S2Jxp_rK0LbK8_Vdq_vzSp4ESchTEF8KCk_CbZgUJPIkIuWsU_wXsGaTqMfgiKvmBYrzp50cv0PMj5xNvSM3hctkxNSpRkjvA.webp",
+    "ottLinks": [
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/M000377679"
+      },
+      {
+        "name": "쿠팡플레이",
+        "url": "https://www.coupangplay.com/content/98c48bb8-a45f-4bbb-bb3f-c9ea469f2d83"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42813"
+      },
+      {
+        "name": "디즈니 플러스",
+        "url": "https://www.disneyplus.com/ko-kr/browse/entity-8ab2c3fb-77f2-4456-ac24-423eaf7fe1d0"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 354,
     "title": "더블 드래곤 더빙 (비디오판)",
     "category": "애니",
@@ -4553,6 +4580,39 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyJ6aqV9F01P2iv4zFHkGJqFd09AqEU-tF8cwHCzsahu8jjAINUw2sZ4Z_feAFDh2jcYyTWgkujK5w8rcC31ow3_uHX4n4-yhbiafr-kQQWkwaRhVgbW96IGb5jlNIfp_YVLFWE1ZXH5J9O2S09QHRk2_gX5JricR8h0ULQZNdG_aBkvrdJ_zf79ZIWQ/s1600/slam-dunk-94403l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 863,
+    "title": "슬램덩크 비디오 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/dyDQqjGmbJ036P_E3qCkni5LQ4PgSQZzjw2DHCD6h0BT9qEidn-DCybDXvH12wcvQcJQ3fObTxbVifakAOXsIQw77TboqfX9KylcHkVDsPGMWpSrej8BPp7hwAn8rxdICeXDdBi2rG2rDozPyVpM6w.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/16192"
+      },
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/70024218"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001685046"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 864,
+    "title": "슬램덩크 SBS 더빙",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/dyDQqjGmbJ036P_E3qCkni5LQ4PgSQZzjw2DHCD6h0BT9qEidn-DCybDXvH12wcvQcJQ3fObTxbVifakAOXsIQw77TboqfX9KylcHkVDsPGMWpSrej8BPp7hwAn8rxdICeXDdBi2rG2rDozPyVpM6w.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 290,
