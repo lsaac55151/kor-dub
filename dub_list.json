@@ -745,6 +745,21 @@
     "memo": ""
   },
   {
+    "id": 826,
+    "title": "귀환자의 마법은 특별해야 합니다 1기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/4fuwMLXzGRk7jh4FzVUQtn7fwfMaWEVUkh3osY3YXIoTcOlcFqTUz18H73WbLI2Eu0GP65OzMoNJAq5OWQjymBvXhTifEWlwHPOtRQw9TkhQuiBT9aeXfSi2Hz8o5voJlHDs_VIpOEb31UbALJ5tTw.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41881"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 788,
     "title": "그 날 본 꽃의 이름을 우리는 아직 모른다(미라지엔터테이먼트 더빙)",
     "category": "애니",
@@ -761,6 +776,33 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbmwnEHc4oyoA_uR2NO6YhsBDRGrk2OEkZs02TwF91xDWP9s4mDR0SrVpw9cZ4mL-3nxxyFDiYQMsU1WLIPeCGdModuvv9X9sgnSH3Op59nYv11iyjmiJy9c0m2DnTVB1J6Og6sJJxFB7v0UvW4ZLT_xULzaxEhdtyewtLpYePvTwmfEQs8PNVwzjeOw/s1600/karekano-108880l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 828,
+    "title": "그녀가 공작저로 가야 했던 사정 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/ScXZuUCL3c172DPolP_tGfN7zxxk1LJq4Vz0SKFZdxD8Liug1Cqr-YK0syGcJydlvm2K1N7pDX1r5gsCREKm3-wciUh6Gao_bEu0Wvz09pqCipKfAwPaHxvF6-l27B4F07Er37RYFzpKERhAlq0kOA.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41581"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001734361"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=C6101_C61000000671&history=season"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tlAnYow"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 723,
@@ -1352,7 +1394,7 @@
         "url": "https://www.tving.com/contents/P001682579"
       },
       {
-        "name": "라프텔",
+        "name": "넷플릭스",
         "url": "https://www.netflix.com/title/80236253"
       }
     ],
@@ -4122,30 +4164,8 @@
     "memo": ""
   },
   {
-    "id": 762,
-    "title": "스파이 패밀리",
-    "category": "애니",
-    "status": "active",
-    "thumbnail": "https://i.namu.wiki/i/t6NsXK8zB1hlardADA24cLtBv9IxOvP-TAy_kEf1U5Lu0Ft0kdCFZNRl1gZuHnisimUP90yKs4O-1jy2JS_kMwFugImYxDFMYycW4QxAYTnoWbpviI4hepjNksDuVSyVggAR-TMl3xP8XHNM8F4I7A.webp",
-    "ottLinks": [
-      {
-        "name": "라프텔",
-        "url": "https://laftel.net/item/40965"
-      },
-      {
-        "name": "웨이브",
-        "url": "https://www.wavve.com/player/vod?programid=C6101_C61000000569"
-      },
-      {
-        "name": "티빙",
-        "url": "https://www.tving.com/contents/P001665263"
-      }
-    ],
-    "memo": ""
-  },
-  {
     "id": 763,
-    "title": "스파이 패밀리 2기",
+    "title": "스파이 패밀리 2기 더빙",
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/rBLFzEL2suNuQEojLTXLy8_QcDgH0qq7BVl2jUdvprC70bbytgLfMtO4vJyARYJnNf3g5oY7iuHf3Z5Kh7p_zHB1so1iQS6KV69kSiGQZR_yupJNStpElIoNZ_AEy2Ul1O1FIU-RYvEkG02JAorMtQ.webp",
@@ -4171,6 +4191,28 @@
       {
         "name": "라프텔",
         "url": "https://laftel.net/item/45272"
+      }
+    ],
+    "memo": ""
+  },
+  {
+    "id": 762,
+    "title": "스파이 패밀리 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/t6NsXK8zB1hlardADA24cLtBv9IxOvP-TAy_kEf1U5Lu0Ft0kdCFZNRl1gZuHnisimUP90yKs4O-1jy2JS_kMwFugImYxDFMYycW4QxAYTnoWbpviI4hepjNksDuVSyVggAR-TMl3xP8XHNM8F4I7A.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/40965"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=C6101_C61000000569"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001665263"
       }
     ],
     "memo": ""
@@ -5569,6 +5611,29 @@
     "memo": ""
   },
   {
+    "id": 827,
+    "title": "은하 특급 밀키☆서브웨이 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/icYU_QIRQUpa-BcYtXb4Kly0Txpy98-0abgKIgQaGXadJKKYe9ciiAoYEctxyBiwuqdeVy-yYblKW4APekfPpKI7528wPdTetnfUesAVbMy2ALM5VocFYjouPK8t1Nz5kSEebDSvKa5mHrTPzKhzxA.webp",
+    "ottLinks": [
+      {
+        "name": "유튜브",
+        "url": "https://www.youtube.com/playlist?list=PLc63ZeZBeagQ1DDOy1YefunpFhcaEeyKC"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001778667"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/43763"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 534,
     "title": "은하로 킥오프 더빙 (애니맥스)",
     "category": "애니",
@@ -6934,7 +6999,7 @@
   },
   {
     "id": 758,
-    "title": "토리코",
+    "title": "토리코 더빙",
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/slSVmu4VHM8DoaX2ENyRyUPfkPKi0SOjcQqqQSHHdsLaFUPRfzj9l5o-qYx5cAgH5eARYxn_4Dn7IeNRxDdZev3Iz5TaLFNbAF45WreQ1RdBEA7thWA6aXLr05_2WrvARsmVqmKud-gW7a4BDNrL1w.webp",
@@ -7592,6 +7657,21 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi87Ssdpnyz8ZKQayLNBHa6lETQICiqq0-htq9FHYW5Bd3jBubLznS1Rn9sWQ40lSKrqmw6WtphpthRtJJSDjZx12ymUz9Pk4iTC3JIz0tVKmSLBC9_L1IUpVuCeZTiQZgmmCotF-QvwXe5SrvQpyenTHteQF_USP35nTjZSQUXgUf5imbaSG5JEojxkg/s1600/happy-okojo-san.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 825,
+    "title": "허니 레몬 소다 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/0M4m4XXGkSzyzkfiIfQhLVIFlbdzqTqBJDroZhVANxE6T526Ywz8dRq6YZzHUB-nNGRwKcQtW_XT6dUKnguOFjR-dwZ-q-EQDq2_Om2NEC8KCGYeHIDpsiltKF2mBl0eGgYW9cNNsrskCJHlMk4rAQ.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42860"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 672,
