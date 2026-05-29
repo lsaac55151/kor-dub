@@ -1492,6 +1492,44 @@
     "memo": ""
   },
   {
+    "id": 885,
+    "title": "나루토 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/dtQ7r_Pas3WL1YORykR0fTs-_y0t-7hfxtc6i82_m0bDcChLhDcT6ntbaKgOwSViAN7GnGFalow8eFaUVznauH0l9bMs20HDTCPss3ZzmVbO8uATuU3jAuIvNQ6kYobmqqycvkwcCAysS2aG0y0vIg.webp",
+    "ottLinks": [
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=F7001_F70000000015"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=F7001_F70000000020"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 886,
+    "title": "나루토 질풍전 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/o5cM8l3SR8QfP1OXDy6pWf21VQ4as4osfL0UL3KVc-g9vb2cjGcSV162jtakqrLiKrbyuVptpyPQg1ujyEcogYc1w44a1jg-CiROmfatCd0WUcxeZ4G1LyuikquDhuRaKMbuniBVgu_S8ULq8pAUTQ.webp",
+    "ottLinks": [
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=F7001_F70000000015"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=F7001_F70000000020"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 244,
     "title": "나유타 더빙 (비디오판)",
     "category": "애니",
@@ -2241,7 +2279,24 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/D_kONgr-ZB3qOmprJ1j8DB9LkgZ3IDK8lWsKc_79I3NFKbV2QNkD99p7lPT2uXj_01IM7kTtqLLejpA-dfIQkzVrv0Fj0tJLwyGk9SrAFVxTd8ffsCuTQaVmIi561VUT7j1uql55lQZaRpT88ddiPw.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "쿠팡플레이",
+        "url": "https://www.coupangplay.com/content/34a25c3b-dda5-42aa-97be-4b4b3b9146dc"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/16155"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001593418"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=H08_VOD000001242&history=season"
+      }
+    ],
     "memo": "",
     "isExcavated": false
   },
@@ -3772,7 +3827,7 @@
   },
   {
     "id": 807,
-    "title": "블랙 클로버 1기(더빙)",
+    "title": "블랙 클로버(더빙)",
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/ZyxyFShJrqND1Q1Kl4owbi0ZhC5n64N4Sgr7h8nlCjazhYkgul8Zb763ZgVyLJeTLFudZiRVbxbdNJFoL4aNugP25g-cgHR37kv_L3fSP9aMoyBKO92Fm9A7MBfdriS1fXxtQir6bqqxlkv48DUGBg.webp",
@@ -5256,6 +5311,21 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgft_HOe_Jrm6QytN1lD8c3xskdE02qk8ikG6K038edG07LW518hhW_qFH8FROsTW6CLrKilMd4A8WytyuaAhkhwC5UgegaTMtZ__aAW1Oj_G5kkHSOmOksNeRJYmc-80tyiGgJJ6e5T8na3v78fftiqmnFJATodoU6BrcjYgsmcn1P0NxWYAOH48u3KQ/s1600/always-my-santa.png",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 881,
+    "title": "얼음 성벽 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/UyKstG2ZjIgtXMu3-Sp9afy59s82_YmCPiuweM6Eh6RQdKKhGA9A0YVRObP1mTz7fw1tu0swljPHpr_ECml8TlYuXCwCUw-0et2FryJzEwkBi6MB4GxkFm7D5bTqn-W7uCZHy98YJbdLbjh1JcstdQ.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/82031882"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 7,
@@ -6769,6 +6839,21 @@
     "memo": ""
   },
   {
+    "id": 884,
+    "title": "종말의 발키리 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/aNnkJnXe1vbWm1FPB6cepAoIJ41adMwLK0hZJjsEH4y6eUfY0Sjt0M96S-_SFloKYt4fqahkbs4VK8a5p-5Ka4vy2wiz9G6Q8Ywz4WCeK1XiDCW9T7jFLGmOsjQ82sXh6cVtVisPOsFMMTtuz8WEdw.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/81281579"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 588,
     "title": "중2병이라도 사랑이 하고 싶어 1기 더빙 (애니맥스)",
     "category": "애니",
@@ -8274,6 +8359,21 @@
     "memo": ""
   },
   {
+    "id": 880,
+    "title": "프리즘 윤무곡 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/jbK-p71sZ0U0ISops1545Lsy1OMx670fTWStgyE9cjJU0QQggdL2e2efoqvP8Wc0--C-VLBUSCc5RF5UB5s1XaIZ8IQxdsJP4TR6GkLJDCuJoT2E3km8LuSD_av_oiCXGEQnINwVqEKB3PEy9DZf-Q.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/81498882"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 607,
     "title": "프린세스 츄츄 더빙 (애니원TV)",
     "category": "애니",
@@ -8439,6 +8539,36 @@
     "ottLinks": [],
     "memo": "",
     "isExcavated": true
+  },
+  {
+    "id": 882,
+    "title": "한마 바키 1기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/CoOKJm4QsWbSrU_3Ihj0CR960te6XkyTC70GvLzrPywgDuVW_dT_vGG_-vWhjLA8W3WTukBjZaZQcEw6pJ9dXkLt9JP9rh3ywciXQRAId9pvPjX3zJ_h15p_Ydv5XwTEylXzgoSQZweKehEjrXB87Q.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/81236338"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 883,
+    "title": "한마 바키 2기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/YOFD9wD17E407AW-KfQ6UqY9XjVaJEMRqWAm-Ncg9warjaDssl7JnVD8xg2swTBFC9gtnJ3f_54xO6PlkcsC2h4tRqoTT16kAh_dkAs8cZZApfJV1Ffg7VrkbSBZIAtgooK0oiaJNN-R3dBrGnygew.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/81236338"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 574,
