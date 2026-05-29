@@ -706,7 +706,24 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/YWq3IkQUaaMhAjn5AgNc9e1AfQaONQFmBNfCKk1h4gjydWvz3pjTUqV3vTZtsWJBATLRRQ_Q02AIEWGDvC1xKMbaddWI7FgBnC5VdRQG8cgEM2NMo-lCiYVZtMyYNclsSL3odgYJVKr1aE-IIxDjcA.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42957"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001774532"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tlnN6J1"
+      },
+      {
+        "name": "U+ 모바일 티비",
+        "url": "https://motvlnk.uplus.co.kr/?a_rtype=detail_page&contents_id=M01255T241PPV00"
+      }
+    ],
     "memo": ""
   },
   {
@@ -715,7 +732,16 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/mBtJ73RLuIUNL5v1F7ud4ZTISnO2cE6y1WofnWerPzfWPiXFVK6rg345EZnuxBvZIixWQOXZv5YIwQi3SQ-QABGHwCww2aHXNRuAmxSSoOFJ4n5TV-gCEzdPJTCLcWUz278pstLHfxNA44uwJWuZ-w.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/43009"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tRp4BOB"
+      }
+    ],
     "memo": ""
   },
   {
@@ -769,7 +795,24 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/SkX5I9WO-zeShn0yHsSUqWMSbFDN8v7JzTA88TePkdcnPgi6-LsWL9-Y3MTO8eKMyOC0KERWFNLQh370yzJsDnUN0pZTBy36Fki3-IOZEwG-BKTgXAze-g4uhaJOmHJqMQZONqvkEanUXIYyjOD1kQ.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "쿠팡플레이",
+        "url": "https://www.coupangplay.com/content/d03e5a26-5e4d-445a-9c33-28ea9396a997"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/40847"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/M000368159"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/movie?movieid=MV_CR01_DN0000011265"
+      }
+    ],
     "memo": ""
   },
   {
@@ -787,7 +830,16 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/ZyDI267krBH_7nk_NW49oL4nXjt6sZ-6YuPCNqbtSRCyuB9Ij06lFXXTWcB8fo-c00Jmn4o5rxGaV8Vf__lVomqzyzyYvx57wlxMUf1ysnUCoYIAfurE6u2fO5Cy_m00xRqUj9aCz_6--f0NJI7q6Q.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42808"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/M000377496"
+      }
+    ],
     "memo": ""
   },
   {
@@ -1157,7 +1209,20 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/uoHni6Ki5REjQkynox5eB9UMVoFq7moosO7JLAmpw06S9RBUIQmEypTnDdfx4JCnJbywRUSuNALLcjDGpxEcBcoxR_W6dmPmvkMgHxEIP5JuF45t9mM4h7-PP0AKg_UibLDSQ6Gr1evvpqmGooOOAg.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/81749761"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42674"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=C6101_C61000000816"
+      }
+    ],
     "memo": ""
   },
   {
@@ -1166,7 +1231,36 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/bvgyFlwpEvzw7vJ49ZCAtASbKvgdnu1VE1H7sxJNl5VDM3vKo1zz_DYU7FYzsR1nY2RIAmcogyUo8Gc9DppvMWdYxn3fS63dbnzsm0pDTkDQcvoo_27G7yuLuQ087575WnHZ3U7rcsONd32qE1Pnmw.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41879"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41920"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tE0mZVy"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/E004117538"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=C6101_C61000000724"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?contentid=C6101_C61000000724_01_0005.1"
+      },
+      {
+        "name": "쿠팡플레이",
+        "url": "https://www.coupangplay.com/content/602b74d4-3bd4-4dc0-a2e0-853eeb856762"
+      }
+    ],
     "memo": ""
   },
   {
@@ -1328,7 +1422,20 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/LVOhhaQnwZQaReARabn-dFtUiO8arZ9tpQ-Ifqi5zPU3ReROQ9TqnCyt3YdueNx8TrSDiTAOfe-8VKmJnEGjeNhPefCZUEiEAFzO_nTwBPDQldRlra90whdzG6ZOkHzXhjQxm1slvA4_2e2qCIRtDg.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/37463"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/movie?movieid=MV_CV01_KE0000012288"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/M000167233"
+      }
+    ],
     "memo": ""
   },
   {
@@ -1421,6 +1528,90 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNlCcWJ3gKH0r1NdlCKouHSvNR1tbrCIcqpDyug_f55NW_4vew6FZvzzsnWs6Ml6blOyl9zgOPc-sh1JTRn-7g2sAZONf4OtjLnzqs7xYmU29WxS6q-yaEFiuOcc0DksKWQR37g1h7hSbkRSruIuqVlFFoIuSkeMZdv3TEW4lKczCUlQF8GjfhgDzg4g/s1600/dr-slump-116861l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 817,
+    "title": "닥터스톤 1기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/PnuYBF3j24aVnPxJB9hiqtoROSZHiHOSt8-kyyw2T0tr8rM8UVIL_yRQ3kCJ7PnI4lu-S7DZTIgcA8w1LHaj_87nKvJQHZ63LcNAT8nmFrV4iouHJ87XPaxINcd-KvlC0xA76uiybQkPzfdXcroekg.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/40112"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001632571"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=CR02_DN0000000588&history=season"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 818,
+    "title": "닥터스톤 2기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/7VfCXYn4Yk8NOX76cSU1DDJHqIbuvWAPvzpmIr-NsLvOvytV32ydsDmASbjA6jXoltdoEc63IZLzMlVoJS9huL4Uyx2ncT1n6B4YGU3DousNcmStlbr9htndaMSJuX7XwZrgfmnMeGd-DeH0zjMGLA.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41365"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001699493"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=CR02_DN0000000460&history=season"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 820,
+    "title": "닥터스톤 3기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/8PsJ2SEUovQ-ENBp70mgHi1jV-n567OudoRXNO_WCBdtWDDaI6cF0f3Qn0J8FCg5U4IneHBhslk81TxbgQJgJG3MAoJL3-Byy3DLmK68tF_Jl21I-AT67HyqMfeTixbUNWtkJg6ddKddAVpstMwDqw.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41608"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001708983"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=CR02_DN0000000458&history=season"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 819,
+    "title": "닥터스톤 류스이 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/_z9BITsORhWyfWdx-LYXdUB5jAk1wzygo062XrGAxfTs86MGyIoFN57zuHu_3xhouRYC9v3DpO9F6tBQpt4Lmu0nVCxr5JqfXRkPMU5lh1wv9XnN0RPgtq65ogpRHQi68grULaT0_CVX5kApiNRt0A.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41603"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 88,
@@ -2094,6 +2285,52 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5YeDiooYnncUozukY3vLoWwieRSeoMRQ8FS70PjrJv3dPGDU-ZLXiW_Z15iuxDK6906snULgjdpCQlZu_eY5QYhOo9-QgSdBIQIVAhKkOKcsLPGzKONAnOxokTmkHJw68uvc6NZBwcwnMJC8vBazxqf5RwcaQnoYYJDoMAw9qbzHf6bVBbyX03WdyIA/s1600/magi-42773l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 822,
+    "title": "마도조사 1기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/sHXB3gXu5z7yblQX8Faf8Tq_yMDk5mQF_R7f2SeHrXyru_f_FaHOMHf8RoYOSRskpGpf4NWXyfcuAYiK6fNqrM4s2yDtd1T0zatiYjBaO3GuhfgAHviPnUqEp9E2AigTxLHIXPJ4gkGdBts0qEwF7Q.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/39706"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=C6101_C61000000833&history=season"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001769514?utm_source=kinolights&utm_campaign=kinolights&utm_medium=organic&utm_content=title_provider"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 823,
+    "title": "마도조사 2기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/7GfjvqL2XUEFDivG0B1ouRxIRUtl0ChjC4BVQKbzinBcxS102UKqrJLaNgJ-t-vm9GYUhQULuzLUHQG7AemVuqOcjSgxv133GB_7f9EM9ly3rJFyXISTUvSL5GLGF5HCT_gqXX8zUlOPEJscbhc75A.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/39829"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=C6101_C61000000835&history=season"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001770149?utm_source=kinolights&utm_campaign=kinolights&utm_medium=organic&utm_content=title_provider"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 551,
@@ -3172,7 +3409,28 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/ZyxyFShJrqND1Q1Kl4owbi0ZhC5n64N4Sgr7h8nlCjazhYkgul8Zb763ZgVyLJeTLFudZiRVbxbdNJFoL4aNugP25g-cgHR37kv_L3fSP9aMoyBKO92Fm9A7MBfdriS1fXxtQir6bqqxlkv48DUGBg.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/39457"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001515006"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=CR02_DN0000000248&history=season"
+      },
+      {
+        "name": "U+ 모바일 티비",
+        "url": "https://motvlnk.uplus.co.kr/naver?a_rtype=detail_page&contents_id=M0118BN258PPV00"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tE0Jv2P"
+      }
+    ],
     "memo": ""
   },
   {
@@ -3217,7 +3475,16 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/gbBwXf729FPFVpx7j08VDpI9nQW9RSMDviF_Ov8dt_2Kk5jaQPJAn6ftUXap2h_pNtLuW-k2_SHuyw3Z3aVbE1G8cFjBLPHFVZsuUPr4u8B0qkgEoMcVbfsFQD6rLlSeghy5oEJ9sFxoLDP1FVEjQg.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42116"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001755589"
+      }
+    ],
     "memo": ""
   },
   {
@@ -3860,7 +4127,20 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/t6NsXK8zB1hlardADA24cLtBv9IxOvP-TAy_kEf1U5Lu0Ft0kdCFZNRl1gZuHnisimUP90yKs4O-1jy2JS_kMwFugImYxDFMYycW4QxAYTnoWbpviI4hepjNksDuVSyVggAR-TMl3xP8XHNM8F4I7A.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/40965"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=C6101_C61000000569"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001665263"
+      }
+    ],
     "memo": ""
   },
   {
@@ -3869,16 +4149,30 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/rBLFzEL2suNuQEojLTXLy8_QcDgH0qq7BVl2jUdvprC70bbytgLfMtO4vJyARYJnNf3g5oY7iuHf3Z5Kh7p_zHB1so1iQS6KV69kSiGQZR_yupJNStpElIoNZ_AEy2Ul1O1FIU-RYvEkG02JAorMtQ.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41882"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tEqZ4dQ"
+      }
+    ],
     "memo": ""
   },
   {
     "id": 764,
-    "title": "스파이 패밀리 3기",
+    "title": "스파이 패밀리 3기 더빙",
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/-vlU-hxkM3B3wgch9MHKs0prkypnctRRGM3ntP_zwnbDbllV3ZlBlbWrrseQboVnQweAyxnmHDLbL99CjBSQ5z3Iuus9AF0jzvDg13OFU2lxTzVM2x7QDZlzarIcrDl5g800QxiyfgsAE2LH2HK0qg.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/45272"
+      }
+    ],
     "memo": ""
   },
   {
@@ -5058,6 +5352,41 @@
     "memo": ""
   },
   {
+    "id": 816,
+    "title": "원피스 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/0oXdS8Wxzk7q9Y8Y8Whvl5uIpTlyneFzZs5aETix05O1QY574WYiQIAs6jk__KgdtbVJGz5QHMWe9BBV0ysXRv24Cy7xgUiDZ6fi5kl7mCX23YuYkRsut3-bnFDOkTnBJjhQftV4arLdMqedMsErig.webp",
+    "ottLinks": [
+      {
+        "name": "제이박스",
+        "url": "https://www.jbox.co.kr/search/?q=%EC%9B%90%ED%94%BC%EC%8A%A4"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/search?keyword=%EC%9B%90%ED%94%BC%EC%8A%A4"
+      },
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/kr/title/80107103"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tl9wkaR"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/search?searchWord=%EC%9B%90%ED%94%BC%EC%8A%A4&category=program&mtype=&transactionkey=20221023015529323132%EA%B8%B0][br][include(%ED%8B%80:TVING%20%ED%91%9C%EC%8B%9C)]%20[[https://www.tving.com/search/tv?keyword=%EC%9B%90%ED%94%BC%EC%8A%A4"
+      },
+      {
+        "name": "쿠팡 플레이",
+        "url": "https://www.coupangplay.com/content/16791ab6-306e-4522-b022-41ce47087354"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 346,
     "title": "월리를 찾아라 더빙 (비디오판)",
     "category": "애니",
@@ -5298,7 +5627,24 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/eUW1nWy1vaW4eKw32hJ2VewYAIY8I0ZFyKI8VZfidZxfuSDtv_34Vylc7cqpqC42PdPdbrWM2R6c9Ag8JY-aVQaTOdNBGEqbTMXj87ZGfztVp1W4k1at5xEVEmHnMVAtWRmBBv-3bMLgZXKqislMFg.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41884"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001751329"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tPJZWXQ"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=H08_VOD000002051"
+      }
+    ],
     "memo": ""
   },
   {
@@ -5355,6 +5701,25 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirZSRsL0gjSQXPku77RGRchXQSM0sAbCyIAfy0RlivKAGD0CyTASPYHkCnBzb9a08gsg7KMSBx_qotrAow01xuGLo318vSvfeLGHIVdRmIDVIjykldV1qt-BQes2LVNSWLtUizbw21tNAMXDOAiysnqhsd7O4QCBz8-MRtfTRgGWq37wLSQr3bAtlNYg/s1600/licca-chan-105492l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 821,
+    "title": "일하는 세포 1기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/r8H4MDRKBFvOhfgg3CGwYD5pudZDQgo5Z_jS8ICH66pJGaIxmIFKXYXXKvs-DivqCxJjqpEUfPOpweEf3a8WQstc5TDWT9sADhuqDcJA9J07yX1uIbPumFmi1PXDbrUJH0o3sc3vZlIk1Y57IvwT1g.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/39405"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/E003075205"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 176,
@@ -5854,12 +6219,44 @@
   },
   {
     "id": 805,
-    "title": "천관사복(더빙)",
+    "title": "천관사복 1기 더빙",
     "category": "애니",
     "status": "active",
-    "thumbnail": "https://i.namu.wiki/i/iHr2aYIX_OifkKPFnvgbIfHJKfDc-x2xEEBz3X2-G6ShNW-lm4LHV3T7wr49ev76WBDHQEFdQAC2GKUrCEcmBQx8tBhn3u2jf7LScLP3NVZESaXQKwSZui3ciIsRjs9lgDRX1E_TUphgIg-pSnvqrA.webp",
-    "ottLinks": [],
+    "thumbnail": "https://i.namu.wiki/i/abuAbHn_NDDlax73tRET0_aLBm2mqXHofk3o9yJkozSzYg_hYr-3ZFpORyz-ekcA5_-mrBnyWGdImNw-iDBAGzRphwXuXNHprBlaU9ECt7wYhH8IuHuk4R6Fgdr0LJvDUAPAWQr6PR1u6EV6dTTgTw.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/40586"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001580983?utm_source=kinolights&utm_campaign=kinolights&utm_medium=organic&utm_content=title_provider"
+      }
+    ],
     "memo": ""
+  },
+  {
+    "id": 814,
+    "title": "천관사복 2기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/l_jwPQswP7L5dqLcv5kFcxEQIDJoAIAhGiu41ZDkhjQYyfXkFZZGAleavXmGUMJov5nfMRCTpEHzIzMMBv6v9eHZmW6RxLNUCYH1Txp2pRnbMcGoYDCDLcv4ysHPpwSMlGkV_YRpoH6UhBnJmEFAlg.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41635?modal=42661"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001764785?utm_source=kinolights&utm_campaign=kinolights&utm_medium=organic&utm_content=title_provider"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?history=season&programid=H08_VOD000002785&utm_campaign=kinolights&utm_content=title_provider&utm_medium=organic&utm_source=kinolights"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 200,
@@ -6833,6 +7230,16 @@
     "memo": ""
   },
   {
+    "id": 815,
+    "title": "펭귄 하이웨이",
+    "category": "애니",
+    "status": "bddvd",
+    "thumbnail": "https://i.namu.wiki/i/4KVcgzhrL5e_Nhqks_PEfiAKHXNUce3smmRW_SvNvttoRWKgmRXYKR0bz1w4me7lFEQ1jIjohwy6VMaVbvQtmVbNJ9yzHV8PaQxD7H7IeRL9tTMg-W6EPkv1kumpu9FeJXcLoVICwZzT42p4k0vong.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 352,
     "title": "포요포요 관찰일기 더빙 (재능TV)",
     "category": "애니",
@@ -7208,8 +7615,13 @@
     "title": "헌터X헌터 리메이크(더빙)",
     "category": "애니",
     "status": "active",
-    "thumbnail": "",
-    "ottLinks": [],
+    "thumbnail": "https://i.namu.wiki/i/ehylpIcE6yVZp5kXt2kAIqEw7XpJnNtkDoIJyTa0jSrCbbF9sjDWsZUK0dX-GKRnhAxKbDZGH4lawurhMuCqLgreIowChmBJEqGQIOHMT-nT7M23TpzHH6TKkAFUMZyctZnngUBBbJXvaXjRafZC-g.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/13286"
+      }
+    ],
     "memo": ""
   },
   {
@@ -7441,21 +7853,31 @@
   },
   {
     "id": 813,
-    "title": "Free! -Dive to the Future-",
+    "title": "Free! -Dive to the Future- 더빙",
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/JdkFek2I-M88riYiUNo1l1Uj8cmrq6onGTDhFsiybUOeLYF20kExqUwZw-wzneM6tKJDi9HAV3L7j0x0w4QTpe4m0nDmbgTfmkbenAiBNU-EmGMtL0vgvKeW1_eY9cnp-ox9TwvgrCwHhO_Cok8JNQ.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41903"
+      }
+    ],
     "memo": "",
     "isExcavated": false
   },
   {
     "id": 812,
-    "title": "Free! -Eternal Summer-",
+    "title": "Free! -Eternal Summer- 더빙",
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/tgJf6r1qpNYJ4yRi6QdP0PsBauGCe7pLd2iTG55DDywWhiSbwji09_TLx3CCYGCqIEneLc1okDI-42hfSBvaBPRiTI1aT3nbMPSDPHKgU-NFbkXD3ge4k9SGZIgNIfQ_Rdvc1YE7zGyLeFzYClrWgQ.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41580"
+      }
+    ],
     "memo": "",
     "isExcavated": false
   },
@@ -7465,7 +7887,12 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/PkOD17FGszF4RXX1j_K76SsIDlmSTwghVIRak5kaBgVsWGO8ZUVJ7IKQPD0G_Xdj4C9RZYNTCoT-RQpxOxVSUMxS7NbXXVkexteRgaiDG17hXdU3DEo2aFCXcjBtVew27H1bKZIzc_QNQINKfhJAwA.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41031"
+      }
+    ],
     "memo": ""
   },
   {
