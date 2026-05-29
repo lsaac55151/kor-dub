@@ -583,6 +583,16 @@
     "isExcavated": true
   },
   {
+    "id": 853,
+    "title": "골판지 전사 W 재더빙 or 구더빙(순서 불명)",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/wQDvIsgk_X_-fHPsLxdVh77KqSl1AAnrAHbH-f3c0Ric2r2eWo1AGY9UB9Ke_Olfu-XrcM_3gVurjgoS2qZp4MXYnYbrlZjs1vyYgeTa8OivGiJqVLcP2Fl__7cGzJHEN6XYN2RKZ5-5IEL56999Cg.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 381,
     "title": "골판지 전사 Wars 더빙",
     "category": "애니",
@@ -792,7 +802,7 @@
   },
   {
     "id": 797,
-    "title": "귀멸의 칼날 4기: 합동 강화 훈련편",
+    "title": "귀멸의 칼날 4기: 합동 강화 훈련편 더빙",
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/mBtJ73RLuIUNL5v1F7ud4ZTISnO2cE6y1WofnWerPzfWPiXFVK6rg345EZnuxBvZIixWQOXZv5YIwQi3SQ-QABGHwCww2aHXNRuAmxSSoOFJ4n5TV-gCEzdPJTCLcWUz278pstLHfxNA44uwJWuZ-w.webp",
@@ -897,6 +907,21 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqtCohsugFaEqiV1z-LCwEi8rVIr1Vr7sU0pYKq_JH5U5d9OAF4rkVrAj9blal4AjUrJMN3i4QxyILovSik1AYTxWsJmmGQClIy_q-d0QcaVAuirFie6GJWvGJ3ub8Tv0_Fo_vEhYv40oGw2rKZJxnhunUDGUZItRLVUydJRUYSFbnskFkYsZFmM21aQ/s1600/gokujou-seitokai-97594l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 849,
+    "title": "극장판 가면라이터 빌드",
+    "category": "영화",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/uGdvWoTpJEdlg_kiEMWq_b1jyZd0QfkQfopMIFg2IXDwRBCDgJ0fVzLVXfyevZ6-U8qOjPp73zTOx3Q6iDOEd1tUsaKkTJgUAluB4YVNsZ_7zGpUM3cBAM2gE2fZvwAHYP1tXQP1R171SfVVH98xuQ.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/39474"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 799,
@@ -1191,6 +1216,21 @@
     "memo": ""
   },
   {
+    "id": 860,
+    "title": "꼬마 마법사 레미 애니원TV 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/4hx-geAbpQTpb4TycTNrZoj4hHZrbYOyLQ2oQklSlYI7RIhsA2cTHzXzQCeJjclXnQHg_MuH5zyWhtU4LbYpNIrqVD_26I8FfJmJkbFvwe6ewneuDjxF-c07qZzxz2UMr7klGEqqB80i8eKAYaG30Q.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/16546"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 422,
     "title": "꼬마 엘시드 더빙 (KBS)",
     "category": "애니",
@@ -1214,15 +1254,6 @@
     "category": "애니",
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiALf07qUlDRUOqEZAoD9f5tPKG4LTd6YLhsXj-VCQtx_hGJX4y9KGwF1vvSMya4tqWX-Y4ifZuaHh2pOTEEYAd2351nNRWyiG3Wk8EKVtjVAPzpoUBCJE0VqUFxuexnVYNdgAoseJdbROUTt-ClaAAL7Hi_PF4kntPdSDTB1XTse9NWvpO5K8pPKO2rA/s1600/yoyo-nene-94444l.jpg",
-    "ottLinks": [],
-    "memo": ""
-  },
-  {
-    "id": 295,
-    "title": "꼬마마법사 레미 더빙 (MBC, 애니원TV)",
-    "category": "애니",
-    "status": "expired",
-    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRkD8XR2evLeFfTvdBP9U26FJe3Eh5MGiJzzaPb5nW537N5K8afDGWDUkf1AMT1VHw6ibZS65p-dqximi96_FmZdj1NwCwQCTuqmh91XD3mV3tDsKUcKLknFGIRLuUXCmOUIOMmR7cY135d4A4d4-DLIMbmq4S2-9k94DdkPqeolnRb6YF8CZFMesSTA/s1600/ojamajo-doremi-s1-133679l.jpg",
     "ottLinks": [],
     "memo": ""
   },
@@ -1263,6 +1294,15 @@
     "ottLinks": [],
     "memo": "",
     "isExcavated": true
+  },
+  {
+    "id": 295,
+    "title": "꼬마마법사 레미 MBC 더빙",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRkD8XR2evLeFfTvdBP9U26FJe3Eh5MGiJzzaPb5nW537N5K8afDGWDUkf1AMT1VHw6ibZS65p-dqximi96_FmZdj1NwCwQCTuqmh91XD3mV3tDsKUcKLknFGIRLuUXCmOUIOMmR7cY135d4A4d4-DLIMbmq4S2-9k94DdkPqeolnRb6YF8CZFMesSTA/s1600/ojamajo-doremi-s1-133679l.jpg",
+    "ottLinks": [],
+    "memo": ""
   },
   {
     "id": 233,
@@ -1392,11 +1432,16 @@
     "id": 454,
     "title": "나나 : NANA 더빙 (애니원TV, 챔프TV)",
     "category": "애니",
-    "status": "expired",
+    "status": "active",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx3aiPE2ydPlDAXEyulfMMh3mFWLITQkdmL3paWcb82I7B0GUltKQS7a2aMBsJtzXFIkdqBETYAVJILgrpsHd1LjaQ-RP44TsMcodPretopEuMXTpSCNgNhbA3_E2iQjqqRheyC_H_hnIUqDE-I_DX-XFCdsmSqUbwEcbjuzf9NCeyzQOT47grE671hQ/s1600/nana-112103l.jpg",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42124"
+      }
+    ],
     "memo": "",
-    "isExcavated": true
+    "isExcavated": false
   },
   {
     "id": 555,
@@ -1505,6 +1550,35 @@
       }
     ],
     "memo": ""
+  },
+  {
+    "id": 852,
+    "title": "너의 이름은 재더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/JDrJH6cKnBhpj5AV-KsNGCRkTRtfwq7F2zq-4OPzPH4wSmqUdV8epYTPKmCFtadVS2iZtaGKw4m7Ak-zlhw_jM3cevKYym4KIAI5AcizPmcjrzXJWG8Rh-d05Hn-bybHtAmnwMLege21-4Tk5fuQTw.webp",
+    "ottLinks": [
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/movie?movieid=MV_MC01_MC000000050"
+      },
+      {
+        "name": "U+ 모바일 티비",
+        "url": "https://motvlnk.uplus.co.kr/?a_rtype=detail_page&contents_id=M01177K374PPV00"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 851,
+    "title": "너의 이름은(구더빙)",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/JDrJH6cKnBhpj5AV-KsNGCRkTRtfwq7F2zq-4OPzPH4wSmqUdV8epYTPKmCFtadVS2iZtaGKw4m7Ak-zlhw_jM3cevKYym4KIAI5AcizPmcjrzXJWG8Rh-d05Hn-bybHtAmnwMLege21-4Tk5fuQTw.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 594,
@@ -2105,6 +2179,16 @@
     "memo": ""
   },
   {
+    "id": 861,
+    "title": "디지몬 어드벤처 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/D_kONgr-ZB3qOmprJ1j8DB9LkgZ3IDK8lWsKc_79I3NFKbV2QNkD99p7lPT2uXj_01IM7kTtqLLejpA-dfIQkzVrv0Fj0tJLwyGk9SrAFVxTd8ffsCuTQaVmIi561VUT7j1uql55lQZaRpT88ddiPw.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 124,
     "title": "디지몬 테이머즈 더빙 (KBS2, 투니버스)",
     "category": "애니",
@@ -2204,6 +2288,16 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuBBwpX-O98yjS85AJdBclZITGQJnrXx-i0IstaLIEmYMiavTR1g6QTHrvZ_MjYpbyshzpfYx3aH8dyaQEYe7ihe2yDvXRiJIClTB1MSywHNqI8SnKm6yNrm6_gH4yjVURf0PYmQcboxl5Oi6941yzwJ5ozbqRiD7aLddJ3TgMisqDoc76Td0mGLasHA/s1600/radiant-95345l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 854,
+    "title": "라라랜드 배리어프리 더빙",
+    "category": "영화",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/_B0NI_E4Mj_ZliPQcAh2RHYJchkvyb20GbWEt6SI6KmEph4UuxrHxmpeeDj5lvHk8Tu4RI6bIb1IVbb85UG7rSUhYNaADgK42899TdHh3l-COjT4TlP1WDGQeU7tMik6DT5OqjPx-m_BNkKtyxOSBQ.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 336,
@@ -4258,6 +4352,21 @@
     "memo": ""
   },
   {
+    "id": 850,
+    "title": "스즈메의 문단속 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/mB3XvwrGUd6fKgYvbwljGFaxM5Agk3YshO7qfgTU-Yz3ZHzueEe6hRRhERBmFAuuKNLdtNct7-Duvl-LV9qTUXY4Jlx2rittXi1cORRZveuJSE_H_TF0B56j-RsPdCWQZNFqP4edpX0p9Vm-J6UUfA.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41933"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 701,
     "title": "스즈미야 하루히의 우울 더빙 (애니맥스)",
     "category": "애니",
@@ -4386,6 +4495,16 @@
       }
     ],
     "memo": ""
+  },
+  {
+    "id": 855,
+    "title": "스파이더맨 트릴로지 1 더빙",
+    "category": "영화",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/bDHN8Po-yIwSZXBUWVHngIdokT63PzzVHT20GS0RNOA_lbBE6-wf1_u2HLjft_Y_zu-m1K6mqhFSo7e2Bn9jmvlydGmSfZhD04Uxi5eN_EKNh62_0jXYlplKPbxfGkDuZjtUmvRgoecsCVyDZaXrtA.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 845,
@@ -4668,6 +4787,33 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIJAt9UDZZpTLJU92OHlFe9FBWKoFlVam4OzXmHbsDz2DwUjXqyIT0NtlN6lYmxvxsy_Jc2SHSpDcaB0JGgzyylTfWTz8EhbZoV8A8Luf06r2DSrV6DBrw3aWbAgngh-YB4sM82VuaLXFjuZPbggBjYI-nbynNEpDuP_pl3SnGj1FjJHFkbsBu2QAlbA/s1600/kobushi.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 859,
+    "title": "싸움독학 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/GuychMidMar_WhRhzVNS1FjKMjjNfa2MSofWWWg3St1Ee2NtlSazTUGVpwh_gAU6ZEDQ_4mAP37uWhZbV0ucp30AqfTerE13XBZzT_klDC3KH1hsAgRiJZ3w9aOFkIgT7BJe2pjs9J7Hb_v2TcDfmg.webp",
+    "ottLinks": [
+      {
+        "name": "웨이브",
+        "url": "https://deep.wavve.com/content/J0401_J04000000015"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/E004174723"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tlGNMQD"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/43725"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 497,
@@ -6006,6 +6152,60 @@
     "isExcavated": true
   },
   {
+    "id": 856,
+    "title": "이 멋진 세계에 축복을! 1기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/m6JRPNyqGQ_SkEjTJz3VW2mpkOTeyttvoBrkQ56ljtKvCWCbgnEePrrZ4f2ExJlRAso5z3CkUGcDyc6ohGof0jcAkeIMoEQqmGb6VUBYRqJe7rE-bqXFMjYB_dwDBpbyV4bCSzdWe4r5cNod41BkGA.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/40468"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001566418"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=A01_A00000000255&history=season"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tEg8YJR"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 857,
+    "title": "이 멋진 세계에 축복을! 2기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/LjM2JPn0OGzw6SbWvBJx1Z28dqLb6T-PHopr8q_GgY8ikvvwwT8gy7PLb3BnEcgBNSoK3fTbRAzNwOZ71gkWYT7EJlcS-24m4MFzP0EwQ0aSgq5sq9jUnRhWf8JqVCYfhvuzI_v3TcCFQAhXJ9apKQ.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/40469"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001566828"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=A01_A00000000256&history=season"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tRXdmKR"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 159,
     "title": "이겨라 얏타맨 더빙 (재능TV)",
     "category": "애니",
@@ -6588,6 +6788,21 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHsJBtCvfdTeCRuC1BL4moUDtYJZFdG1rBq3hKooeziCB54CZMGBhLZcdH4EqB_ZLUiH8pBaPLtZZzLJedFw9A1ZxrlcBb1rNAYbZW35ECl8CBx9cyL2OOgq7lut1-a1gPBDhbzcmLQg_7GmOTohfTVWfyapg7ZSIic9OmFon2EBUx-9W6_VFIsM535g/s1600/peanuts-animated-specials-korea.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 858,
+    "title": "창가의 토토 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/9ksq8wiRG3F5hvekBCT-N9_z10gbCrfxERlFWBdrlPcFJDkkXKNViHVshnBZob27CmurQuOQQ5mPvQld07M4CkYCoKgUQRFAkCRCYiFDTVuZWBUEthozEgMBBNK7QmW8YOhZ1G_RjH_ZBTmGFgdBKg.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42303"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 396,
@@ -7320,11 +7535,16 @@
     "id": 679,
     "title": "탐정학원Q 더빙 (투니버스)",
     "category": "애니",
-    "status": "expired",
+    "status": "active",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9LA2bckoNV4sxONRGmrMl5xoXcug0W3R9HGu8FpRQvU_rSwHR3KwHaNks6n5FBBshr8a-VzVlYkmwsIwumC7BUO4jMceWySUjiK896YTT6rlKELa_nANPTaatynSASOMwOqYtOqkcgU0FPYJS44O-MwVcVa5kCLnW05u2lNoNprC5JTyeHkBwTGY3tw/s1600/tantei-gakuen-q-120766l.jpg",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/16118"
+      }
+    ],
     "memo": "",
-    "isExcavated": true
+    "isExcavated": false
   },
   {
     "id": 132,
