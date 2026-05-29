@@ -676,7 +676,28 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/lePKDNL3VqTXPo-GKg_llQWgopAY6IMSAaCARiCZJ0paQ6yxmS0c1wqlWMpb19x_PDb2ZgnpeTTmoPzCT7-O5YMoWXUpBwm2LOkCOvutzS5t-JaEekOPhcLAiH_ZkRYIj-uhgipI42O8MuaJCyMtoQ.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42816"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001774176"
+      },
+      {
+        "name": "U+ 모바일 티비",
+        "url": "https://motvlnk.uplus.co.kr/?a_rtype=detail_page&contents_id=M01255K193PPV00"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tEqZd4d"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=A01_A00000000432&history=season"
+      }
+    ],
     "memo": ""
   },
   {
@@ -1306,7 +1327,7 @@
     "title": "늑대아이",
     "category": "애니",
     "status": "active",
-    "thumbnail": "",
+    "thumbnail": "https://i.namu.wiki/i/LVOhhaQnwZQaReARabn-dFtUiO8arZ9tpQ-Ifqi5zPU3ReROQ9TqnCyt3YdueNx8TrSDiTAOfe-8VKmJnEGjeNhPefCZUEiEAFzO_nTwBPDQldRlra90whdzG6ZOkHzXhjQxm1slvA4_2e2qCIRtDg.webp",
     "ottLinks": [],
     "memo": ""
   },
@@ -3150,25 +3171,7 @@
     "title": "블랙 클로버 1기(더빙)",
     "category": "애니",
     "status": "active",
-    "thumbnail": "",
-    "ottLinks": [],
-    "memo": ""
-  },
-  {
-    "id": 808,
-    "title": "블랙 클로버 2기(더빙)",
-    "category": "애니",
-    "status": "active",
-    "thumbnail": "",
-    "ottLinks": [],
-    "memo": ""
-  },
-  {
-    "id": 809,
-    "title": "블랙 클로버 3기(더빙)",
-    "category": "애니",
-    "status": "active",
-    "thumbnail": "",
+    "thumbnail": "https://i.namu.wiki/i/ZyxyFShJrqND1Q1Kl4owbi0ZhC5n64N4Sgr7h8nlCjazhYkgul8Zb763ZgVyLJeTLFudZiRVbxbdNJFoL4aNugP25g-cgHR37kv_L3fSP9aMoyBKO92Fm9A7MBfdriS1fXxtQir6bqqxlkv48DUGBg.webp",
     "ottLinks": [],
     "memo": ""
   },
@@ -3210,10 +3213,10 @@
   },
   {
     "id": 801,
-    "title": "블루록(더빙)",
+    "title": "블루 록 1기(더빙)",
     "category": "애니",
     "status": "active",
-    "thumbnail": "",
+    "thumbnail": "https://i.namu.wiki/i/gbBwXf729FPFVpx7j08VDpI9nQW9RSMDviF_Ov8dt_2Kk5jaQPJAn6ftUXap2h_pNtLuW-k2_SHuyw3Z3aVbE1G8cFjBLPHFVZsuUPr4u8B0qkgEoMcVbfsFQD6rLlSeghy5oEJ9sFxoLDP1FVEjQg.webp",
     "ottLinks": [],
     "memo": ""
   },
@@ -5294,7 +5297,7 @@
     "title": "이두나!(더빙)",
     "category": "애니",
     "status": "active",
-    "thumbnail": "",
+    "thumbnail": "https://i.namu.wiki/i/eUW1nWy1vaW4eKw32hJ2VewYAIY8I0ZFyKI8VZfidZxfuSDtv_34Vylc7cqpqC42PdPdbrWM2R6c9Ag8JY-aVQaTOdNBGEqbTMXj87ZGfztVp1W4k1at5xEVEmHnMVAtWRmBBv-3bMLgZXKqislMFg.webp",
     "ottLinks": [],
     "memo": ""
   },
@@ -5854,7 +5857,7 @@
     "title": "천관사복(더빙)",
     "category": "애니",
     "status": "active",
-    "thumbnail": "",
+    "thumbnail": "https://i.namu.wiki/i/iHr2aYIX_OifkKPFnvgbIfHJKfDc-x2xEEBz3X2-G6ShNW-lm4LHV3T7wr49ev76WBDHQEFdQAC2GKUrCEcmBQx8tBhn3u2jf7LScLP3NVZESaXQKwSZui3ciIsRjs9lgDRX1E_TUphgIg-pSnvqrA.webp",
     "ottLinks": [],
     "memo": ""
   },
@@ -7437,11 +7440,31 @@
     "memo": ""
   },
   {
+    "id": 813,
+    "title": "Free! -Dive to the Future-",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/JdkFek2I-M88riYiUNo1l1Uj8cmrq6onGTDhFsiybUOeLYF20kExqUwZw-wzneM6tKJDi9HAV3L7j0x0w4QTpe4m0nDmbgTfmkbenAiBNU-EmGMtL0vgvKeW1_eY9cnp-ox9TwvgrCwHhO_Cok8JNQ.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 812,
+    "title": "Free! -Eternal Summer-",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/tgJf6r1qpNYJ4yRi6QdP0PsBauGCe7pLd2iTG55DDywWhiSbwji09_TLx3CCYGCqIEneLc1okDI-42hfSBvaBPRiTI1aT3nbMPSDPHKgU-NFbkXD3ge4k9SGZIgNIfQ_Rdvc1YE7zGyLeFzYClrWgQ.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 802,
     "title": "Free! (더빙)",
     "category": "애니",
     "status": "active",
-    "thumbnail": "",
+    "thumbnail": "https://i.namu.wiki/i/PkOD17FGszF4RXX1j_K76SsIDlmSTwghVIRak5kaBgVsWGO8ZUVJ7IKQPD0G_Xdj4C9RZYNTCoT-RQpxOxVSUMxS7NbXXVkexteRgaiDG17hXdU3DEo2aFCXcjBtVew27H1bKZIzc_QNQINKfhJAwA.webp",
     "ottLinks": [],
     "memo": ""
   },
