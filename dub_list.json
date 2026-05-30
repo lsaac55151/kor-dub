@@ -510,6 +510,16 @@
     "isExcavated": true
   },
   {
+    "id": 937,
+    "title": "겟 스마트 기내 더빙",
+    "category": "영화",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/OzXqdFljYIxfyweq80Vflhbo-ECDZmyexLKpPX70QQGqs-ZZoqbVBN9PB-NI7BAEPtku86O5f2mbAP3V4iEtdgYRZMIXIvBOj7Qlxh34QPEnc2i9wmE44KcEhLmBHeSEGbK1La9eTRLFHs2ZCd_TZw.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
     "id": 72,
     "title": "겟타로보G 더빙 (비디오판)",
     "category": "애니",
@@ -8088,11 +8098,61 @@
     "memo": ""
   },
   {
+    "id": 942,
+    "title": "카드캡터 체리 투니버스 재더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/6f683e86-6ac3-491a-aeda-cca7b83bfc6c.jpg?webp=0&w=380",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/14433"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 319,
-    "title": "카드캡터 체리 더빙 (SBS, 투니버스)",
+    "title": "카드캡터 체리 SBS 구더빙",
     "category": "애니",
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbsJHu_h2H2VR-0kqepLdavDiy0msbiXQ1oIjzdADItzwhEm7WjNDx8HrQogWy1Uir6O4pwJAoicOGHXWUWPB3QHKV3NupHhKSAFuwOL0XqLCW_BpArrcDTiK5ruQ4YqaXsKUwdCgIy7bMa0KodGwQRApiKYxndH107G87Qt6P97H1IwDhiCI0lFoOEg/s1600/cardcaptor-sakura-60781l.jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 940,
+    "title": "카드캡터 체리 TV 스페셜 2기(극장판) 봉인된 카드 구더빙",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/vNduoGk5OZF84lbTgnplNGCN87EuKpYvwKKz1thjFTUBhFajJkgNoXW6r5lA_Tcmtr8YzTejlf3YZD2Ikn_J8vEDsrPjsomKt0Y1H7qqZO-gfwlkDREJ0z5VgAKNLeZ_ibmC_yH0NzWeVshyCeZYOQ.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 941,
+    "title": "카드캡터 체리 TV 스페셜 2기(극장판) 봉인된 카드 재더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/vNduoGk5OZF84lbTgnplNGCN87EuKpYvwKKz1thjFTUBhFajJkgNoXW6r5lA_Tcmtr8YzTejlf3YZD2Ikn_J8vEDsrPjsomKt0Y1H7qqZO-gfwlkDREJ0z5VgAKNLeZ_ibmC_yH0NzWeVshyCeZYOQ.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/14434"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 939,
+    "title": "카드캡터 체리 TV 스페셜(극장판) 구더빙",
+    "category": "애니",
+    "status": "bddvd",
+    "thumbnail": "https://i.namu.wiki/i/xLlR7nlXyLhVu2fq-ZA61ctLRDbGHW98U31D3nvvoWzHIOzR87gFqimyNvJ8KjhUP0ldfCLpcbaW30vilReK4yg7QM0dvVrosbLA5xFhNq-GiZfNKshu6egbgwMR2cirwR42A07qpDakWjn5JdRRLQ.webp",
     "ottLinks": [],
     "memo": "",
     "isExcavated": true
@@ -9328,6 +9388,16 @@
       }
     ],
     "memo": ""
+  },
+  {
+    "id": 938,
+    "title": "헤어스프레이",
+    "category": "영화",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/BMTORYmSDvQ4wB6BepxZ6BBK2t4HkUmC720XifAFXyX6ZOVJLSHxE90_mG_eL1TEw-PcarvRFZCivzgFC9nl63vwX0_brblSqZKXQgX4tWZjS6UrW2RojkRp5Vz7FteHlXD4Yrf3fIGzlqBG5OqWRw.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 630,
