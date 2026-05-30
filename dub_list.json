@@ -1631,6 +1631,37 @@
     "isExcavated": true
   },
   {
+    "id": 921,
+    "title": "날씨의 아이 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/f2taRGU9Jyy_kabongxi8v6eIHxyXQ5ZfLuHbi_1K7atCkBpLammD5F1Ibj4V35Dy_mBn2tdDfdl9B5QpPJd2_8jKNgXUgP_6EZkdTG5K01X1GfW55xzAxFqmfwtOjejvBRGOACsQxbTHvvkhXnrKA.webp",
+    "ottLinks": [
+      {
+        "name": "쿠팡 플레이",
+        "url": "https://www.coupangplay.com/content/e2f5a35e-109d-4720-b142-7e55603f7b3e"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/movie?movieid=MV_MC01_MC000000049"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/m5nwoZ9"
+      },
+      {
+        "name": "비플릭스",
+        "url": "http://v.bflix.kr/6LFq1"
+      },
+      {
+        "name": "U+ 모바일 티비",
+        "url": "https://motvlnk.uplus.co.kr/?a_rtype=detail_page&vod_type=vod&main_run=Y&backkey_finish=N&is_splash=N&review_yn=N&contents_id=M01205P239PPV00"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 481,
     "title": "내 마음의 비밀 더빙 (애니박스)",
     "category": "애니",
@@ -1716,6 +1747,14 @@
       {
         "name": "U+ 모바일 티비",
         "url": "https://motvlnk.uplus.co.kr/?a_rtype=detail_page&contents_id=M01177K374PPV00"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/mOo0PkN"
+      },
+      {
+        "name": "비플릭스",
+        "url": "https://www.bflix.co.kr/landing/6LMwQ"
       }
     ],
     "memo": "",
@@ -1725,11 +1764,16 @@
     "id": 851,
     "title": "너의 이름은(구더빙)",
     "category": "애니",
-    "status": "expired",
+    "status": "active",
     "thumbnail": "https://i.namu.wiki/i/JDrJH6cKnBhpj5AV-KsNGCRkTRtfwq7F2zq-4OPzPH4wSmqUdV8epYTPKmCFtadVS2iZtaGKw4m7Ak-zlhw_jM3cevKYym4KIAI5AcizPmcjrzXJWG8Rh-d05Hn-bybHtAmnwMLege21-4Tk5fuQTw.webp",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/mOo0PkN"
+      }
+    ],
     "memo": "",
-    "isExcavated": true
+    "isExcavated": false
   },
   {
     "id": 594,
@@ -4752,6 +4796,14 @@
       {
         "name": "라프텔",
         "url": "https://laftel.net/item/41933"
+      },
+      {
+        "name": "쿠팡 플레이",
+        "url": "https://www.coupangplay.com/content/c7174d47-65ca-4cb2-97ac-817b6acdda6b"
+      },
+      {
+        "name": "유튜브",
+        "url": "https://www.youtube.com/watch?v=5suRaBCI21I"
       }
     ],
     "memo": "",
