@@ -1644,6 +1644,25 @@
     "isExcavated": false
   },
   {
+    "id": 932,
+    "title": "나와 로보코 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/87ae5ee4-3795-4630-8018-576f6ccdbb93.jpg?webp=0&w=380",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41444"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001719100"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 244,
     "title": "나유타 더빙 (비디오판)",
     "category": "애니",
@@ -1711,6 +1730,21 @@
     "ottLinks": [],
     "memo": "",
     "isExcavated": true
+  },
+  {
+    "id": 935,
+    "title": "내 이야기!! 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/3QnvlFtQpb45u3Ew8dMJ1yg28KIct-I7GQMEvTpdx7-QB0G9eputDEmYH5wTkQdpHXZKPAJZbfDBKHOsWbufMA2oPDSDlLhHvr4LgNj3ltUKB2ampnnnkRcB25VKQaqpEc0OxXOD_Lq8aD9KifMoYw.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/39307"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 14,
@@ -3661,7 +3695,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQaxL7GeWibfox5vfmpC33MRkBIPRE8wZCCuvD8s5n-FITp_eAe4adbY76gskcdzU2XzX9yvEMUH-KOTW76v-cBiZaghLDtFpEX577xFAvGVQzvf7FhYv7zu1DkGFfkUdphruC8-0pc0AzMXHWmxUd5DJc1J3AOzKgBHcHR9JySKUngtLw_yz8KVhUxg/s1600/rurouni-kenshin-119505l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 160,
@@ -4109,6 +4144,21 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8OlewpPCLsE3OAN_XklPa_ONVPm6E5gKcBjQmvd2-IMBCMQQsSuo0pUtFNbp5zYYXgXfy_dO8LfEB7ESGFS0jSL3px6N9jz35mEnkxKOZIId_0212SCWZwUDn4avfbth01ZcLeANZ5d3dEJIkw9yPj_O57x5n_gOMLY25pvKD1ysKVWHj_OmM1aKdaA/s1600/my-melody-23594l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 934,
+    "title": "부호형사 Balance:UNLIMITED",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/a744b633-c319-4798-a665-eb8613b11fd1.jpg?webp=0&w=380",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41974"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 91,
@@ -5439,6 +5489,33 @@
     "isExcavated": true
   },
   {
+    "id": 927,
+    "title": "아메쿠 타카오의 추리 카르테 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/PbNoyg-0ln-aaeMfnNZ0UkO_nGEh9u4U1yxeE0kCITxSxd_jd7-d2vztFhtxb1_FJtadITPOhFbWzcPFKXW7Qym0MznCHgXHRTwDAq5w52yJKkcf1vFa1RHkLY-QApp0PYL_p1UTywOyZYDkv8eYVQ.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42861"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tRbqjnr"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001771272?utm_source=kinolights&utm_campaign=kinolights&utm_medium=organic&utm_content=title_provider"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=CR02_DN0000000673&history=season"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 510,
     "title": "아미테이지 더 서드 더빙 (투니버스)",
     "category": "애니",
@@ -5673,6 +5750,16 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW6VRwen859fzZk2LEBIQTrd0AmB2iI9Qyz18DFiDi_6y1h3ABmcAfDkH1NaraQ5yUOxyxksGlmgg1-gow0Xjce0St13H9yxu9ZZqlhsHCr-vRwF46jW67miNy9_d1KuBQbJAQam2tElAH-LM8Qhsy3Clqo0j8i-mjo5lqwLWRS2ahpbwq-tw2cFfX1w/s1600/digimon-app-monsters-98841l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 930,
+    "title": "언데드 언럭 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/4LEG2C80RzDIyXOy0HBHVxBhDYx4-_gkLxKHfe_RrfKXhpEHaGqspkSbU9_T8lOLHzLvNwLTj135dsOKRn47uhVuWX3yzmpP0y33qlmWhwCy-SINT6eclXf5pMjWTShDJ-kHByZmk1CLpt_FGKM4hA.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 234,
@@ -6139,6 +6226,21 @@
     "isExcavated": true
   },
   {
+    "id": 931,
+    "title": "우라미치 선생님 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/Noq1Fz7M1Mw14_kKw_f7WuaITN_Gor8x98i3euxGvczOQpIW1STOfmuw9pcDEhrDvRS8LQ2Bo4-9ew0Sw1ONiFrKus694TiyG3U4PFkoHtLiWGY66a69Rpsw85CZn3zvsW2eAMoUndBsGImib3WXNw.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41612"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 479,
     "title": "우리들이 있었다 더빙 (애니박스)",
     "category": "애니",
@@ -6556,6 +6658,44 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHwRTY9aNTbh5U3wbAiBsuF1mi7hMafOspOGC7GeooS_AO3wL9nTTfJDvkjeE-L3mDcNsPXApSM_EokngbrcEfHaK_0EPvZ0yebg-vsm3vUlnVFnwxfdREtlmMjjLrxs4hLzDXlllCnxhEpu7C-5qcd4UB_q9t93dJizWWR_GKLbzDcxr1ZLkgCwQLkA/s1600/windaria-133835l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 928,
+    "title": "윈브레 -WINBRE- 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/M5zeTWlirb6TI-JA77AIbbuU1lKBkzgYEXQ5ninC6arkx5WlwNyWyZ0OsdjUG1KKKWNVf4NVqF85e8eMiPlzX-PIgEELLhC5KrJgUb9Nu_Yb329EunaTg3QwgF2KiET-Mg-vDWF8hGVBZZJc6FPfBw.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42322"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 929,
+    "title": "윈브레 -WINBRE- Season 2 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/TZ_H4VoL_XgTSfCQcQoICjjL08O_juWdfnKUhMZnTvAbX286sDTr9gq4wsxw5d41j1K2X0lVAqTu2iGqGdPGTkjtuAMs9sHNKZ-UpL8Wa-kVJ3gltuTUQfZ0Dz3D8gMjKBCqG5kukI3KbIjAuOZHtw.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42862"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tRB6MYq"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/E004363131"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 409,
@@ -9018,6 +9158,21 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwZ9XzheKYuoq4hHreVGPArwCXobGaqNz6DK9pI0Td47zl-FmNM_-qKlhN9L02kWcyh-wh33Dvxcaa9mAQKgAr3M_cvyQ7-HNTczW5tuvwvpq0Csgc_j5u5OYWpYIMDHw-bc7LEqRiQVq3DESVGwpqI7XL1WDSYlRyo2qh_xjvxSn6ivUie_iauK1IJQ/s1600/gakkou-no-yuurei-54087l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 933,
+    "title": "학원 베이비시스터즈",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/PsPlf62cTQE8_naEX7zZ13LFNpDBbRJ-30rltP0QORl6qFfUQd2p6ARjUO7WzbIAdgnap9_ri7l-gnjdMwgsyv53R3p8AESZlJ-Rjd6_bIKhtZZIfkNzpVefRAurPACpIrYNf-rCoFQIpZsFYBbIvA.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/40596"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 467,
