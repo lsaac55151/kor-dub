@@ -3330,6 +3330,25 @@
     "isExcavated": true
   },
   {
+    "id": 926,
+    "title": "명탐정 코난",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/-GJt0hwu28sTJIvnKdsStxjq2WHVVYuEyaAr9DYLJdw6qWnEUIgB1Y8zNNirN0iTB4-VOnQQVvimh0SS9uvUVvw2Lg6Hu4YLELnBHLzaVKbmVbQCcstXifNdIr-93pqcZoORezo3ec4E-lWh1hcD0w.webp",
+    "ottLinks": [
+      {
+        "name": "티빙(1~24기)",
+        "url": "https://www.tving.com/contents/E004535164"
+      },
+      {
+        "name": "라프텔(4기~21기)",
+        "url": "https://laftel.net/item/43755"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 240,
     "title": "명탐정 코난 미공개 X파일 더빙 (투니버스)",
     "category": "애니",
