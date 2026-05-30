@@ -2867,7 +2867,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkUyjrcFNemTTpZPu2-puJhB-0ZKaghDp4v7r2RfESzF047xuyKyjX1FTfYcj66dDRmerM2SVJWe4LVLYPBX-VA5f-YscBy8l6YONMigOEPbp-SJDa-gD2avNjn2_B00y1WBW4NwuNfvpZV12Zf2lLsOrz0RfVEcrGKJaFI2QBNuSzWGoBivqMpYRJfQ/s1600/rockman-exe-94654l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 463,
@@ -4064,7 +4065,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzOaIH1lqa6yxTHrsTU8wFY-hp5VfvRgZ5eQVTTYudI33zZeClBob3l6cpYXwNLlvlhYtLq1YeE23PfURSstP86KsfyNvL978qsUDQh2ksDzhVUMUMK_JRT83TWnsaXWmJqO2zWCtrGpJbAEm1ZZz0psOE07G3DruI7WBw7w0y1gZqX3Zf4A2R3XBDtQ/s1600/kirby-22184l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 528,
@@ -5121,6 +5123,16 @@
     "isExcavated": false
   },
   {
+    "id": 943,
+    "title": "스피드왕 번개",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/2bKVQ6QccEIGGc5lFfmXuBKlM2UA0Jqr7uIQwc04CyvAwzEDKuwvkqjntdihQtIFBtqJiLTw8BmwsE5F-rvs_qMKMKFuHXOYyPaFA-U322nOlKYHtiPsTzSb-wd__fbboAb08Izaj1iT8_h7mb8pmg.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
     "id": 532,
     "title": "스피릿 오브 원더 더빙 (투니버스)",
     "category": "애니",
@@ -5211,7 +5223,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4tR6gyYrKUdxtVnK2YQmL4dVKZ7IhWwNAEetnNYwrTf5aVnEXkHdlo9s_JH2pIAkdBWSYvQGtvCFaK1gPAEBoyIHgHjj0px3c1RWseM08ZK2_91Nobolu_o0RJEuuAN1fDYxqRSvn6emtKYGWOWkzBtTqpKXUcO9hzbaTNCCr_TOKvrU5_uCFpCB8yw/s1600/city-hunter-107580l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 137,
@@ -5569,7 +5582,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv_maLVZI0pFKU5BCMf2I_KuArltubcXcQJxAZIW3e-10c25GJ_5h_7V9O154rFzp55Mf7WQf2XSqSbRFi2UimFBkazWZ8XIHQoL6Y_HSIZB1RiyaYPatFjruU3K9a05cULin92ys8FwWIvlnUbmgjsS1SbtKTosmzW3tHbKJwXJrpMN-IpJS5ReGrhQ/s1600/kodomo-omocha-133512l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 2,
@@ -5620,10 +5634,11 @@
     "id": 646,
     "title": "아즈망가 대왕 더빙 (투니버스)",
     "category": "애니",
-    "status": "expired",
+    "status": "bddvd",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpGbn7gGqwWBitChfVRTTxlxjCYDvtg99ZJFxt5XbWcwG5WfxCLbg6MYTtpfz6IW9I3Ai49aGfHWH_GEfNZSvduDleYDn5LLwtKV742UWaX36D_ASgizHyTBMm7ndCvhZg7vGoxBuR7tVBhqpz1_R14M635qbWsrDs7YES_eyG71zH6xvUAdiouyMCGw/s1600/azumanga-133588l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 698,
@@ -6918,7 +6933,7 @@
     "thumbnail": "https://i.namu.wiki/i/5UjhKKHIL1QfpugKS7J3nfiwahcq0ihWgIYFDPPwdkIkTNiM59N78JZsSrB6YXCe1riQPlOXg-_5QbMwgPn3NmDaFrVvvnDEhLGIHx6LjtgeWGABRFe4BlEZxHQOkaej5Z-ss1viJ0nmw4G-spu9cg.webp",
     "ottLinks": [],
     "memo": "",
-    "isExcavated": false
+    "isExcavated": true
   },
   {
     "id": 691,
@@ -7103,6 +7118,16 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTuEo4YvEd4iF-fU1Tup79Q9z-6BJ-5Ii5Fiw-5u0ZQKIbkPtFFbTAYXL1MesCTemQKFI96IImoTGxxNKspREfSE7OPubshCxqfzcH5V7pnqsBZtH0HFIiUTQ8RURnP3r545W5_kO1vQxVLNkJjwk2pLdy4TKMW77VBKcj2Sg8cnOwR7iBe0ufp2ZXIg/s1600/jin-roh-103343l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 944,
+    "title": "인사이드 아웃 북한 문화어 더빙",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/XMKfLZzHJ0aJA-n56TwemVH6XHYlUXZSACfSFtbfmBFeYg3EJvRjpLTXrYIzUAEaa0BpzJFfHOU_a0vCVjBQN-V7BGiuon0CUQwC3Av19A0tdB_I-27uPNUfnEt3ZtvIJBXH_Qh29Ekc-8uRT_MrFw.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 20,
@@ -7749,7 +7774,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9RZzklwMKNaNVIWhQQw2iT39561Js8SfIBZqspVnOtKKgLHmJYxrs65grORSycEBjLNOtCC-X3FUjrF5J13I4Y8g1fMfhuycFlGtRa1BJcwIn4RWy_L75YotII6xeXKfSaT0JZ2HGuKKsAFQEy2PR1Z-bU38J0MHthRv-qIPwgrXbj4PebYlInCINEQ/s1600/gokudou-kun-94117l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 11,
@@ -8351,6 +8377,16 @@
     "category": "애니",
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvxY139e63JBZeghFpgSMvr8R0ZBJb6YVfzuFEGhFzkMdKRt3VECEZfe8FZQr_44L6ZolLwxiYHwZeZa4ZXA_BlOQl3Gv48rSrau4kEul7qjE6d8YUf6FVBtOSKu_4w2xXpJaUZTpxLW9vbwUe7v2hkKDItAzjtgK5raYZPd5BJxw7r0DZ1h4GaXAGWQ/s1600/kaiketsu-zorori-131495l.jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 945,
+    "title": "쾌걸 조로리의 공룡알을 지켜라 더빙",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/8099867e-6f60-40cc-b461-223850865bd5.jpg?webp=0&w=380",
     "ottLinks": [],
     "memo": "",
     "isExcavated": true
@@ -9547,7 +9583,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixNsWUwHaNqWDgNuWMMbEdr2c953_jToCtsZ2rICXFKtGg0VTr7fEI47uBx_G_tipVMYVW3g7W2qYzFGXqV4_Oq6wwGt2Ig5OZDPmFYaoVt3B4aHByZGsVTZdvQwzYcWLLbsYYmHnbUjIJIBMJyPDBmOXfeLnlj4SCp_OvAoG-W2K7HKX1ja_W-IdEkA/s1600/fruits-basket-75204l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 674,
