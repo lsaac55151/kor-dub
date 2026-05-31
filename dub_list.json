@@ -3975,6 +3975,21 @@
     "memo": ""
   },
   {
+    "id": 954,
+    "title": "버블 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/FH4QKIZAAx0_rJ_15V7VsgER0fIJxooD9xKPlDX0h5HgnKbj5J3EPkblWReoJlutk9HNEGsMoh97aOdXtNF3pLvUqabxlZipUlM9HiAUtv-fZQVBeO-yOdRucGQ-R8yS6-hu-Tng6zXK9RzLCb3jeQ.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/81345945"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 464,
     "title": "버블검 크라이시스 더빙 (비디오판, 투니버스)",
     "category": "애니",
@@ -4018,6 +4033,21 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj85nXyu9RxOHVLP_cJH64UaxZNuQH3IsQ44iKhLH43I0T6LwfbLACr2gO5CRC281-F7xEAqMBJTzKn5qpi8TVHdx9-hIn1zfitLA3pQNNuSL2iY3UHtkP5ZA2YNYJ6FvJ2AA1b3bEVLXVo9gWwv5ffhrKRNZlV3ed2hl3rT_qaQmxEj1nAstYA-IMySg/s1600/burn-up-155058l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 956,
+    "title": "베르사유의 장미 2025 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/073KAtVVgzJkPTqAmknKeGXbM8jLsT-IF4b1eXACGToNxvjvMgxAU9RxxY8NbCcnIBfxQ7IRxPBp6NhRwYmEZH-NB1yWew5wSNITOUGwr7XGazJeprpLn3lbzgwgW2cFyT-b_wiqMgxk3OUMx04_vg.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/81177638"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 5,
@@ -7586,6 +7616,21 @@
     "isExcavated": false
   },
   {
+    "id": 955,
+    "title": "좋아해도 싫어하는 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/xf2lFjIUCl-E5Yl39x0iADrpmBWtXMWIHjvxhn9wmpi7Rpymq_zCjq7K2AytK69lMnr8IRXzj9LRS74_CRhSpJfL5msdabsiWYqXB0YQS8rqBn63iI1RHsc8vg6Kq6Vio_M-LUnpXZNxIL2GZY37ng.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/81582442"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 588,
     "title": "중2병이라도 사랑이 하고 싶어 1기 더빙 (애니맥스)",
     "category": "애니",
@@ -8472,6 +8517,21 @@
     "isExcavated": true
   },
   {
+    "id": 952,
+    "title": "케이팝 데몬 헌터스 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/cbHQerg-PoFYONKTgcKVm5sTM5OXt_cgw77PjZJuUZlD7Uyv89WFKjseXCoOb9kpvdDrYONZXWdxPYPZuxhXhVhfBTlOeaDacoFl_ghKV0ncf4lawCJFTPECL7yIAlBC6y8Q2U09dyhn-dSFSJ8yIA.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/81498621"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 950,
     "title": "코만도 더빙",
     "category": "영화",
@@ -9187,6 +9247,21 @@
     "ottLinks": [],
     "memo": "",
     "isExcavated": true
+  },
+  {
+    "id": 953,
+    "title": "표류단지 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/L2uO_ZWLqLnqzhNDhebBpWgBG-H4pTkZZv9XLUJL_C3M8tqpgdLaWIWlDNl9DTW6wzhUjDjMe2VNgZTO2kgfH1X07ReZtnsp_5fU5007AywR-3n2ZGv_sxM07wEKronTfmd5FeN7TXvUaCsX7wo0ZQ.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/81328781"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 372,
