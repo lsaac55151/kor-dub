@@ -694,6 +694,48 @@
     "isExcavated": true
   },
   {
+    "id": 948,
+    "title": "괴수 8호 1기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/u-DfMH_cIU82U2ZSk6ppJWSH2ZlIAXo8ELK7MmR7vJz8T32DQQG6-YgWX48MyHqJggAaHR_dsS48M3sM2ZuL0Q9lWBCXSTPeWUDHGc2rr_tmEJYUHIcxNFejMR3WTL9H97typqE-coyqJ8iP0zJo0w.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42212"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001757192"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=C6101_C61000000770&history=season"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tEkOvOj"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 949,
+    "title": "괴수 8호 2기 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/jvy1xlaTHbWyEELWlDcQQDlYmpB7N3bT_Uvl4hGvTDZvLSR4g4WVL_kUkl5iOgEu4QHWDkV5e3ioj7GndEDHclNHzItFUkK2Xte-QG9eog5ZUZA3o3yJ4svZ92Yoogj4M-PZSoKlOjvidm2FdV5bTw.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/43928"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 873,
     "title": "괴짜 레이스 2016년 더빙",
     "category": "애니",
@@ -4605,7 +4647,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcsDxcE-G5wi7ha9nmiBqPkryYqnMCcPsxEJ8jb_xn0KdJL5qOR9ID6RhXHSBCxulCufMlf7-szq8BdcXeojO7Aw596RuVCxZXmHacIZgxD5aNKtiZJ4unwmkwU9wDbbYAiJUYP19VAxsxTP9clGD7ZEJxKODC1z-lP9HDuZrvSwMOp5LkC2i0ZxHTSA/s1600/shaman-king-118966l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 282,
@@ -4641,7 +4684,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBPfID2fN8-lRKIei1GSIXjZJsbXx9d-H3rsVF3gtgDt0QnItvM2PA2rpDY91X-lw3UdUiiH0eX9S6SA9HvlZKoOhyphenhyphenTwcde4FydtqV6xj_iniCs1onb6A4iL0gBARiFMJBpj8psGZO4ai_kd7jIPoHlhetxcPQR3RjvFjKXGvujmqEr1PtawrUUakdig/s1600/houshin-engi-94169l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 703,
@@ -4698,7 +4742,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBEwOPVPyNhOPFLZoz2lzuXrPOFrBzxMbsAlPv40lUj2JTUMJ7B01JwuVTj-RHRCLq1VtxGXrtc7xNDj-kJbizeobJiZ7qtJH_sc6Ksaf945go3qu-p4MqUEFGtwQeHEMsaWifkmMrqYjG7eh-Sx4X0p7xXW928Ud6YgpqJ5efdiY9UkXAb7dKYmszOg/s1600/princess-sara.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 593,
@@ -4782,7 +4827,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsvAWoM0dy3HMTYza_fptJYl94YF8ZtcccbhLjYLZ1p9BWIV-8yWJFobUUPMpnkrv2GTfz99_4aoGqWVwgHeG73VUl-NONtn63yqrZ065NGi07gOOSZ9s1Hivqe7YB36lqLTliBjYpN_zFy-1pgKHpE-NnUwMe4iaFu3dcOlmeZHOAI_EmbYsizn872w/s1600/sonic-x-121070l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 480,
@@ -4876,7 +4922,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj05dZyCwbKTT6jYAyHc4gXtkVecQunJm7CHKvoDQFyZUqH8rK_Xsw83OvujVjIL71adpiZ2PfTQVj4r_b9QJbINzp1PJUjmcA5ZQ26RED0s11wU00jvJKgIBbn6H7dmNpwVmQLcdYvvh4zItFYTic57ZR_6W1a1WJLome3TFHTNGqI3sEykAK3JYpmug/s1600/sugar-sugar-rune-94738l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 702,
@@ -5607,6 +5654,21 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQhVK-yZCs2ECE_d0YmlkY8d23vFDkw7hfcRGR9x2I4Yqz7SWbzoEV1Km2OWcBOa5yacp01Lv6FuCp06E_G_22maB3BjvMDRhyphenhyphenpquV8dkWBQSyLsQMFxFgMCbKmIFXzBBmxCjn1JdTKbUNup96js78Ul28qU409Mgblr5k3wHlRsxob3lHDLgkLHmhyw/s1600/armitage-the-third-92904l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 947,
+    "title": "아바타 아앙의 전설 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/w-Ouo2rEVhkLgjubWMtH3LZttZhtbKR6GOY5G4z4eucFlYcmvFN9TfYkepEzaBuURjs4MH5xEjHJHpAhY3SgwXyj8tJeI2YUvfJLefqknMoYphVft_qYlnugrtKX7xlgAIacvJ4F759zdDm005dl1w.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/kr/title/70142405"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 197,
