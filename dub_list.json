@@ -7115,6 +7115,21 @@
     "isExcavated": false
   },
   {
+    "id": 951,
+    "title": "이 별에 필요한",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://i.namu.wiki/i/BXVGWE5rZR-ieaLVSPODN24Ou4QaI_ernUn3ayruSrvclk1C6IMjo-6DTj2qn4u1Kq-_l8TJDdIanR2Dw_iPjJeTBfuXyYiRcNOYRcvGiB2DG1eJQhwbnPCMKcDYG2Jr1zf8Zb0CQYZLPgXwb6CnOQ.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/81664623"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 159,
     "title": "이겨라 얏타맨 더빙 (재능TV)",
     "category": "애니",
