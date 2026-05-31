@@ -3362,7 +3362,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7cNP7aKPHevh31KpSMtTr27DFfC1dlJ47Fe0JzSd_h3OadG0EwkscwzeBGmBTkPcyCuB1o98169wg9Zf6vc2_NSprEUiNasfv0Go14FaFRxbrYHlrp4kfqBvjHutHjyjU0z1x4_ODk5OFEIcB2UWsRZ69sjyDWaPlWAQJ_Q48tnIEUPd6nEhF4y9_Hg/s1600/major-73973l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 118,
@@ -3497,7 +3498,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo6iRY2VLfOCJYFhP9phQV_bwALrVsZ6g_aP-GmuR8DubRh9ErFDQTPm0oZxLvSY0qBfY2ApRm16VflB3jaDyNNXwgoynjY_5C4zy9cDMVdaBDg8y7hsCVj0n9QA0yfxOKZRG4wRvvP7ND42cgSWPEnGBHVCYh2e8D3nDRye3xYPp74PJT8PFvXEr3tw/s1600/monster-farm-95306l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 195,
@@ -3534,7 +3536,8 @@
     "status": "vhs",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbbHJ9hZgcFFKR_XvuWuJQAdRK4noOEeQhPzjmF5TD_VdFs8YIQRKpCHYmcTxWcfl7yokIGmAwsCBawgwbIML7uSXhdtDGL-EHDlH2J9r7i7ysJnYBgEdPuVXrJIwtQS_eFqre3ZgVVRic9lGI9IQxzY7dkHwRfGD6Cr2u8bC5_WllljfqzWofASBB1g/s1600/ta-chan-106089l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 623,
@@ -3667,10 +3670,26 @@
     "id": 154,
     "title": "미래소년 코난 더빙 (KBS)",
     "category": "애니",
-    "status": "expired",
+    "status": "bddvd",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8b1kQuq-EomewUohYOb_duw_ODDuE9sFTdGYy42xFv9S8mT3mXZH8pk6Z98F8ftOiMYkortKXR0IT0xJpAtpEARlEt4gbeWAzHok7FYHqZ_pkfjKyhzOTkMLlN3-Q-eFx-V5b2oE6IbQdlcERXQRVgA7nB11kMCBdoIh1BNEcsU6jhviDpkP9I6XTzw/s1600/future-boy-conan-17529l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 946,
+    "title": "미래소년 코난 애니박스 재더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231102/1606/P001730264.jpg/dims/resize/F_webp,480",
+    "ottLinks": [
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001730264"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 46,
@@ -3689,7 +3708,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOwQmAdCW8a_vF85WlSkKgLxZidLZA1yRtbMCtGLfiSLycfg04bogjeXpM44Ov3wVbJWd4iw-QfUrA84UhUfg_qfy4QxFpBPIizwK1nImdZs6GtGFZnX4RKCLa-UCBPPra8uat6YbNBQEAM5JpoWWH0EBtvSfEl7ZTKO1fkwlij16ULOSwhzk7ylnCiw/s1600/daigunder-103211l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 255,
@@ -3982,7 +4002,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggFRBrhBBMnXl3ISREWHY1C8RDelf8XvavvUW1IOTLuy-PxBT8asg3zBUEgp4giNMUFc9WfzNFspp9884TJCjcZynp0uHV2O2v03Uyv7F8C3ziyhSOYLMflFJsR-dQytfIbFlA1xU8enxBozmmRyfED95P0AewSAuanuaP_pKJL4FKgBVhFUiZ-4X7fQ/s1600/tokyo-mew-mew-89298l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 461,
@@ -3991,7 +4012,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge-fFDvnTOaeSGVGYlOj09ZTinpytvHtMsbrGhR9USILzQOXVpl0kc5zaljz63xZcI6DVhBysCFvTmHGBxdIlItKBjk31nbsWnHFnOieui_3a-vJLX5AepxFg_9cmJ_7gROph1rPrj4ZYveXRXp8PnV_3egUgQY9NTP4TFKpuBiV_UHMw82y-bT1C_5w/s1600/chibi-devi-35927l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 705,
@@ -4081,7 +4103,7 @@
     "id": 238,
     "title": "별의 목소리 더빙 (투니버스, KBS)",
     "category": "애니",
-    "status": "expired",
+    "status": "bddvd",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdCWcozHbBUUSgMQgCczn95twjoyITTVnMzz05x-1p7AZIToIrD_V8HGY57f7YbSf2qC29sB1BFl3YaGqP9g4iS8gZF_EU7GUON2zqhjmlXg9fm-bEzItR3a1NgXEhHhS5fWKfj-Jfx12vNC7P6gnJq4j84H0YezJwMFWmVB72Aibgioi1exmJjkTvzQ/s1600/hoshi-no-koe-112996l.jpg",
     "ottLinks": [],
     "memo": ""
@@ -4471,7 +4493,8 @@
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaUR45RiU87T1KR56gVzZSo14G4JoQecRgKcGri_XFsB6frKnmeH9TgxhfKEbzSQuVBPRMbYJWlJzZ1t3HHOHZbzf1iDVH4mOaLrRObHCp9usQFM8HuDeVn41Q1X3CVfZOjrT_VR5bdurzKW0313vJV8tEUF6YHtOeXwhD13tcyEvqIEjKcJ-KXX-0hA/s1600/makibao.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 519,
