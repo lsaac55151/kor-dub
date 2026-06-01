@@ -291,6 +291,21 @@
     "memo": ""
   },
   {
+    "id": 973,
+    "title": "강철의 연금술사 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/f3b6ff08-89c9-447f-add1-932ae0fe2038.jpg?webp=0&w=380",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/16113"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 315,
     "title": "개골개골 마법사 더빙 (대교어린이TV)",
     "category": "애니",
@@ -692,6 +707,44 @@
     "ottLinks": [],
     "memo": "",
     "isExcavated": true
+  },
+  {
+    "id": 980,
+    "title": "괴도키드 1412 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/3fbded77-1164-4683-9b14-2e3bf1b8edd5.jpg?webp=0&w=380",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/40629"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/E001008444"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 981,
+    "title": "괴도키드 스페셜 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/b76d5332-44c8-4ba9-9391-6d7967500b57.jpg?webp=0&w=380",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/40327"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001768810"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 948,
@@ -2010,7 +2063,7 @@
   },
   {
     "id": 803,
-    "title": "늑대아이",
+    "title": "늑대아이 더빙",
     "category": "애니",
     "status": "active",
     "thumbnail": "https://i.namu.wiki/i/LVOhhaQnwZQaReARabn-dFtUiO8arZ9tpQ-Ifqi5zPU3ReROQ9TqnCyt3YdueNx8TrSDiTAOfe-8VKmJnEGjeNhPefCZUEiEAFzO_nTwBPDQldRlra90whdzG6ZOkHzXhjQxm1slvA4_2e2qCIRtDg.webp",
@@ -2962,7 +3015,8 @@
     "status": "vhs",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9UtLSw6oYn72N6RCIuSvaxps8iF-lCACooMXmlOVqtmXFQIlyaST5zrYYmpoVwewhqbgpuGxaDVVkOZOSAO-iQvaXJDyn1nWA0oc76ZaBiD6XKHzDkoEh9VPwRBEaKz5SA2yvmAqpSum9uIt1NRRV17tLk7etoJHTonSaAJ2T7uxJTZLysKibdUI_Hw/s1600/lodoss-tou-senki-ova-119235l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 713,
@@ -4492,7 +4546,7 @@
   },
   {
     "id": 972,
-    "title": "분노의 질주: 홉스&쇼",
+    "title": "분노의 질주: 홉스&쇼 더빙",
     "category": "영화",
     "status": "expired",
     "thumbnail": "https://i.namu.wiki/i/FrQ1utoUPtcUYLCT8cSEMEIvmMTqH3UZbrtu0mqSG21YVTfGK0zmi5zZUKe6rQRtWVyjCXE4FKwzNR-9YRm81yQJDf_AIe7-zS8rlLQFWk_WS9AbmKwrNfoTca-l0bIzfTWUXfI695D5s9WME3F54g.webp",
@@ -5509,6 +5563,47 @@
     "isExcavated": true
   },
   {
+    "id": 978,
+    "title": "시간을 달리는 소녀 구더빙(배리어프리 재사용)",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/4c26f316-e23d-4c8c-98c4-61b420a9c04a.jpg?webp=0&w=380",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 979,
+    "title": "시간을 달리는 소녀 재더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/4c26f316-e23d-4c8c-98c4-61b420a9c04a.jpg?webp=0&w=380",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/39014"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/M000208434"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/movie?movieid=MV_CV01_KE0000012515"
+      },
+      {
+        "name": "쿠팡플레이",
+        "url": "https://www.coupangplay.com/content/df4f2cdb-e4d9-4296-8cc3-2d8bdff1b672"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/mNdK17W"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 414,
     "title": "시간탐험대 더빙 (MBC)",
     "category": "애니",
@@ -6327,6 +6422,33 @@
     "isExcavated": true
   },
   {
+    "id": 974,
+    "title": "엘레나 엘보이 관찰일지",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/be18ea8c-c813-4f9d-b652-783d61e6eb1a.jpg?webp=0&w=380",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41336/%EC%9D%BC%EB%A0%88%EB%82%98-%EC%97%90%EB%B3%B4%EC%9D%B4-%EA%B4%80%EC%B0%B0%EC%9D%BC%EC%A7%80"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001743429"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=C6101_C61000000688&landing=season"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/tE3AJN2?tab=content_info"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 562,
     "title": "엘르멘탈 제라드 더빙 (퀴니)",
     "category": "애니",
@@ -6663,6 +6785,21 @@
     "ottLinks": [],
     "memo": "",
     "isExcavated": true
+  },
+  {
+    "id": 976,
+    "title": "용한소녀",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/7055476f-4712-46bb-bc00-ae1f15ef4a47.jpg?webp=0&w=380",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/43126"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 347,
@@ -8543,6 +8680,21 @@
     "memo": ""
   },
   {
+    "id": 977,
+    "title": "친하게 지내자",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/ffed0820-bb4b-43f9-b40a-a27311b04491.jpg?webp=0&w=380",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/45040"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 611,
     "title": "침략! 오징어 소녀 더빙 (투니버스)",
     "category": "애니",
@@ -9670,6 +9822,21 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUJTDrImmqly9NA8wSc5hA39hEOasbsxKxBW2DMedYKpqto1-hBYWPy8R55BPepnvmWaAUOy_nJsqjC3sJrf5FFQMh32JlJ_Jj6gpjWNsgiN5ZVCC8OCNwr36C2l60k5wKfuQM3OklOxY9hmRunQjIzskPpOrCvoOK1cZ__Tsp300JkJdH3_DxJB_0_g/s1600/figure-17-117602l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 975,
+    "title": "피라미드 게임",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/cef22f7c-a5eb-4b12-81d1-a39b3f23f3a0.jpg?webp=0&w=380",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42128"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 498,
