@@ -4719,6 +4719,29 @@
     "isExcavated": true
   },
   {
+    "id": 988,
+    "title": "비밀의 아이프리 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/b0dcaa6f-d1e8-4a17-a7df-e74a812e877a.jpg?webp=0&w=380",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42093"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/vod?programid=C8201_C82000001008"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/E004408456"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 430,
     "title": "비스트 워즈 더빙 (비디오판, MBC)",
     "category": "애니",
@@ -7110,6 +7133,25 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPWgWSO25G3HXUZws9D46mtAeHByhOGyvhf-7TU_pNdtjnZLG311pxIcupd3H1p4fwfHAnI3KISKhscsysWnF97NDMk-D5-xVOA5_pB_1TMPPl1GXlAxVCXKNklBTCLYY8QvLZW9dpomVJu-x58CpyNhNeZb-NHaL0y8y3C7C9hTvuR96OEECsNM8VjQ/s1600/ultraman-great.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 987,
+    "title": "울트라맨 데커 더빙",
+    "category": "드라마",
+    "status": "active",
+    "thumbnail": "https://thumbnail.laftel.net/items/full/f306062d-5a43-4bff-832e-37eb305f595e.jpg?webp=0&w=380",
+    "ottLinks": [
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001786510"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/45766"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 202,
