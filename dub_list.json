@@ -3402,6 +3402,16 @@
     "isExcavated": true
   },
   {
+    "id": 985,
+    "title": "마징가 극장판 더빙",
+    "category": "애니",
+    "status": "bddvd",
+    "thumbnail": "https://image.yes24.com/momo/TopCate51/MidCate09/5083498.jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 223,
     "title": "마징카이저 더빙 (애니원TV)",
     "category": "애니",
@@ -4764,6 +4774,16 @@
     "memo": ""
   },
   {
+    "id": 984,
+    "title": "빛의 전사 마스크맨",
+    "category": "드라마",
+    "status": "bddvd",
+    "thumbnail": "https://i.namu.wiki/i/khCF_JFemFmEDJaOEqXpfvVubMIpW-0B47Kgr57lnDd5AXqKNNY81EJ2uz0mlctY8FXuG6TJ9VKpt0IPJenoetPoAis4aPNrEInrinArRkgfZJ4Nxflrx83oLVnP-b-YOsiGPb10Wpw4jp81Q4xRzg.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 501,
     "title": "빛의 전사 프리큐어 더빙 (SBS)",
     "category": "애니",
@@ -4781,6 +4801,16 @@
     "ottLinks": [],
     "memo": "",
     "isExcavated": true
+  },
+  {
+    "id": 986,
+    "title": "빨간머리 앤 KBS+미라지 엔터테이먼트 리마스터링 더빙",
+    "category": "애니",
+    "status": "bddvd",
+    "thumbnail": "https://i.namu.wiki/i/XOFBqcfCgD3z5klQJRX91IngcXyGA5iniBuorq58Chl4sLwRr5EGFtq21iHbuVq8tj5TZ0aZ5xoJaSBhlLyEEtRjEDHXtyRaEeHGgcJ9bVGz0Jmaox5p9TdGgNvp4LmHvX-fXdU_GKppl5ikJesHDw.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 15,
@@ -7761,10 +7791,11 @@
     "id": 176,
     "title": "자이언트 로보 OVA 더빙 (투니버스)",
     "category": "애니",
-    "status": "expired",
+    "status": "bddvd",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJB26pM2wVpyZ77z4X7Z1b860ROU1Zl2XkDTSpKZiPQjeu-6bPEiFyfkQYCfCB2VcfK89_XXeiD8w9EHoyj5-mmJdkbKfL6p76pEgAiHfyzYISQO12R5KfJB_ejQZ16v-uGymX551ElHypLU9Wpt7hbHAJxolgPb_g6Vo7eRAGUTDTi9x5-EAj-j7Fqw/s1600/giant-robo-ova-95157l.jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 155,
