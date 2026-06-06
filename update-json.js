@@ -44,7 +44,7 @@ function updateThumbnails() {
 
         // 3. 데이터 순회 및 업데이트
         let updatedCount = 0;
-        let missingCount = 0;
+        let missingTitles = [];
 
         const updatedList = dubList.map(item => {
             const title = item.title;
@@ -54,8 +54,6 @@ function updateThumbnails() {
 
             // 2단계: 특수문자 치환 후 재시도 (윈도우 파일명 제한 때문)
             if (!matchedFile) {
-                // 윈도우에서 파일명으로 쓸 수 없는 문자들을 _로 치환해봅니다.
-                // 특히 " : " (공백 포함 콜론)은 " _ "로 치환되는 경우가 많습니다.
                 const normalizedTitle = title
                     .replace(/[:\\/|*?"<>]/g, '_') // 금지 문자 -> _
                     .replace(/\s+/g, ' ')           // 다중 공백 -> 단일 공백
@@ -64,7 +62,7 @@ function updateThumbnails() {
                 matchedFile = imageMap.get(normalizedTitle);
                 
                 // 3단계: 공백이나 특수문자 처리가 미세하게 다를 경우를 대비해 
-                // 모든 파일명과 타이틀을 공백 제거 후 비교 (최후의 수단)
+                // 모든 파일명과 타이틀을 공백 제거 후 비교
                 if (!matchedFile) {
                     const superNormalizedTitle = normalizedTitle.replace(/\s/g, '');
                     for (const [name, file] of imageMap.entries()) {
@@ -77,13 +75,11 @@ function updateThumbnails() {
             }
 
             if (matchedFile) {
-                // 인코딩된 파일명을 포함한 새 URL 생성
                 const encodedFileName = encodeURIComponent(matchedFile);
                 item.thumbnail = `${CONFIG.githubBaseUrl}${encodedFileName}`;
                 updatedCount++;
             } else {
-                // console.warn(`[주의] 매칭되는 이미지 없음: "${title}"`);
-                missingCount++;
+                missingTitles.push(title);
             }
             return item;
         });
@@ -94,7 +90,12 @@ function updateThumbnails() {
         console.log('\n--- 작업 완료 보고서 ---');
         console.log(`총 아이템 수: ${updatedList.length}`);
         console.log(`업데이트 성공: ${updatedCount}`);
-        console.log(`이미지 누락: ${missingCount}`);
+        console.log(`이미지 누락: ${missingTitles.length}`);
+        
+        if (missingTitles.length > 0) {
+            console.log('\n[누락된 아이템 목록]');
+            missingTitles.forEach((t, i) => console.log(`${i + 1}. ${t}`));
+        }
         console.log('------------------------');
         console.log('결과가 dub_list.json에 저장되었습니다.');
 
