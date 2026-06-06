@@ -6266,12 +6266,18 @@
   },
   {
     "id": 191,
-    "title": "아이엠스타 더빙 (투니버스)",
+    "title": "아이엠스타 1기 더빙 (투니버스)",
     "category": "애니",
-    "status": "expired",
+    "status": "active",
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EC%95%84%EC%9D%B4%EC%97%A0%EC%8A%A4%ED%83%80%20%EB%8D%94%EB%B9%99%20(%ED%88%AC%EB%8B%88%EB%B2%84%EC%8A%A4).jpg",
-    "ottLinks": [],
-    "memo": ""
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/22776"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 789,
