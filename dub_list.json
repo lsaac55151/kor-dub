@@ -2500,7 +2500,7 @@
     "title": "데스노트 리라이트: 환상을 쫓는 신",
     "category": "애니",
     "status": "expired",
-    "thumbnail": "https://i.namu.wiki/i/KGMuvGCWJFVAa3HQOv8uoamSDy3VRMi2rg_WN3odEJSxQ4ehVlfo6l0dFMKqChaKbSyCIG1HN4a-0XdabsmoO5RALGNe-fLJAFUW3AQ2Q_pIbPRwySVcodSHEIJU6W-OxKWiWSHeOMzc3o3dYsx_mA.webp",
+    "thumbnail": "https://i.namu.wiki/i/GkLreRrBbPmZK1YmMEhuzdpeGgN5lgUCX5s7RSMZW78JJ5ZjuqXYjsLpNd1KDWjoCEF8G8U5cGVBmYQGAB1R6x2ySqvDDWeyDIGfsmFRdzs6urzk8cfNWj8DWBGeyWeiyfbYkojlVUEp52K_8jtoNA.webp",
     "ottLinks": [],
     "memo": "",
     "isExcavated": true
@@ -2520,7 +2520,7 @@
     "title": "데스노트(더빙)",
     "category": "애니",
     "status": "active",
-    "thumbnail": "https://i.namu.wiki/i/F8oryq3omydqKaVJ1JY-sndclP5IhIzxUbuMionUTHIJaHp5ppRkuNM1y7FXBI-bCru2fliU_Nrl7g2J0I2UrSOoFOhFrmwreKFAhPeGBqf26E_jEPihRX1WTEdDo7GCYbQJ2xyaJtGURrXsp6qgUA.webp",
+    "thumbnail": "https://i.namu.wiki/i/qayFRlHHHTAfx205sRvDAOP0sMEerXO0fGiHJ0Oj_tgN98pBkvnrxpy0ffxZLRxPW_yvDNJoRkuyw-YUjXC0maUzmD6awSmR3fVHffyypSqAysGMilHdQy-0bac2ppJbe9WV6gGX_J5B9Z_AkjoXfw.webp",
     "ottLinks": [
       {
         "name": "라프텔",
@@ -3156,6 +3156,16 @@
     "category": "애니",
     "status": "expired",
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWXCyL_VJD0Z50dK-Y8f2_DV5lZOKUmPIT6xLbJP7nA8KMkp93SwgFJau2CdOM9w1Zt6Ku7rDuEcCv3SaY-VjtCeD147fuiTchvwELh5TpmLN9YFw95XfhnEDo6tqmjrCTX-1MZRi5tjdliah4I1SPhMheLF6nAM9XFHGrf38RbuCD0b_NHJ5toTXJTQ/s1600/lilpri-133814l.jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 993,
+    "title": "링컨의 집에서 살아남기 6 더빙",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/iQgggXfUYv_NI4SVALvNXmE0kpmI8m5V274GpblfOZprKpAKjMNtj4FEWvuzN59ktivDTJBXpBCiIPw9sowKMNGMMwgHxzUHJlYm5d4LWTq09UxBcGA77nwsdiHc_zwZIJSPaBGE-3Vw6D-OG7intw.webp",
     "ottLinks": [],
     "memo": "",
     "isExcavated": true
@@ -4173,6 +4183,26 @@
     "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR2rOz-4i7DAN7rabnK6yas_zn84dSZ_JMACgtTEAal1hMqFFXRiYKOPb6zTqywuent20Ovtm9Py-ylj69ShUjnHbP7pWClSowUX0d4PXuX0g_Z76oOHxbjuxwx6LVxePYE506SGhf4AgWgjWZds7bKcI366_qRuOCOcGmmMJMcu_XI2AvuOztr2Cqlw/s1600/ueki-no-housoku-90876l.jpg",
     "ottLinks": [],
     "memo": ""
+  },
+  {
+    "id": 991,
+    "title": "백투더퓨처 시리즈 KBS 더빙",
+    "category": "영화",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/OZLYyepzYB4lgQXAyTOnLt0jOgkvyDuJ4ut3om2zAR5PsAG7MBwjdzW4QmsdGcjrJ9zDNSD7d7Bid8WE-VPup2wJM3Y1SDmfONDeJtSuj6RMWoaJlUzx-oM5q3VP1ATgsUg88ibr2PvRwvmiTkOpPQ.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 992,
+    "title": "백투더퓨처 시리즈 SBS 더빙",
+    "category": "드라마",
+    "status": "expired",
+    "thumbnail": "https://i.namu.wiki/i/OZLYyepzYB4lgQXAyTOnLt0jOgkvyDuJ4ut3om2zAR5PsAG7MBwjdzW4QmsdGcjrJ9zDNSD7d7Bid8WE-VPup2wJM3Y1SDmfONDeJtSuj6RMWoaJlUzx-oM5q3VP1ATgsUg88ibr2PvRwvmiTkOpPQ.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 658,
