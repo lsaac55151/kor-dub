@@ -1,22 +1,13 @@
 [
   {
     "id": 1038,
-    "title": "신수 유치원",
+    "title": "클로저스 : SIDE BLACKLAMBS",
     "category": "애니",
-    "status": "active",
-    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EC%8B%A0%EC%88%98%20%EC%9C%A0%EC%B9%98%EC%9B%90.jpg",
-    "ottLinks": [
-      {
-        "name": "티빙",
-        "url": "https://www.tving.com/contents/P001787689"
-      },
-      {
-        "name": "라프텔",
-        "url": "https://laftel.net/item/46097"
-      }
-    ],
+    "status": "expired",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%ED%81%B4%EB%A1%9C%EC%A0%80%EC%8A%A4%20_%20SIDE%20BLACKLAMBS.webp",
+    "ottLinks": [],
     "memo": "",
-    "isExcavated": false
+    "isExcavated": true
   },
   {
     "id": 1037,
