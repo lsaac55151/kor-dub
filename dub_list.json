@@ -1,5 +1,28 @@
 [
   {
+    "id": 1041,
+    "title": "또봇 1기~19기",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%98%90%EB%B4%87%201%EA%B8%B0~19%EA%B8%B0.jpg",
+    "ottLinks": [
+      {
+        "name": "유튜브",
+        "url": "https://www.youtube.com/playlist?list=PLxAqlO4zbr3M_bWGpq5i7_UztkLR2GDF-"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/E004274687"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42519"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 1040,
     "title": "영혼기병 라젠카",
     "category": "애니",
