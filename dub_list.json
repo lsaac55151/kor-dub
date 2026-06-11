@@ -1,5 +1,25 @@
 [
   {
+    "id": 1045,
+    "title": "2020년 우주의 원더키디",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/2020%EB%85%84%20%EC%9A%B0%EC%A3%BC%EC%9D%98%20%EC%9B%90%EB%8D%94%ED%82%A4%EB%94%94.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 1044,
+    "title": "무한행성 서바이브 더빙",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
     "id": 1043,
     "title": "EBS 삼국지(최강무장전 삼국연의) 더빙",
     "category": "애니",
@@ -4422,7 +4442,8 @@
     "status": "expired",
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EC%AA%BD%EB%B9%9B%EB%B3%B4%EB%8B%A4%20%ED%91%B8%EB%A5%B4%EA%B2%8C%20%EB%8D%94%EB%B9%99%20(%EC%95%A0%EB%8B%88%EC%9B%90TV).jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 685,
@@ -4478,7 +4499,8 @@
     "status": "expired",
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%ED%81%AC%EB%A5%B4%EB%85%B8%20%ED%81%AC%EB%A3%A8%EC%84%B8%EC%9D%B4%EB%93%9C%20%EB%8D%94%EB%B9%99%20(%ED%88%AC%EB%8B%88%EB%B2%84%EC%8A%A4).jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 679,
@@ -5846,7 +5868,8 @@
     "status": "expired",
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EC%BA%A1%ED%8B%B4%20%ED%85%8C%EC%9D%BC%EB%9F%AC%20%EB%8D%94%EB%B9%99%20(%ED%88%AC%EB%8B%88%EB%B2%84%EC%8A%A4%2C%20SBS).jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 534,
@@ -8101,7 +8124,8 @@
     "status": "expired",
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%AC%B4%EC%9D%B8%ED%96%89%EC%84%B1%20%EC%84%9C%EB%B0%94%EC%9D%B4%EB%B8%8C%20%EB%8D%94%EB%B9%99%20(%ED%88%AC%EB%8B%88%EB%B2%84%EC%8A%A4).jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 298,
@@ -8214,7 +8238,8 @@
     "status": "expired",
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%A7%88%EB%B2%95%EC%9D%98%20%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80%20%ED%8C%AC%EC%8B%9C%EB%9D%BC%EB%9D%BC%20%EB%8D%94%EB%B9%99%20(%ED%88%AC%EB%8B%88%EB%B2%84%EC%8A%A4).jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 286,
@@ -8831,7 +8856,8 @@
     "status": "vhs",
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EC%9A%94%EC%88%A0%EA%B3%B5%EC%A3%BC%20%EC%83%90%EB%A6%AC%20%EB%8D%94%EB%B9%99%20(%EB%B9%84%EB%94%94%EC%98%A4%ED%8C%90%2C%20EBS).jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 221,
