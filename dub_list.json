@@ -1,5 +1,20 @@
 [
   {
+    "id": 1049,
+    "title": "외모지상주의",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EC%99%B8%EB%AA%A8%EC%A7%80%EC%83%81%EC%A3%BC%EC%9D%98.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/81177634"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 1048,
     "title": "도굴왕",
     "category": "애니",
