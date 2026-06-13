@@ -1,5 +1,65 @@
 [
   {
+    "id": 1060,
+    "title": "부탁이니 죽어주라!",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%B6%80%ED%83%81%EC%9D%B4%EB%8B%88%20%EC%A3%BD%EC%96%B4%EC%A3%BC%EB%9D%BC!.jpg",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41449"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 1059,
+    "title": "잊혀진 황녀는 평화롭게 살고싶어",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EC%9E%8A%ED%98%80%EC%A7%84%20%ED%99%A9%EB%85%80%EB%8A%94%20%ED%8F%89%ED%99%94%EB%A1%AD%EA%B2%8C%20%EC%82%B4%EA%B3%A0%EC%8B%B6%EC%96%B4.jpg",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41448"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 1058,
+    "title": "테라리움 어드벤처",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%ED%85%8C%EB%9D%BC%EB%A6%AC%EC%9B%80%20%EC%96%B4%EB%93%9C%EB%B2%A4%EC%B2%98.jpg",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41447"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 1057,
+    "title": "느린 장마",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%8A%90%EB%A6%B0%20%EC%9E%A5%EB%A7%88.jpg",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/41181"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 1056,
     "title": "위험한 편의점",
     "category": "애니",
