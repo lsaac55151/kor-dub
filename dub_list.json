@@ -1,5 +1,20 @@
 [
   {
+    "id": 1055,
+    "title": "엄마 찾아 삼만리 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EC%97%84%EB%A7%88%20%EC%B0%BE%EC%95%84%20%EC%82%BC%EB%A7%8C%EB%A6%AC%20%EB%8D%94%EB%B9%99.jpg",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/38710"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 1054,
     "title": "원룸 조교님",
     "category": "애니",
