@@ -1,5 +1,15 @@
 [
   {
+    "id": 1050,
+    "title": "가면라이더 지오 더빙",
+    "category": "드라마",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EA%B0%80%EB%A9%B4%EB%9D%BC%EC%9D%B4%EB%8D%94%20%EC%A7%80%EC%98%A4%20%EB%8D%94%EB%B9%99.jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 1049,
     "title": "검정고무신 1~3기",
     "category": "애니",
