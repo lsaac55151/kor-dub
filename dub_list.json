@@ -1,5 +1,20 @@
 [
   {
+    "id": 1072,
+    "title": "가면라이더 빌드 : Be The One 더빙",
+    "category": "영화",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EA%B0%80%EB%A9%B4%EB%9D%BC%EC%9D%B4%EB%8D%94%20%EB%B9%8C%EB%93%9C%20_%20Be%20The%20One%20%EB%8D%94%EB%B9%99.jpg",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/39474"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 1071,
     "title": "명탐정코난 : 미궁의 십자로",
     "category": "애니",
