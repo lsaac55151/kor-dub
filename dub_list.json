@@ -1,5 +1,162 @@
 [
   {
+    "id": 1071,
+    "title": "명탐정코난 : 미궁의 십자로",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%AA%85%ED%83%90%EC%A0%95%EC%BD%94%EB%82%9C%20_%20%EB%AF%B8%EA%B6%81%EC%9D%98%20%EC%8B%AD%EC%9E%90%EB%A1%9C.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/17421"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/M000368407"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 1070,
+    "title": "명탐정코난 : 베이커가의 망령",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "",
+    "ottLinks": [
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/M000153633"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/17420"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 1069,
+    "title": "명탐정코난 : 천국으로의 카운트다운",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%AA%85%ED%83%90%EC%A0%95%EC%BD%94%EB%82%9C%20_%20%EC%B2%9C%EA%B5%AD%EC%9C%BC%EB%A1%9C%EC%9D%98%20%EC%B9%B4%EC%9A%B4%ED%8A%B8%EB%8B%A4%EC%9A%B4.webp",
+    "ottLinks": [
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/M000369266"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/17419"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/movie?movieid=MV_EN01_EN000001088"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 1068,
+    "title": "명탐정코난 : 눈동자 속의 암살자",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%AA%85%ED%83%90%EC%A0%95%EC%BD%94%EB%82%9C%20_%20%EB%88%88%EB%8F%99%EC%9E%90%20%EC%86%8D%EC%9D%98%20%EC%95%94%EC%82%B4%EC%9E%90.webp",
+    "ottLinks": [
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/M000371574"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/17418"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 1067,
+    "title": "명탐정코난 : 세기말의 마술사",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%AA%85%ED%83%90%EC%A0%95%EC%BD%94%EB%82%9C%20_%20%EC%84%B8%EA%B8%B0%EB%A7%90%EC%9D%98%20%EB%A7%88%EC%88%A0%EC%82%AC.webp",
+    "ottLinks": [
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/M000361877"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/16921"
+      },
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/ko-KR/contents/md76veO"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 1066,
+    "title": "명탐정코난 : 14번째 표적",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%AA%85%ED%83%90%EC%A0%95%EC%BD%94%EB%82%9C%20_%2014%EB%B2%88%EC%A7%B8%20%ED%91%9C%EC%A0%81.webp",
+    "ottLinks": [
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/mWqJmNO"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/M000125308"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/movie?movieid=MV_EN01_EN000001091"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/16920"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 1065,
+    "title": "명탐정 코난 : 시한장치의 마천루",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%AA%85%ED%83%90%EC%A0%95%EC%BD%94%EB%82%9C%20_%20%EC%8B%9C%ED%95%9C%EC%9E%A5%EC%B9%98%EC%9D%98%20%EB%A7%88%EC%B2%9C%EB%A3%A8.webp",
+    "ottLinks": [
+      {
+        "name": "왓챠",
+        "url": "https://watcha.com/contents/mOP7XpW"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/M000125306"
+      },
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/16919/63024"
+      },
+      {
+        "name": "웨이브",
+        "url": "https://www.wavve.com/player/movie?movieid=MV_EN01_EN000001092"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 1064,
     "title": "원피스 로맨스 던 더빙",
     "category": "애니",
