@@ -41,7 +41,6 @@ function updateJson() {
 
   // 1. 이미지 폴더 스캔
   const imageMap = scanImages(CONFIG.imageDir);
-  console.log(`📸 발견된 이미지 수: ${Object.keys(imageMap).length}개`);
 
   // 2. JSON 파일 읽기
   if (!fs.existsSync(CONFIG.jsonPath)) {
@@ -85,7 +84,6 @@ function updateJson() {
       updatedCount++;
     } else {
       // 이미지 파일이 없는 경우
-      console.warn(`⚠️ 매칭되는 이미지가 없음: [${title}]`);
       missingCount++;
     }
     return item;
