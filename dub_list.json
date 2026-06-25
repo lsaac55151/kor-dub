@@ -1,5 +1,62 @@
 [
   {
+    "id": 1096,
+    "title": "기동전사 건담 SEED FREEDOM 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EA%B8%B0%EB%8F%99%EC%A0%84%EC%82%AC%20%EA%B1%B4%EB%8B%B4%20SEED%20FREEDOM%20%EB%8D%94%EB%B9%99.webp",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/42305"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/M000377586"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 1095,
+    "title": "GO! GO! 다섯 쌍둥이 시즌 2",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/GO!%20GO!%20%EB%8B%A4%EC%84%AF%20%EC%8C%8D%EB%91%A5%EC%9D%B4%20%EC%8B%9C%EC%A6%8C%202.jpg",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/19135"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001754665"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
+    "id": 1094,
+    "title": "GO! GO! 다섯 쌍둥이 시즌 1",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/GO!%20GO!%20%EB%8B%A4%EC%84%AF%20%EC%8C%8D%EB%91%A5%EC%9D%B4%20%EC%8B%9C%EC%A6%8C%201.jpg",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/15334"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001754641"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 1093,
     "title": "요괴워치 2 더빙",
     "category": "애니",
