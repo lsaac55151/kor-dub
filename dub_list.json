@@ -1,5 +1,15 @@
 [
   {
+    "id": 1106,
+    "title": "닌자고 시리즈",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%8B%8C%EC%9E%90%EA%B3%A0%20%EC%8B%9C%EB%A6%AC%EC%A6%88.jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 1105,
     "title": "가면라이더 세이버 더빙",
     "category": "드라마",
