@@ -1901,10 +1901,6 @@
       {
         "name": "웨이브",
         "url": "https://www.wavve.com/player/vod?programid=F7001_F70000000015"
-      },
-      {
-        "name": "웨이브",
-        "url": "https://www.wavve.com/player/vod?programid=F7001_F70000000020"
       }
     ],
     "memo": "",
@@ -1917,10 +1913,6 @@
     "status": "active",
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%82%98%EB%A3%A8%ED%86%A0%20%EC%A7%88%ED%92%8D%EC%A0%84%20%EB%8D%94%EB%B9%99.webp",
     "ottLinks": [
-      {
-        "name": "웨이브",
-        "url": "https://www.wavve.com/player/vod?programid=F7001_F70000000015"
-      },
       {
         "name": "웨이브",
         "url": "https://www.wavve.com/player/vod?programid=F7001_F70000000020"
