@@ -3020,7 +3020,8 @@
     "status": "expired",
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%91%90%EA%B7%BC%EB%91%90%EA%B7%BC%20%EB%B9%84%EB%B0%80%EC%B9%9C%EA%B5%AC%20%EB%8D%94%EB%B9%99%20(SBS).jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 476,
