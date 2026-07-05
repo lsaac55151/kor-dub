@@ -2915,7 +2915,16 @@
     "category": "애니",
     "status": "active",
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%8F%84%EA%B5%B4%EC%99%95.jpg",
-    "ottLinks": [],
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/46427"
+      },
+      {
+        "name": "티빙",
+        "url": "https://www.tving.com/contents/P001788072"
+      }
+    ],
     "memo": "",
     "isExcavated": false
   },
