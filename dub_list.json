@@ -1,5 +1,20 @@
 [
   {
+    "id": 1130,
+    "title": "이거 그리고 죽어 더빙",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EC%9D%B4%EA%B1%B0%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EC%A3%BD%EC%96%B4%20%EB%8D%94%EB%B9%99.webp",
+    "ottLinks": [
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/81787975"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
+  },
+  {
     "id": 1129,
     "title": "포켓몬 레인저와 바다의 왕자 마나피 구더빙",
     "category": "애니",
