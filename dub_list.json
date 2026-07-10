@@ -1,5 +1,95 @@
 [
   {
+    "id": 1140,
+    "title": "마법의 스타 매지컬 에미 더빙 (비디오판)",
+    "category": "애니",
+    "status": "vhs",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%A7%88%EB%B2%95%EC%9D%98%20%EC%8A%A4%ED%83%80%20%EB%A7%A4%EC%A7%80%EC%BB%AC%20%EC%97%90%EB%AF%B8%20%EB%8D%94%EB%B9%99%20(%EB%B9%84%EB%94%94%EC%98%A4%ED%8C%90).jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 1139,
+    "title": "유리가면 1기 더빙 (비디오판)",
+    "category": "애니",
+    "status": "vhs",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EC%9C%A0%EB%A6%AC%EA%B0%80%EB%A9%B4%20%EB%8D%94%EB%B9%99%20(%EB%B9%84%EB%94%94%EC%98%A4%ED%8C%90).jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 1138,
+    "title": "세인트 세이야 더빙 (비디오판)",
+    "category": "애니",
+    "status": "vhs",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EC%84%B8%EC%9D%B8%ED%8A%B8%20%EC%84%B8%EC%9D%B4%EC%95%BC%20%EB%8D%94%EB%B9%99%20(%EB%B9%84%EB%94%94%EC%98%A4%ED%8C%90).jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 1137,
+    "title": "타임보칸 더빙 (비디오판)",
+    "category": "애니",
+    "status": "vhs",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%ED%83%80%EC%9E%84%EB%B3%B4%EC%B9%B8%20%EB%8D%94%EB%B9%99%20(%EB%B9%84%EB%94%94%EC%98%A4%ED%8C%90).jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 1136,
+    "title": "100% 파스칼 선생님 더빙 (애니박스)",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/100%25%20%ED%8C%8C%EC%8A%A4%EC%B9%BC%20%EC%84%A0%EC%83%9D%EB%8B%98%20%EB%8D%94%EB%B9%99%20(%EC%95%A0%EB%8B%88%EB%B0%95%EC%8A%A4).jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 1135,
+    "title": "모험왕 걸리버 더빙 (MBC)",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%AA%A8%ED%97%98%EC%99%95%20%EA%B1%B8%EB%A6%AC%EB%B2%84%20%EB%8D%94%EB%B9%99%20(MBC).jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 1134,
+    "title": "디스크 전사 어벤져스 더빙 (투니버스)",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%94%94%EC%8A%A4%ED%81%AC%20%EC%A0%84%EC%82%AC%20%EC%96%B4%EB%B2%A4%EC%A0%B8%EC%8A%A4%20%EB%8D%94%EB%B9%99%20(%ED%88%AC%EB%8B%88%EB%B2%84%EC%8A%A4).jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 1133,
+    "title": "밀림의 왕자 레오 더빙 (KBS)",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%B0%80%EB%A6%BC%EC%9D%98%20%EC%99%95%EC%9E%90%20%EB%A0%88%EC%98%A4%20%EB%8D%94%EB%B9%99%20(KBS).jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 1132,
+    "title": "소년탐정 김전일 구더빙 (비디오판, 투니버스)",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EC%86%8C%EB%85%84%ED%83%90%EC%A0%95%20%EA%B9%80%EC%A0%84%EC%9D%BC%20%EA%B5%AC%EB%8D%94%EB%B9%99%20(%EB%B9%84%EB%94%94%EC%98%A4%ED%8C%90%2C%20%ED%88%AC%EB%8B%88%EB%B2%84%EC%8A%A4).jpg",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
     "id": 1131,
     "title": "음양대전기 더빙",
     "category": "애니",
