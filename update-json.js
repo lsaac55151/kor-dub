@@ -77,8 +77,7 @@ function updateJson() {
       const encodedFileName = encodeURIComponent(fileNameWithExt)
         .replace(/%28/g, '(')
         .replace(/%29/g, ')')
-        .replace(/%7E/g, '~')
-        .replace(/%25/g, '%'); // 👈 멋대로 %25로 변환된 것을 다시 %로 복구하여 100%%20 형태 유지
+        .replace(/%7E/g, '~');
       
       const rawGithubUrl = `https://raw.githubusercontent.com/${CONFIG.githubUser}/${CONFIG.githubRepo}/refs/heads/${CONFIG.branch}/images/${encodedFileName}`;
       item.thumbnail = `${CONFIG.baseProxyUrl}${rawGithubUrl}`;
