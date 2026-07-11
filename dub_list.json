@@ -1,5 +1,45 @@
 [
   {
+    "id": 1144,
+    "title": "더 울트라맨 더빙",
+    "category": "애니",
+    "status": "vhs",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%8D%94%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%EB%A7%A8%20%EB%8D%94%EB%B9%99.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 1143,
+    "title": "명왕계획 제오라이머 더빙",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%AA%85%EC%99%95%EA%B3%84%ED%9A%8D%20%EC%A0%9C%EC%98%A4%EB%9D%BC%EC%9D%B4%EB%A8%B8%20%EB%8D%94%EB%B9%99.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 1142,
+    "title": "레드바론 더빙",
+    "category": "애니",
+    "status": "expired",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%A0%88%EB%93%9C%EB%B0%94%EB%A1%A0%20%EB%8D%94%EB%B9%99.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
+    "id": 1141,
+    "title": "환경전사 젠타포스",
+    "category": "드라마",
+    "status": "expired",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%ED%99%98%EA%B2%BD%EC%A0%84%EC%82%AC%20%EC%A0%A0%ED%83%80%ED%8F%AC%EC%8A%A4.webp",
+    "ottLinks": [],
+    "memo": "",
+    "isExcavated": true
+  },
+  {
     "id": 1140,
     "title": "마법의 스타 매지컬 에미 더빙 (비디오판)",
     "category": "애니",
@@ -44,7 +84,7 @@
     "title": "100% 파스칼 선생님 더빙 (애니박스)",
     "category": "애니",
     "status": "expired",
-    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/100%%25%20%ED%8C%8C%EC%8A%A4%EC%B9%BC%20%EC%84%A0%EC%83%9D%EB%8B%98%20%EB%8D%94%EB%B9%99%20(%EC%95%A0%EB%8B%88%EB%B0%95%EC%8A%A4).jpg",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/100%25%20%ED%8C%8C%EC%8A%A4%EC%B9%BC%20%EC%84%A0%EC%83%9D%EB%8B%98%20%EB%8D%94%EB%B9%99%20(%EC%95%A0%EB%8B%88%EB%B0%95%EC%8A%A4).jpg",
     "ottLinks": [],
     "memo": "",
     "isExcavated": true
@@ -5270,7 +5310,7 @@
     "title": "딸기 100% 더빙 (애니맥스)",
     "category": "애니",
     "status": "expired",
-    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%94%B8%EA%B8%B0%20100%%25%20%EB%8D%94%EB%B9%99%20(%EC%95%A0%EB%8B%88%EB%A7%A5%EC%8A%A4).jpg",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%94%B8%EA%B8%B0%20100%25%20%EB%8D%94%EB%B9%99%20(%EC%95%A0%EB%8B%88%EB%A7%A5%EC%8A%A4).jpg",
     "ottLinks": [],
     "memo": ""
   },
@@ -5328,7 +5368,8 @@
     "status": "expired",
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EC%B4%88%EA%B8%B0%EB%8F%99%EC%A0%84%EC%84%A4%20%EB%8B%A4%EC%9D%B4%EB%82%98%EA%B8%B0%EA%B0%80%20%EB%8D%94%EB%B9%99%20(%ED%88%AC%EB%8B%88%EB%B2%84%EC%8A%A4).png",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 743,
@@ -6289,7 +6330,8 @@
     "status": "expired",
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EC%82%AC%EB%AC%B4%EB%9D%BC%EC%9D%B4%20%EB%94%94%ED%8D%BC%20%EC%BF%84%EC%9A%B0%20%EB%8D%94%EB%B9%99%20(XTM).jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 643,
