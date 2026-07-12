@@ -10,6 +10,25 @@ const CONFIG = {
   branch: 'main',
   baseProxyUrl: 'https://images.weserv.nl/?url=',
 };
+/**
+ * URL이 완전히 디코딩될 때까지 반복해서 디코딩합니다.
+ */
+function deepDecode(url) {
+  if (!url) return '';
+  let curr = url;
+  while (true) {
+    try {
+      const decoded = decodeURIComponent(curr);
+      if (decoded === curr) {
+        break;
+      }
+      curr = decoded;
+    } catch (e) {
+      break;
+    }
+  }
+  return curr;
+}
 
 /**
  * 이미지 폴더를 스캔하여 파일명(확장자 제외)과 실제 확장자를 맵핑한 객체를 반환합니다.
@@ -80,17 +99,17 @@ function updateJson() {
         .replace(/%7E/g, '~');
       
       const rawGithubUrl = `https://raw.githubusercontent.com/${CONFIG.githubUser}/${CONFIG.githubRepo}/refs/heads/${CONFIG.branch}/images/${encodedFileName}`;
-      item.thumbnail = `${CONFIG.baseProxyUrl}${rawGithubUrl}`;
-      updatedCount++;
+      const newThumbnail = `${CONFIG.baseProxyUrl}${rawGithubUrl}`;
+      if (deepDecode(item.thumbnail) !== deepDecode(newThumbnail)) {
+        item.thumbnail = newThumbnail;
+        updatedCount++;
+      }
     } else {
       // 이미지 파일이 없는 경우
       missingCount++;
     }
     return item;
   });
-
-  // 4. ID 기준 내림차순 정렬 (최신 항목 상단 노출)
-  updatedList.sort((a, b) => (b.id || 0) - (a.id || 0));
 
   // 5. 파일 저장
   try {
