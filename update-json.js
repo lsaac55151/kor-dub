@@ -10,25 +10,6 @@ const CONFIG = {
   branch: 'main',
   baseProxyUrl: 'https://images.weserv.nl/?url=',
 };
-/**
- * URL이 완전히 디코딩될 때까지 반복해서 디코딩합니다.
- */
-function deepDecode(url) {
-  if (!url) return '';
-  let curr = url;
-  while (true) {
-    try {
-      const decoded = decodeURIComponent(curr);
-      if (decoded === curr) {
-        break;
-      }
-      curr = decoded;
-    } catch (e) {
-      break;
-    }
-  }
-  return curr;
-}
 
 /**
  * 이미지 폴더를 스캔하여 파일명(확장자 제외)과 실제 확장자를 맵핑한 객체를 반환합니다.
@@ -92,15 +73,20 @@ function updateJson() {
     if (ext) {
       // 이미지 파일이 존재하는 경우: 규칙에 맞게 주소 생성
       const fileNameWithExt = title + ext;
-      // manual_downloader.py와 동일한 인코딩 방식을 위해 ( ) 등 일부 특수문자 유지
-      const encodedFileName = encodeURIComponent(fileNameWithExt)
+      
+      let encodedFileName = encodeURIComponent(fileNameWithExt)
         .replace(/%28/g, '(')
         .replace(/%29/g, ')')
         .replace(/%7E/g, '~');
       
+      // 원본 제목 자체에 % 문자가 있는 경우만 weserv 프록시 규격에 따라 %%25로 변환
+      if (title.includes('%')) {
+        encodedFileName = encodedFileName.replace(/%25/g, '%%25');
+      }
+      
       const rawGithubUrl = `https://raw.githubusercontent.com/${CONFIG.githubUser}/${CONFIG.githubRepo}/refs/heads/${CONFIG.branch}/images/${encodedFileName}`;
       const newThumbnail = `${CONFIG.baseProxyUrl}${rawGithubUrl}`;
-      if (deepDecode(item.thumbnail) !== deepDecode(newThumbnail)) {
+      if (item.thumbnail !== newThumbnail) {
         item.thumbnail = newThumbnail;
         updatedCount++;
       }
@@ -111,7 +97,7 @@ function updateJson() {
     return item;
   });
 
-  // 5. 파일 저장
+  // 4. 파일 저장
   try {
     const outputData = JSON.stringify(updatedList, null, 2);
     fs.writeFileSync(CONFIG.jsonPath, outputData, 'utf8');
