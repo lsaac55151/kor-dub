@@ -1,24 +1,5 @@
 [
   {
-    "id": 1145,
-    "title": "극장판 귀멸의 칼날: 무한성 편",
-    "category": "애니",
-    "status": "active",
-    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EA%B7%80%EB%A9%B8%EC%9D%98%20%EC%B9%BC%EB%82%A0_%20%EB%AC%B4%ED%95%9C%EC%84%B1%20%ED%8E%B8.jpg",
-    "ottLinks": [
-      {
-        "name": "라프텔",
-        "url": "https://laftel.net/item/46626"
-      },
-      {
-        "name": "넷플릭스",
-        "url": "https://www.netflix.com/title/82723106"
-      }
-    ],
-    "memo": "",
-    "isExcavated": false
-  },
-  {
     "id": 1136,
     "title": "100% 파스칼 선생님 더빙 (애니박스)",
     "category": "애니",
@@ -1283,6 +1264,25 @@
     "ottLinks": [],
     "memo": "",
     "isExcavated": true
+  },
+  {
+    "id": 1145,
+    "title": "극장판 귀멸의 칼날: 무한성 편",
+    "category": "애니",
+    "status": "active",
+    "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EA%B7%B9%EC%9E%A5%ED%8C%90%20%EA%B7%80%EB%A9%B8%EC%9D%98%20%EC%B9%BC%EB%82%A0_%20%EB%AC%B4%ED%95%9C%EC%84%B1%20%ED%8E%B8.jpg",
+    "ottLinks": [
+      {
+        "name": "라프텔",
+        "url": "https://laftel.net/item/46626"
+      },
+      {
+        "name": "넷플릭스",
+        "url": "https://www.netflix.com/title/82723106"
+      }
+    ],
+    "memo": "",
+    "isExcavated": false
   },
   {
     "id": 799,
@@ -3943,7 +3943,8 @@
     "status": "vhs",
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%A7%88%EB%B2%95%EC%9D%98%20%EC%9A%94%EC%A0%95%20%ED%8E%98%EB%A5%B4%EC%83%A4%20%EB%8D%94%EB%B9%99%20(%EB%B9%84%EB%94%94%EC%98%A4%ED%8C%90).jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 133,
