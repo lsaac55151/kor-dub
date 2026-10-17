@@ -231,7 +231,7 @@
     </div>
 
     <!-- 4. [곡별 보기] 오프닝 곡 상세 모달 -->
-    <div id="songDetailModal" class="hidden fixed inset-0 bg-slate-950/60 backdrop-blur-md z-[100] items-center justify-center p-4 cursor-pointer">
+    <div id="songDetailModal" class="hidden fixed inset-0 bg-slate-950/60 backdrop-blur-md z-[110] items-center justify-center p-4 cursor-pointer">
         <div class="bg-white border border-slate-200 w-full max-w-4xl rounded-[2rem] flex flex-col max-h-[85vh] animate-slide-up cursor-default overflow-hidden relative shadow-lg" onclick="event.stopPropagation()">
             <div class="p-6 md:p-8 bg-indigo-600 relative overflow-hidden shrink-0">
                 <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600 opacity-90"></div>
@@ -243,9 +243,9 @@
                         </div>
                     </div>
                     <div class="flex gap-3 shrink-0">
-                        <button id="songDetailPlayBtn" class="w-11 h-11 flex items-center justify-center rounded-full bg-red-600 text-white hover:bg-red-500 hover:scale-110 transition-all shadow-lg cursor-pointer" title="유튜브에서 재생">
-                            <i class="ph-fill ph-play text-lg ml-1"></i>
-                        </button>
+                        <a id="songDetailExternalBtn" target="_blank" rel="noopener noreferrer" class="w-11 h-11 flex items-center justify-center rounded-full bg-white/20 text-white hover:bg-white hover:text-red-600 transition-all backdrop-blur-sm cursor-pointer" title="YouTube 새 탭으로 열기">
+                            <i class="ph ph-arrow-square-out text-lg font-bold"></i>
+                        </a>
                         <button onclick="closeModal('songDetailModal')" class="w-11 h-11 flex items-center justify-center rounded-full bg-white/20 text-white hover:bg-white hover:text-indigo-900 transition-all backdrop-blur-sm cursor-pointer" title="닫기">
                             <i class="ph ph-x text-lg font-bold"></i>
                         </button>
@@ -254,14 +254,7 @@
             </div>
             
             <div class="p-6 md:p-8 overflow-y-auto custom-scrollbar flex-grow bg-slate-50 flex flex-col items-center">
-                <div class="w-full max-w-2xl aspect-video shrink-0 bg-slate-950 rounded-2xl overflow-hidden shadow-sm relative mb-8 group cursor-pointer flex items-center justify-center" id="songDetailThumbWrapper">
-                    <img id="songDetailThumb" src="" loading="lazy" decoding="async" class="w-full h-full object-contain group-hover:scale-105 transition-all duration-500 opacity-90 group-hover:opacity-100">
-                    <div class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-2xl transform scale-90 group-hover:scale-100 transition-transform">
-                            <i class="ph-fill ph-play text-white text-3xl ml-1.5"></i>
-                        </div>
-                    </div>
-                </div>
+                <div class="w-full max-w-2xl aspect-video shrink-0 bg-slate-950 rounded-2xl overflow-hidden shadow-sm relative mb-8 flex items-center justify-center" id="songDetailThumbWrapper"></div>
 
                 <div class="w-full max-w-2xl">
                     <h4 class="text-sm font-black text-slate-500 mb-4 flex items-center gap-2"><i class="ph-bold ph-users"></i> 이 곡을 부른 가수 목록</h4>
@@ -311,6 +304,9 @@
 
         // 전역 메인 탭 제어 함수
         function switchMainTab(tab) {
+            closeModal('playerModal');
+            closeModal('songDetailModal');
+
             const rightsPane = document.getElementById('mainPaneRights');
             const openingsPane = document.getElementById('mainPaneOpenings');
             const rightsBtn = document.getElementById('mainTabRights');
@@ -336,10 +332,34 @@
             }
         }
 
+        function stopSongDetailVideo() {
+            const wrapper = document.getElementById('songDetailThumbWrapper');
+            if (wrapper) {
+                wrapper.innerHTML = '';
+            }
+        }
+
         // 공통 모달 닫기 제어 함수 (매개변수로 id 전달)
         function closeModal(modalId) {
-            document.getElementById(modalId).classList.add('hidden');
-            document.body.style.overflow = '';
+            const modal = document.getElementById(modalId);
+            if (!modal) return;
+
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+
+            if (modalId === 'songDetailModal') {
+                stopSongDetailVideo();
+            }
+            if (modalId === 'playerModal') {
+                stopSingerInlineVideos();
+            }
+
+            const isPlayerOpen = document.getElementById('playerModal') && !document.getElementById('playerModal').classList.contains('hidden');
+            const isDetailOpen = document.getElementById('songDetailModal') && !document.getElementById('songDetailModal').classList.contains('hidden');
+
+            if (!isPlayerOpen && !isDetailOpen) {
+                document.body.style.overflow = '';
+            }
         }
 
         // ==================== [파트 1: 더빙 판권 목록 로직] ====================
@@ -847,7 +867,7 @@
             const extraSingers = s.singers.length > 3 ? `<span class="text-[10px] font-bold text-slate-400 px-0.5">+${s.singers.length - 3}</span>` : '';
 
             return `
-                <div class="group relative flex flex-col bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-350 transition-all duration-300 animate-slide-up cursor-pointer" onclick="openSongDetailModal('${s.key}')">
+                <div class="group relative flex flex-col bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-350 transition-all duration-300 animate-slide-up cursor-pointer" onclick="openSongDetailModal('${encodeURIComponent(s.key)}')">
                     <div class="relative pt-[56.25%] overflow-hidden bg-slate-900 shrink-0">
                         <img src="${thumbUrl}" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 opacity-70 group-hover:opacity-100 transition-all duration-500" onerror="this.src='https://images.unsplash.com/photo-1614680376593-902f74cf0d41?q=80&w=640'">
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20">
@@ -878,78 +898,198 @@
         const playerModal = document.getElementById('playerModal');
         playerModal.addEventListener('click', (e) => { if (e.target === playerModal) closeModal('playerModal'); });
 
+        let currentOpenSingerId = null;
+        let currentSingerPlayingIdx = null;
+
+        function stopSingerInlineVideos() {
+            if (currentSingerPlayingIdx !== null) {
+                restoreSingerThumbnail(currentSingerPlayingIdx);
+                const activeCard = document.getElementById(`singerSongCard-${currentSingerPlayingIdx}`);
+                if (activeCard) {
+                    activeCard.classList.remove('ring-2', 'ring-indigo-400', 'border-indigo-400');
+                }
+                currentSingerPlayingIdx = null;
+            }
+        }
+
+        function restoreSingerThumbnail(idx) {
+            const container = document.getElementById(`singerSongMedia-${idx}`);
+            if (!container) return;
+            const thumbUrl = container.dataset.thumbUrl || '';
+            const youtubeId = container.dataset.youtubeId || '';
+            const songKey = container.dataset.songKey || '';
+            const encodedKey = encodeURIComponent(songKey);
+            
+            container.innerHTML = `
+                <img src="${thumbUrl}" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-103 transition-all duration-300">
+                ${youtubeId ? `
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20 cursor-pointer" onclick="playSingerSongInline(${idx})" title="임베드로 바로 재생">
+                    <div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center shadow-md scale-90 group-hover:scale-100 transition-transform">
+                        <i class="ph-fill ph-play text-white ml-0.5 text-sm"></i>
+                    </div>
+                </div>
+                <button onclick="event.stopPropagation(); openSongDetailModal('${encodedKey}')" class="absolute top-2 right-2 z-20 w-8 h-8 rounded-lg bg-black/60 hover:bg-black/80 text-white flex items-center justify-center backdrop-blur-sm transition-all cursor-pointer" title="상세 모달에서 크게 보기">
+                    <i class="ph ph-arrows-out-simple text-sm"></i>
+                </button>
+                ` : ''}
+            `;
+        }
+
+        function playSingerSongInline(idx) {
+            const currentSinger = SINGER_DATA.find(x => x.id === currentOpenSingerId);
+            if (!currentSinger || !currentSinger.songs || !currentSinger.songs[idx]) return;
+            const song = currentSinger.songs[idx];
+            if (!song.youtubeId) return;
+
+            if (currentSingerPlayingIdx !== null && currentSingerPlayingIdx !== idx) {
+                stopSingerInlineVideos();
+            }
+
+            stopSongDetailVideo();
+
+            const container = document.getElementById(`singerSongMedia-${idx}`);
+            if (!container) return;
+
+            currentSingerPlayingIdx = idx;
+            const card = document.getElementById(`singerSongCard-${idx}`);
+            if (card) {
+                card.classList.add('ring-2', 'ring-indigo-400', 'border-indigo-400');
+            }
+
+            container.innerHTML = `
+                <iframe 
+                    class="absolute inset-0 w-full h-full border-0" 
+                    src="https://www.youtube-nocookie.com/embed/${song.youtubeId}?autoplay=1&rel=0" 
+                    title="${escapeHtml(song.title)}" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            `;
+        }
+
         function openSingerModal(id) {
+            stopSingerInlineVideos();
+            stopSongDetailVideo();
+
             const s = SINGER_DATA.find(x => x.id === id);
             if (!s) return;
 
+            currentOpenSingerId = id;
             document.getElementById('playerTitle').textContent = s.name;
             document.getElementById('playerDesc').textContent = s.description || "기록된 추억이 없습니다.";
             
             let songHtml = (s.songs || []).map((song, idx) => {
                 const thumbUrl = song.youtubeId ? `https://img.youtube.com/vi/${song.youtubeId}/hqdefault.jpg` : 'https://images.unsplash.com/photo-1614680376593-902f74cf0d41?q=80&w=640';
-                const clickable = song.youtubeId ? `onclick="window.open('https://www.youtube.com/watch?v=${song.youtubeId}', '_blank')"` : '';
-                const pointerClass = song.youtubeId ? 'cursor-pointer hover:border-slate-350' : 'opacity-70 grayscale';
+                const songKey = song.youtubeId || (song.title || '').toLowerCase().replace(/\s/g, '');
+                const encodedKey = encodeURIComponent(songKey);
+                const pointerClass = song.youtubeId ? 'hover:border-slate-350' : 'opacity-70 grayscale';
+                const safeTitle = escapeHtml(song.title);
                 
                 return `
-                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-300 group flex flex-col ${pointerClass}">
-                    <div class="relative pt-[56.25%] bg-slate-900 overflow-hidden" ${clickable}>
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-300 group flex flex-col ${pointerClass}" id="singerSongCard-${idx}">
+                    <div class="relative pt-[56.25%] bg-slate-900 overflow-hidden" id="singerSongMedia-${idx}" data-thumb-url="${thumbUrl}" data-youtube-id="${song.youtubeId || ''}" data-song-key="${escapeHtml(songKey)}">
                         <img src="${thumbUrl}" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-103 transition-all duration-300">
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20">
-                            <div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center shadow-md scale-90 group-hover:scale-100"><i class="ph-fill ph-play text-white ml-0.5 text-sm"></i></div>
+                        ${song.youtubeId ? `
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20 cursor-pointer" onclick="playSingerSongInline(${idx})" title="임베드로 바로 재생">
+                            <div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center shadow-md scale-90 group-hover:scale-100 transition-transform">
+                                <i class="ph-fill ph-play text-white ml-0.5 text-sm"></i>
+                            </div>
                         </div>
+                        <button onclick="event.stopPropagation(); openSongDetailModal('${encodedKey}')" class="absolute top-2 right-2 z-20 w-8 h-8 rounded-lg bg-black/60 hover:bg-black/80 text-white flex items-center justify-center backdrop-blur-sm transition-all cursor-pointer" title="상세 모달에서 크게 보기">
+                            <i class="ph ph-arrows-out-simple text-sm"></i>
+                        </button>
+                        ` : ''}
                     </div>
-                    <div class="p-3.5 flex items-start justify-between gap-3 bg-white flex-grow">
-                        <span class="font-bold text-xs leading-snug line-clamp-2 mt-0.5 text-slate-800">${song.title}</span>
+                    <div class="p-3.5 flex items-center justify-between gap-2 bg-white flex-grow">
+                        <span onclick="openSongDetailModal('${encodedKey}')" class="font-bold text-xs leading-snug line-clamp-2 text-slate-800 hover:text-indigo-600 cursor-pointer transition-colors" title="${safeTitle}">
+                            ${safeTitle}
+                        </span>
+                        ${song.youtubeId ? `
+                        <div class="flex items-center gap-1 shrink-0">
+                            <button onclick="openSongDetailModal('${encodedKey}')" class="w-7 h-7 flex items-center justify-center rounded-lg bg-slate-100 hover:bg-indigo-50 hover:text-indigo-600 text-slate-500 transition-colors cursor-pointer" title="상세 모달에서 크게 보기">
+                                <i class="ph ph-arrows-out-simple text-xs font-bold"></i>
+                            </button>
+                            <a href="https://www.youtube.com/watch?v=${song.youtubeId}" target="_blank" rel="noopener noreferrer" class="w-7 h-7 flex items-center justify-center rounded-lg bg-slate-100 hover:bg-red-50 hover:text-red-600 text-slate-500 transition-colors cursor-pointer" title="YouTube 새 탭으로 열기" onclick="event.stopPropagation()">
+                                <i class="ph ph-arrow-square-out text-xs font-bold"></i>
+                            </a>
+                        </div>
+                        ` : ''}
                     </div>
-                </div>`
+                </div>`;
             }).join('');
 
             document.getElementById('songListContainer').innerHTML = songHtml;
             playerModal.classList.replace('hidden', 'flex');
+            document.body.style.overflow = 'hidden';
         }
 
         const detailModal = document.getElementById('songDetailModal');
         detailModal.addEventListener('click', (e) => { if (e.target === detailModal) closeModal('songDetailModal'); });
 
         function openSongDetailModal(key) {
-            const s = SONG_DATA.find(x => x.key === key);
+            const decodedKey = decodeURIComponent(key);
+            const s = SONG_DATA.find(x => x.key === key || x.key === decodedKey);
             if (!s) return;
+
+            stopSingerInlineVideos();
 
             document.getElementById('songDetailTitle').textContent = s.title;
             
-            const thumbImg = document.getElementById('songDetailThumb');
-            const playBtn = document.getElementById('songDetailPlayBtn');
             const thumbWrapper = document.getElementById('songDetailThumbWrapper');
+            const externalBtn = document.getElementById('songDetailExternalBtn');
             
             if (s.youtubeId) {
-                thumbImg.src = `https://img.youtube.com/vi/${s.youtubeId}/hqdefault.jpg`;
-                
-                const playAction = `window.open('https://www.youtube.com/watch?v=${s.youtubeId}', '_blank')`;
-                playBtn.setAttribute('onclick', playAction);
-                thumbWrapper.setAttribute('onclick', playAction);
-                
-                playBtn.classList.remove('hidden');
-                thumbWrapper.classList.remove('opacity-70', 'grayscale', 'cursor-default');
-                thumbWrapper.classList.add('cursor-pointer', 'group');
+                thumbWrapper.innerHTML = `
+                    <iframe 
+                        class="w-full h-full rounded-2xl border-0" 
+                        src="https://www.youtube-nocookie.com/embed/${s.youtubeId}?autoplay=1&rel=0" 
+                        title="${escapeHtml(s.title)}" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                `;
+                if (externalBtn) {
+                    externalBtn.href = `https://www.youtube.com/watch?v=${s.youtubeId}`;
+                    externalBtn.classList.remove('hidden');
+                }
             } else {
-                thumbImg.src = 'https://images.unsplash.com/photo-1614680376593-902f74cf0d41?q=80&w=1200';
-                playBtn.classList.add('hidden');
-                thumbWrapper.removeAttribute('onclick');
-                thumbWrapper.classList.remove('cursor-pointer', 'group');
-                thumbWrapper.classList.add('opacity-70', 'grayscale', 'cursor-default');
+                thumbWrapper.innerHTML = `
+                    <div class="w-full h-full flex flex-col items-center justify-center bg-slate-900 text-slate-400 p-6 text-center">
+                        <i class="ph ph-video-camera-slash text-4xl mb-2 text-slate-500"></i>
+                        <p class="text-sm font-semibold">등록된 유튜브 영상이 없습니다.</p>
+                    </div>
+                `;
+                if (externalBtn) {
+                    externalBtn.classList.add('hidden');
+                }
             }
 
             const singersHtml = s.singers.map(singer => {
                 return `
                     <div class="flex items-center gap-3 bg-slate-100 border border-slate-200 p-2.5 px-4 rounded-xl">
-                        <span onclick="closeModal('songDetailModal'); openSingerModal(${singer.id});" class="font-bold text-sm cursor-pointer hover:text-indigo-600 transition-colors text-slate-800">${singer.name}</span>
+                        <span onclick="closeModal('songDetailModal'); openSingerModal(${singer.id});" class="font-bold text-sm cursor-pointer hover:text-indigo-600 transition-colors text-slate-800">${escapeHtml(singer.name)}</span>
                     </div>
                 `;
             }).join('');
 
             document.getElementById('songDetailSingers').innerHTML = singersHtml;
             detailModal.classList.replace('hidden', 'flex');
+            document.body.style.overflow = 'hidden';
         }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const detailModal = document.getElementById('songDetailModal');
+                const playerModal = document.getElementById('playerModal');
+                if (detailModal && !detailModal.classList.contains('hidden')) {
+                    closeModal('songDetailModal');
+                } else if (playerModal && !playerModal.classList.contains('hidden')) {
+                    closeModal('playerModal');
+                }
+            }
+        });
         
         // 오프닝용 실시간 검색 이벤트 바인딩
         document.getElementById('openingsSearchInput').addEventListener('input', e => {
