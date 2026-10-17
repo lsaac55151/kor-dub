@@ -5246,7 +5246,8 @@
     "status": "expired",
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%B2%A0%EC%9D%B4%EB%B8%94%EB%A0%88%EC%9D%B4%EB%93%9C%20%EB%B2%84%EC%8A%A4%ED%8A%B8%20%EB%8D%94%EB%B9%99%20(%ED%88%AC%EB%8B%88%EB%B2%84%EC%8A%A4).jpg",
     "ottLinks": [],
-    "memo": ""
+    "memo": "",
+    "isExcavated": true
   },
   {
     "id": 1011,
@@ -5256,7 +5257,7 @@
     "thumbnail": "https://images.weserv.nl/?url=https://raw.githubusercontent.com/lsaac55151/kor-dub/refs/heads/main/images/%EB%B2%A0%EC%9D%B4%EB%B8%94%EB%A0%88%EC%9D%B4%EB%93%9C%20%EB%B2%84%EC%8A%A4%ED%8A%B8%20%EC%B4%88%EC%A0%9C%ED%8A%B8%20%EB%8D%94%EB%B9%99.webp",
     "ottLinks": [],
     "memo": "",
-    "isExcavated": false
+    "isExcavated": true
   },
   {
     "id": 1099,
